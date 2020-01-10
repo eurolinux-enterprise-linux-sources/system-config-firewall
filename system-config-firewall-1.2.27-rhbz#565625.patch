@@ -1,0 +1,19 @@
+commit bee79ee5caefcb7004223fa69faa06f0b66c57f0
+Author: Thomas Woerner <twoerner@redhat.com>
+Date:   Thu Sep 2 15:16:24 2010 +0200
+
+    - fixed port of libvirt-tls (rhbz#565625)
+
+diff --git a/src/fw_services.py b/src/fw_services.py
+index c1b0b55..592f32c 100644
+--- a/src/fw_services.py
++++ b/src/fw_services.py
+@@ -200,7 +200,7 @@ service_list = [
+                "service is needed for this option to be useful.")),
+ 
+     _Service("libvirt-tls", _("Virtual Machine Management (TLS)"), 
+-             [ (16509, "tcp"), ],
++             [ (16514, "tcp"), ],
+              _("Enable this option if you want to allow remote virtual "
+                "machine management with TLS encryption, x509 certificates "
+                "and optional SASL authentication. The libvirtd service is "

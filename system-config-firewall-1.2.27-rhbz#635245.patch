@@ -1,0 +1,148 @@
+commit cf3cc396a840231f2a1270c8e997679d3068eef2
+Author: jassy <jassy@fedoraproject.org>
+Date:   Mon Sep 20 06:48:39 2010 +0000
+
+    l10n: Updates to Panjabi (Punjabi) (pa) translation
+    
+    Transmitted-via: Transifex (translate.fedoraproject.org)
+
+diff --git a/po/pa.po b/po/pa.po
+index 01e2e14..7517e88 100644
+--- a/po/pa.po
++++ b/po/pa.po
+@@ -15,14 +15,14 @@ msgid ""
+ msgstr ""
+ "Project-Id-Version: system-config-firewall.master.pa\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-07-22 09:36+0200\n"
+-"PO-Revision-Date: 2010-06-25 16:08+0530\n"
++"POT-Creation-Date: 2010-09-19 07:16+0000\n"
++"PO-Revision-Date: 2010-09-20 12:20+0530\n"
+ "Last-Translator: Jaswinder Singh <jsingh@redhat.com>\n"
+-"Language-Team: Punjabi <en@li.org>\n"
++"Language-Team: Punjabi/Panjabi <kde-i18n-doc@kde.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Generator: KBabel 1.11.4\n"
++"X-Generator: Lokalize 1.0\n"
+ "Plural-Forms: Plural-Forms: nplurals=2; plural=(n != 1);\n"
+ "\n"
+ "\n"
+@@ -286,8 +286,7 @@ msgstr ""
+ "ਚਾਹੁੰਦੇ ਹੋ?"
+ 
+ #: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+-msgid ""
+-"Please remember to check if the services iptables and ip6tables are enabled."
++msgid "Please remember to check if the services iptables and ip6tables are enabled."
+ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇਹ ਜਾਂਚ ਕਰੋ ਕਿ iptables ਅਤੇ ip6tables ਸਰਵਿਸਾਂ ਯੋਗ ਹਨ।"
+ 
+ #: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+@@ -302,8 +301,7 @@ msgstr "ਬੇਨਤੀ ਵੇਖਾਓ (ping)"
+ msgid ""
+ "This message is used to test if a host is reachable mostly with the <i>ping</"
+ "i> utility."
+-msgstr ""
+-"ਇਹ ਸੁਨੇਹਾ ਜਾਂਚ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ਜੇ ਮੇਜ਼ਬਾਨ <i>ping</i> ਸਹੂਲਤ ਨਾਲ ਪਹੁੰਚ ਯੋਗ ਹੋਵੇ।"
++msgstr "ਇਹ ਸੁਨੇਹਾ ਜਾਂਚ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ ਜੇ ਮੇਜ਼ਬਾਨ <i>ping</i> ਸਹੂਲਤ ਨਾਲ ਪਹੁੰਚ ਯੋਗ ਹੋਵੇ।"
+ 
+ #: ../src/fw_icmp.py:33
+ msgid "Echo Reply (pong)"
+@@ -349,8 +347,7 @@ msgstr "ਰਾਊਟਰ ਇਸ਼ਤਿਹਾਰ"
+ msgid ""
+ "This message is used by routers to periodically announce the IP address of a "
+ "multicast interface."
+-msgstr ""
+-"ਇਹ ਸੁਨੇਹਾ ਰਾਊਟਰ ਦੁਆਰਾ ਮਲਟੀਕਾਸਟ ਇੰਟਰਫੇਸਾਂ ਦੇ IP ਐਡਰੈੱਸਾਂ ਦਾ ਐਲਾਨ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।"
++msgstr "ਇਹ ਸੁਨੇਹਾ ਰਾਊਟਰ ਦੁਆਰਾ ਮਲਟੀਕਾਸਟ ਇੰਟਰਫੇਸਾਂ ਦੇ IP ਐਡਰੈੱਸਾਂ ਦਾ ਐਲਾਨ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।"
+ 
+ #: ../src/fw_icmp.py:47
+ msgid "Router Solicitation"
+@@ -431,8 +428,7 @@ msgstr "ਸੰਭਾਲੋ ਅਤੇ ਮੁੜ-ਸੰਭਾਲੋ ਕਾਊਂ
+ msgid ""
+ "<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+ "chain counter."
+-msgstr ""
+-"<i>ਰੋਕਣ ਤੇ ਸੰਭਾਲੋ</i> ਅਤੇ <i>ਮੁੜ-ਚਾਲੂ ਹੋਣ ਤੇ ਸੰਭਾਲੋ</i> ਨਾਲ ਹੀ ਨਿਯਮ ਤੇ ਚੇਨ ਕਾਊਂਟਰ ਵੀ ਸੰਭਾਲੋ।"
++msgstr "<i>ਰੋਕਣ ਤੇ ਸੰਭਾਲੋ</i> ਅਤੇ <i>ਮੁੜ-ਚਾਲੂ ਹੋਣ ਤੇ ਸੰਭਾਲੋ</i> ਨਾਲ ਹੀ ਨਿਯਮ ਤੇ ਚੇਨ ਕਾਊਂਟਰ ਵੀ ਸੰਭਾਲੋ।"
+ 
+ #: ../src/fw_iptables.py:57
+ msgid "Numeric status output"
+@@ -721,10 +717,8 @@ msgstr ""
+ 
+ #: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+ #, python-format
+-msgid ""
+-"Set firewall default type: %s. This overwrites any existing configuration."
+-msgstr ""
+-"ਫਾਇਰਵਾਲ ਮੂਲ ਕਿਸਮ: %s ਨਿਰਧਾਰਤ ਕਰੋ। ਇਸ ਨਾਲ ਕੋਈ ਵਾ ਮੌਜੂਦਾ ਸੰਰਚਨਾ ਮੁੜ ਲਿਖੀ ਜਾਂਦੀ ਹੈ।"
++msgid "Set firewall default type: %s. This overwrites any existing configuration."
++msgstr "ਫਾਇਰਵਾਲ ਮੂਲ ਕਿਸਮ: %s ਨਿਰਧਾਰਤ ਕਰੋ। ਇਸ ਨਾਲ ਕੋਈ ਵਾ ਮੌਜੂਦਾ ਸੰਰਚਨਾ ਮੁੜ ਲਿਖੀ ਜਾਂਦੀ ਹੈ।"
+ 
+ #: ../src/fw_parser.py:410
+ msgid "List predefined services."
+@@ -1164,8 +1158,7 @@ msgid "Trusted Interfaces"
+ msgstr "ਭਰੋਸੇਯੋਗ ਇੰਟਰਫੇਸ"
+ 
+ #: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+-msgid ""
+-"Mark all interfaces as trusted which should have full access to the system."
++msgid "Mark all interfaces as trusted which should have full access to the system."
+ msgstr "ਸਭ ਇੰਟਰਫੇਸਾਂ ਨੂੰ ਇਸ ਤਰਾਂ ਭਰੋਸੇਯੋਗ ਬਣਾਓ ਕਿ ਉਹ ਸਿਸਟਮਾਂ ਨੂੰ ਪੂਰੀ ਤਰਾਂ ਵਰਤ ਸਕਣ।"
+ 
+ #. masquerading
+@@ -1240,8 +1233,7 @@ msgstr "ਚੇਤਾਵਨੀ"
+ msgid ""
+ "Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+ "service name."
+-msgstr ""
+-"ਯੋਗ ਮੁੱਲ: <port>[-<port>], ਜਿੱਥੇ ਪੋਰਟ ਜਾਂ ਤਾਂ ਇੱਕ ਨੰਬਰ [0..65535] ਜਾਂ ਇੱਕ ਸਰਵਿਸ ਨਾਂ।"
++msgstr "ਯੋਗ ਮੁੱਲ: <port>[-<port>], ਜਿੱਥੇ ਪੋਰਟ ਜਾਂ ਤਾਂ ਇੱਕ ਨੰਬਰ [0..65535] ਜਾਂ ਇੱਕ ਸਰਵਿਸ ਨਾਂ।"
+ 
+ #: ../src/fw_tui.py:354
+ #, python-format
+@@ -1267,8 +1259,7 @@ msgid "Protocol:"
+ msgstr "ਪਰੋਟੋਕਾਲ:"
+ 
+ #: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+-msgid ""
+-"Please select the source and destination options according to your needs."
++msgid "Please select the source and destination options according to your needs."
+ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਲੋੜ ਅਨੁਸਾਰ ਸਰੋਤ ਤੇ ਨੀਯਤ ਚੋਣਾਂ ਚੁਣੋ।"
+ 
+ #: ../src/fw_tui.py:407
+@@ -1384,8 +1375,7 @@ msgid "<b>User Skill Level</b>"
+ msgstr "<b>ਉਪਭੋਗੀ ਗਿਆਨ ਪੱਧਰ</b>"
+ 
+ #: ../src/system-config-firewall.glade.h:7
+-msgid ""
+-"<b>Your current configuration is empty, all traffic will be blocked.</b>"
++msgid "<b>Your current configuration is empty, all traffic will be blocked.</b>"
+ msgstr "<b>ਤੁਹਾਡੀ ਮੌਜੂਦਾ ਸੰਰਚਨਾ ਖਾਲੀ ਹੈ, ਸਾਰਾ ਟਰੈਫਿਕ ਪਾਬੰਦ ਕੀਤਾ ਜਾਵੇਗਾ।</b>"
+ 
+ #: ../src/system-config-firewall.glade.h:8
+@@ -1633,8 +1623,7 @@ msgid ""
+ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸੂਚੀ ਵਿੱਚ ਇਕਾਈ ਚੁਣੋ ਜਾਂ ਅੱਗੇ ਹੇਠਾਂ ਪੋਰਟ ਅਤੇ ਪਰੋਟੋਕਾਲ ਚੁਣੋ।"
+ 
+ #: ../src/system-config-firewall.glade.h:74
+-msgid ""
+-"Please select keep configuration or choose to load a default configuration."
++msgid "Please select keep configuration or choose to load a default configuration."
+ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸੰਰਚਨਾ ਰੱਖੋ ਜਾਂ ਮੂਲ ਸੰਰਚਨਾ ਲੋਡ ਕਰਨ ਲਈ ਚੁਣੋ।"
+ 
+ #: ../src/system-config-firewall.glade.h:77
+@@ -1739,7 +1728,7 @@ msgstr "ਵਾਰਤਾਲਾਪ"
+ 
+ #: ../src/system-config-firewall.glade.h:106
+ msgid "You can change the settings in the <i>Options</i> menu afterwards."
+-msgstr "ਤੁਸੀਂ ਬਾਅਦ ਵਿੱਚ <i>Options</i> ਮੇਨੂ ਵਿੱਚ ਸੈਟਿੰਗ ਤਬਦੀਲ ਕਰ ਸਕਦੇ ਹੋ।"
++msgstr "ਤੁਸੀਂ ਬਾਅਦ ਵਿੱਚ <i>ਚੋਣਾਂ</i> ਮੇਨੂ ਵਿੱਚ ਸੈਟਿੰਗ ਤਬਦੀਲ ਕਰ ਸਕਦੇ ਹੋ।"
+ 
+ #: ../src/system-config-firewall.glade.h:107
+ msgid "_About"
+@@ -1781,3 +1770,4 @@ msgstr "system-config-firewall"
+ #: ../src/system-config-firewall.glade.h:117
+ msgid "translator-credits"
+ msgstr "ਜਸਵਿੰਦਰ ਸਿੰਘ ਫੂਲੇਵਾਲਾ <j.phulewala@gmail.com>"
++
