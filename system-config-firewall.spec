@@ -16,7 +16,7 @@
 Summary: A graphical interface for basic firewall setup
 Name: system-config-firewall
 Version: 1.2.27
-Release: 5%{?dist}
+Release: 7.1%{?dist}
 URL: http://fedorahosted.org/system-config-firewall
 License: GPLv2+
 ExclusiveOS: Linux
@@ -30,6 +30,11 @@ Patch1: system-config-firewall-1.2.27-rhbz#624400.patch
 Patch2: system-config-firewall-1.2.27-rhbz#717985.patch
 Patch3: system-config-firewall-1.2.27-rhbz#632979.patch
 Patch4: system-config-firewall-1.2.27-rhbz#635245.patch
+Patch5: system-config-firewall-1.2.29-ipv6-dhcp.patch
+Patch6: system-config-firewall-1.2.27-translation.patch
+Patch7: system-config-firewall-1.2.29-rhbz#720831.patch
+Patch8: system-config-firewall-1.2.27-rhbz#711231.patch
+Patch9: system-config-firewall-1.2.27-rhbz#682391.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: intltool
@@ -76,7 +81,7 @@ Obsoletes: system-config-securitylevel-tui
 Provides: system-config-securitylevel-tui = 1.7.0
 Requires: system-config-firewall-base = %{version}-%{release}
 #Requires: system-config-network-tui
-Requires: newt
+Requires: newt-python
 
 %description tui
 system-config-firewall-tui is a text user interface for basic firewall setup.
@@ -88,6 +93,11 @@ system-config-firewall-tui is a text user interface for basic firewall setup.
 %patch2 -p1 -b .rhbz#717985
 %patch3 -p1 -b .rhbz#632979
 %patch4 -p1 -b .rhbz#635245
+%patch5 -p1 -b .ipv6-dhcp
+%patch6 -p1 -b .translation
+%patch7 -p1 -b .rhbz#720831
+%patch8 -p1 -b .rhbz#711231
+%patch9 -p1 -b .rhbz#682391
 
 %build
 %configure %{?with_usermode: --enable-usermode} \
@@ -185,6 +195,23 @@ fi
 %{_datadir}/system-config-firewall/fw_tui.*
 
 %changelog
+* Mon Jun 23 2014 Thomas Woerner <twoerner@redhat.com> 1.2.27-7.1
+- bump release for fast track errata
+
+* Mon Jun 23 2014 Thomas Woerner <twoerner@redhat.com> 1.2.27-7
+- Fixed screen corruption introduced with (RHBZ#720831)
+- Replaced pickle by json introduced with (RHBZ#711231)
+
+* Tue Jun  3 2014 Thomas Woerner <twoerner@redhat.com> 1.2.27-6
+- Added missing dependency for newt-python (RHBZ#756048)
+- Latest translations from transifex (RHBZ#819809)
+- Allow user to select and add trust and masq interfaces (RHBZ#720831)
+- New D-Bus methods to read an write service settings, use in s-c-fw (RHBZ#711231)
+- Drop eth from std device names list (rhbz#682391)
+
+* Mon Jun  2 2014 Thomas Woerner <twoerner@redhat.com> 1.2.27-6
+- Always allow ipv6-dhcp (RHBZ#634857)
+
 * Mon Aug  1 2011 Thomas Woerner <twoerner@redhat.com> 1.2.27-5
 - updated Hindi translation (rhbz#632979)
 - updated Punjabi translation (rhbz#635245)

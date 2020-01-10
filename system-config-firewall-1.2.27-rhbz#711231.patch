@@ -1,0 +1,317 @@
+diff --git a/src/fw_dbus.py b/src/fw_dbus.py
+index e48675f..1d4275c 100644
+--- a/src/fw_dbus.py
++++ b/src/fw_dbus.py
+@@ -1,5 +1,5 @@
+ #
+-# Copyright (C) 2009 Red Hat, Inc.
++# Copyright (C) 2009, 2014 Red Hat, Inc.
+ # Authors:
+ # Thomas Woerner <twoerner@redhat.com>
+ #
+@@ -67,6 +67,24 @@ class DBusProxy(object):
+         return self.dbus_obj.write(rep.encode('utf-8'),
+                                    dbus_interface=DBUS_DOMAIN)
+ 
++    @slip.dbus.polkit.enable_proxy
++    def read_settings(self):
++        rep = self.dbus_obj.read_settings(dbus_interface=DBUS_DOMAIN)
++        try:
++            args = json.loads(rep.encode('utf-8'))
++        except:
++            return None
++        return args
++
++    @slip.dbus.polkit.enable_proxy
++    def write_settings(self, args):
++        try:
++            rep = json.dumps(args)
++        except:
++            return -1
++        return self.dbus_obj.write_settings(rep.encode('utf-8'),
++                                            dbus_interface=DBUS_DOMAIN)
++
+ #
+ 
+ class DBusService(slip.dbus.service.Object):
+@@ -114,6 +132,28 @@ class DBusService(slip.dbus.service.Object):
+ 
+         return (ip4t_status + ip6t_status + c_status + se_status)
+ 
++    # read settings
++    @slip.dbus.polkit.require_auth("%s.auth" % POLKIT_DOMAIN)
++    @dbus.service.method(DBUS_DOMAIN, in_signature='', out_signature='s')
++    def read_settings(self):
++        settings = fw_sysconfig.read_service_settings()
++        try:
++            rep = json.dumps(settings)
++        except:
++            return None
++        return rep.encode('utf-8')    
++
++    # write settings
++    @slip.dbus.polkit.require_auth("%s.auth" % POLKIT_DOMAIN)
++    @dbus.service.method(DBUS_DOMAIN, in_signature='s', out_signature='i')
++    def write_settings(self, rep):
++        try:
++            settings = json.loads(rep.encode('utf-8'))
++        except:
++            return -1
++
++        return fw_sysconfig.write_service_settings(settings)
++
+ #
+ 
+ def run_service():
+diff --git a/src/fw_gui.py b/src/fw_gui.py
+index 3989264..af07b85 100644
+--- a/src/fw_gui.py
++++ b/src/fw_gui.py
+@@ -1,5 +1,5 @@
+ #
+-# Copyright (C) 2002, 2003, 2004, 2007, 2008 Red Hat, Inc.
++# Copyright (C) 2002, 2003, 2004, 2007, 2008, 2014 Red Hat, Inc.
+ # Authors:
+ # Thomas Woerner <twoerner@redhat.com>
+ # Chris Lumens <clumens@redhat.com>
+@@ -2013,35 +2013,49 @@ class ui:
+         self.settingsOKButton.set_sensitive(True)
+ 
+     def settings(self, *args):
+-        ipv4_failed = ipv6_failed = False
+-        # load IPv4 configuration
+-        ip4tables_conf = fw_iptables.ip4tablesConfig(IP4TABLES_CFG)
+-        try:
+-            ip4tables_conf.read()
+-        except:
+-            ipv4_failed = True
+-        # load IPv6 configuration
+-        ip6tables_conf = fw_iptables.ip6tablesConfig(IP6TABLES_CFG)
+-        try:
+-            ip6tables_conf.read()
+-        except:
+-            ipv6_failed = True
++        if not self.use_dbus:
++            ipv4_failed = ipv6_failed = False
++            # load IPv4 configuration
++            ip4tables_conf = fw_iptables.ip4tablesConfig(IP4TABLES_CFG)
++            try:
++                ip4tables_conf.read()
++            except:
++                ipv4_failed = True
++            # load IPv6 configuration
++            ip6tables_conf = fw_iptables.ip6tablesConfig(IP6TABLES_CFG)
++            try:
++                ip6tables_conf.read()
++            except:
++                ipv6_failed = True
++        else:
++            try_again = True
++            while try_again:
++                try:
++                    settings = self.dbus_proxy.read_settings()
++                except Exception, msg:
++                    self.dbus_error("%s" % msg)
++                else:
++                    try_again = False
+ 
+         # service settings
+         self.settingsStore.clear()
+         for setting in fw_iptables.setting_list:
+-            value = ip4tables_conf.get(ip4tables_conf.prefix+setting.key)
+-            ipv4 = False
+-            if value == "yes":
+-                ipv4 = True
+-            if ipv4_failed:
+-                ipv4 = setting.iptables
+-            value = ip6tables_conf.get(ip6tables_conf.prefix+setting.key)
+-            ipv6 = False
+-            if value == "yes":
+-                ipv6 = True
+-            if ipv6_failed:
+-                ipv6 = setting.ip6tables
++            if not self.use_dbus:
++                value = ip4tables_conf.get(ip4tables_conf.prefix+setting.key)
++                ipv4 = False
++                if value == "yes":
++                    ipv4 = True
++                if ipv4_failed:
++                    ipv4 = setting.iptables
++                value = ip6tables_conf.get(ip6tables_conf.prefix+setting.key)
++                ipv6 = False
++                if value == "yes":
++                    ipv6 = True
++                if ipv6_failed:
++                    ipv6 = setting.ip6tables
++            else:
++                ipv4 = settings["iptables"][setting.key]
++                ipv6 = settings["ip6tables"][setting.key]
+             self.settingsStore.append([setting.key, setting.name, ipv4, ipv6])
+ 
+         # show dialog
+@@ -2055,20 +2069,40 @@ class ui:
+             iter = self.settingsStore.get_iter_first()
+             while iter:
+                 key = self.settingsStore.get_value(iter, 0)
+-                if self.settingsStore.get_value(iter, 2):
+-                    ip4tables_conf.set(ip4tables_conf.prefix+key, "yes")
+-                else:
+-                    ip4tables_conf.set(ip4tables_conf.prefix+key, "no")
+-                if self.settingsStore.get_value(iter, 3):
+-                    ip6tables_conf.set(ip6tables_conf.prefix+key, "yes")
++                if not self.use_dbus:
++                    if self.settingsStore.get_value(iter, 2):
++                        ip4tables_conf.set(ip4tables_conf.prefix+key, "yes")
++                    else:
++                        ip4tables_conf.set(ip4tables_conf.prefix+key, "no")
++                    if self.settingsStore.get_value(iter, 3):
++                        ip6tables_conf.set(ip6tables_conf.prefix+key, "yes")
++                    else:
++                        ip6tables_conf.set(ip6tables_conf.prefix+key, "no")
+                 else:
+-                    ip6tables_conf.set(ip6tables_conf.prefix+key, "no")
++                    # ipv4:
++                    value = self.settingsStore.get_value(iter, 2)
++                    if value != settings["iptables"][key]:
++                        settings["iptables"][key] = value
++                    # ipv6:
++                    value = self.settingsStore.get_value(iter, 3)
++                    if value != settings["ip6tables"][key]:
++                        settings["ip6tables"][key] = value
+                 iter = self.settingsStore.iter_next(iter)
+-            # TODO: check status:
+-            # write IPv4 configuration
+-            ip4tables_conf.write()
+-            # write IPv6 configuration
+-            ip6tables_conf.write()
++            if not self.use_dbus:
++                # TODO: check status:
++                # write IPv4 configuration
++                ip4tables_conf.write()
++                # write IPv6 configuration
++                ip6tables_conf.write()
++            else:
++                try_again = True
++                while try_again:
++                    try:
++                        self.dbus_proxy.write_settings(settings)
++                    except Exception, msg:
++                        self.dbus_error("%s" % msg)
++                    else:
++                        try_again = False
+ 
+     def genArgs(self):
+         # With the new enabled/disabled behavior, we have to ignore the config
+diff --git a/src/fw_sysconfig.py b/src/fw_sysconfig.py
+index a963c63..cadf730 100644
+--- a/src/fw_sysconfig.py
++++ b/src/fw_sysconfig.py
+@@ -1,5 +1,5 @@
+ #
+-# Copyright (C) 2007, 2008 Red Hat, Inc.
++# Copyright (C) 2007, 2008, 2014 Red Hat, Inc.
+ # Authors:
+ # Thomas Woerner <twoerner@redhat.com>
+ #
+@@ -19,9 +19,10 @@
+ 
+ import os.path
+ 
+-from fw_config import OLD_CONFIG, CONFIG
++from fw_config import OLD_CONFIG, CONFIG, IP4TABLES_CFG, IP6TABLES_CFG
+ from fw_parser import parseSysconfigArgs
+ import fw_compat
++import fw_iptables
+ import shutil
+ 
+ def read_sysconfig_args():
+@@ -125,3 +126,89 @@ def write_sysconfig_config(filename, conf):
+ 
+     fd.close()
+     return True
++
++def read_service_settings():
++    # load IPv4 configuration
++    ipv4_failed = False
++    ipv4_conf = fw_iptables.ip4tablesConfig(IP4TABLES_CFG)
++    try:
++        ipv4_conf.read()
++    except:
++        # no or empty config
++        ipv4_failed = True
++
++    # load IPv6 configuration
++    ipv6_failed = False
++    ipv6_conf = fw_iptables.ip6tablesConfig(IP6TABLES_CFG)
++    try:
++        ipv6_conf.read()
++    except:
++        # no or empty config
++        ipv6_failed = True
++
++    ipv4_settings = { }
++    ipv6_settings = { }
++    for setting in fw_iptables.setting_list:
++        if not ipv4_failed:
++            ipv4_settings[setting.key] = \
++                (ipv4_conf.get(ipv4_conf.prefix+setting.key) == "yes")
++        else:
++            ipv4_settings[setting.key] = setting.iptables
++        if not ipv6_failed:
++            ipv6_settings[setting.key] = \
++                (ipv6_conf.get(ipv6_conf.prefix+setting.key) == "yes")
++        else:
++            ipv6_settings[setting.key] = setting.ip6tables
++
++    key = "MODULES"
++    if not ipv4_failed:
++        ipv4_settings[key] = ipv4_conf.get(ipv4_conf.prefix+key)
++    else:
++        ipv4_settings[key] = [ ]
++    if not ipv6_failed:
++        ipv6_settings[key] = ipv6_conf.get(ipv6_conf.prefix+key)
++    else:
++        ipv6_settings[key] = [ ]
++
++    return { "iptables": ipv4_settings, "ip6tables": ipv6_settings }
++
++def write_service_settings(settings):
++    # load IPv4 configuration
++    ipv4_failed = False
++    ipv4_conf = fw_iptables.ip4tablesConfig(IP4TABLES_CFG)
++    try:
++        ipv4_conf.read()
++    except:
++        # ok: no or empty config
++        pass
++
++    # load IPv6 configuration
++    ipv6_failed = False
++    ipv6_conf = fw_iptables.ip6tablesConfig(IP6TABLES_CFG)
++    try:
++        ipv6_conf.read()
++    except:
++        # ok: no or empty config
++        pass
++
++    yes_no = { True: "yes", False: "no" }
++
++    ipv4_settings = settings["iptables"]
++    ipv6_settings = settings["ip6tables"]
++    for key in ipv4_settings.keys():
++        if key != "MODULES":
++            ipv4_conf.set(ipv4_conf.prefix+key, yes_no[ipv4_settings[key]])
++        else:
++            ipv4_conf.set(ipv4_conf.prefix+key, ipv4_settings[key])
++    for key in ipv6_settings.keys():
++        if key != "MODULES":
++            ipv6_conf.set(ipv6_conf.prefix+key, yes_no[ipv6_settings[key]])
++        else:
++            ipv6_conf.set(ipv6_conf.prefix+key, ipv6_settings[key])
++    try:
++        ipv4_conf.write()
++        ipv6_conf.write()
++    except:
++        return False
++
++    return True

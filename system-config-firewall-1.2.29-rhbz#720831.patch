@@ -1,0 +1,224 @@
+commit dddaaedbba9304701e06911dfe66321bfb5f458b
+Author: Thomas Woerner <twoerner@redhat.com>
+Date:   Tue Jun 3 14:57:23 2014 +0200
+
+    - allow user to add and select trust and masq interfaces (RHBZ#720831)
+
+diff --git a/src/fw_tui.py b/src/fw_tui.py
+index 4578359..fb1f5ff 100644
+--- a/src/fw_tui.py
++++ b/src/fw_tui.py
+@@ -31,6 +31,7 @@ from fw_functions import getPortID, getServiceName, getPortRange, checkIP, \
+ from fw_parser import *
+ from fw_sysconfig import *
+ import fw_iptables
++import fw_nm
+ 
+ from snack import *
+ 
+@@ -110,6 +111,14 @@ class ui:
+         self.trust = CheckboxTree(4, scroll=1)
+ 
+         tab.add(self.trust, 0, 3, padding=(0,0,1,1), anchorTop=1)
++
++        tab.bb_work = ButtonBar(self.screen,
++                                ((_("Add"), "trust_interface_add"),),
++                                compact=1)
++        grid = Grid(1, 2)
++        grid.setField(self.trust, 0, 0, padding=(0,0,0,0), anchorTop=1)
++        grid.setField(tab.bb_work, 0, 1, padding=(0,0,0,0), anchorTop=1)
++        tab.add(grid, 0, 3, padding=(0,0,1,1), anchorTop=1)
+         self.tabs.append(tab)
+ 
+         # masquerading
+@@ -122,6 +131,14 @@ class ui:
+         self.masq = CheckboxTree(4, scroll=1)
+ 
+         tab.add(self.masq, 0, 4, padding=(0,0,1,1), anchorTop=1)
++
++        tab.bb_work = ButtonBar(self.screen,
++                                ((_("Add"), "masq_interface_add"),),
++                                compact=1)
++        grid = Grid(1, 2)
++        grid.setField(self.masq, 0, 0, padding=(0,0,0,0), anchorTop=1)
++        grid.setField(tab.bb_work, 0, 1, padding=(0,0,0,0), anchorTop=1)
++        tab.add(grid, 0, 4, padding=(0,0,1,1), anchorTop=1)
+         self.tabs.append(tab)
+ 
+         # port forwarding
+@@ -223,6 +240,13 @@ class ui:
+ #                if not dev.Device in devices:
+ #                    devices.append(dev.Device)
+ 
++        try:
++            devs = fw_nm.device_list()
++        except:
++            pass
++        else:
++            devices.extend(devs.keys())
++
+         if config.trust:
+             for dev in config.trust:
+                 if dev not in devices:
+@@ -390,6 +414,30 @@ class ui:
+             elif res == 'cancel':
+                 return None
+ 
++    def interface_selection(self, interface=None):
++        _interface = ( interface if interface else "" )
++        while 1:
++            (res, values) = EntryWindow(\
++                self.screen, _("Add Interface"), "",
++                ((_("Interface:"), _interface),),
++                buttons=((_("OK"), "ok"), (_("Cancel"), "cancel")))
++            self.screen.popWindow()
++
++            if res == 'ok':
++                error = False
++                # interface
++                __interface = values[0].strip()
++                if not len(__interface) > 0 or not checkInterface(__interface):
++                    self.error(_("Interface '%s' is not valid.") % __interface)
++                    error = True
++                else:
++                    _interface = __interface
++                if error:
++                    continue
++                return _interface
++            elif res == 'cancel':
++                return None
++
+     def forward_port_selection(self, interface=None, protocol=None, port=None,
+                                to_address=None, to_port=None):
+         _interface = ( interface if interface else "" )
+@@ -798,6 +846,70 @@ class ui:
+                             self.other_ports.remove(item)
+                             self.other_ports_box.delete(item)
+ 
++                    # trusted interfaces
++                    elif str == 'trust_interface_add':
++                        self.screen.popWindow()
++                    str = self.tabs[self.tab_pos].bb.buttonPressed(res2)
++                    if not str and self.tabs[self.tab_pos].bb_work:
++                        str = self.tabs[self.tab_pos].bb_work.buttonPressed(res2)
++                    if str == 'close':
++                        break
++                    elif str == 'back':
++                        self.screen.refresh()
++                        if self.tab_pos > 0:
++                            self.tab_pos -= 1
++                    elif str == 'forward':
++                        self.screen.refresh()
++                        if self.tab_pos < len(self.tabs):
++                            self.tab_pos += 1
++
++                    # other ports
++                    elif str == 'ports_add':
++                        res3 = self.port_selection()
++                        if res3 and res3 not in self.other_ports:
++                            str = self._portStr(res3[0], res3[1])
++                            self.other_ports.append(res3)
++                            self.other_ports_box.append(str, res3)
++                    elif str == 'ports_edit':
++                        try:
++                            item = self.other_ports_box.current()
++                        except:
++                            pass
++                        else:
++                            (ports, proto) = item
++                            res3 = self.port_selection(ports, proto)
++                            if res3 and res3 not in self.other_ports:
++                                self.other_ports.remove(item)
++                                self.other_ports_box.delete(item)
++                                str = self._portStr(res3[0], res3[1])
++                                self.other_ports.append(res3)
++                                self.other_ports_box.append(str, res3)
++                    elif str == 'ports_remove':
++                        try:
++                            item = self.other_ports_box.current()
++                        except:
++                            pass
++                        else:
++                            self.other_ports.remove(item)
++                            self.other_ports_box.delete(item)
++
++                    # trusted interfaces
++                    elif str == 'trust_interface_add':
++                        dev = self.interface_selection()
++                        if dev: # and dev not in self.trust:
++                            self.trust.append(dev, selected=True)
++                            self.trust.setCurrent(dev)
++                            self.screen.refresh()
++
++
++                    # masqueraded interfaces
++                    elif str == 'masq_interface_add':
++                        dev = self.interface_selection()
++                        if dev: # and dev not in self.trust:
++                            self.masq.append(dev, selected=True)
++                            self.masq.setCurrent(dev)
++                            self.screen.refresh()
++
+                     # forward port
+                     elif str == 'forward_port_add':
+                         res3 = self.forward_port_selection()
+commit a51a4b309546cd2ee5cea0404b4c7e4ccbefec5e
+Author: Thomas Woerner <twoerner@redhat.com>
+Date:   Mon Jun 23 20:10:10 2014 +0200
+
+    s-c-fw-tui: Fix screen corruption cased by commit for RHBZ#720831
+    
+    commit dddaaedbba9304701e06911dfe66321bfb5f458b
+    Author: Thomas Woerner <twoerner@redhat.com>
+    Date:   Tue Jun 3 14:57:23 2014 +0200
+    
+        - allow user to add and select trust and masq interfaces (RHBZ#720831)
+
+diff --git a/src/fw_tui.py b/src/fw_tui.py
+index fb1f5ff..390c9fe 100644
+--- a/src/fw_tui.py
++++ b/src/fw_tui.py
+@@ -257,9 +257,13 @@ class ui:
+                     devices.append(dev)
+         devices.sort()
+ 
++        self.trust_list = [ ]
++        self.masq_list = [ ]
+         for dev in devices:
+             self.trust.append(dev, selected=False)
++            self.trust_list.append(dev)
+             self.masq.append(dev, selected=False)
++            self.masq_list.append(dev)
+ 
+         # trusted services
+         for svc in fw_services.service_list:
+@@ -896,19 +900,24 @@ class ui:
+                     # trusted interfaces
+                     elif str == 'trust_interface_add':
+                         dev = self.interface_selection()
+-                        if dev: # and dev not in self.trust:
++                        if dev and dev not in self.trust_list:
+                             self.trust.append(dev, selected=True)
+                             self.trust.setCurrent(dev)
+-                            self.screen.refresh()
+-
++                            self.trust_list.append(dev)
++                            # draw spaces to the screen to overwrite screen corruption of setCurrent call
++                            for i in xrange(1,20):
++                                self.screen.drawRootText(1, i, " ".ljust(60))
+ 
+                     # masqueraded interfaces
+                     elif str == 'masq_interface_add':
+                         dev = self.interface_selection()
+-                        if dev: # and dev not in self.trust:
++                        if dev and dev not in self.masq_list:
+                             self.masq.append(dev, selected=True)
+                             self.masq.setCurrent(dev)
+-                            self.screen.refresh()
++                            self.masq_list.append(dev)
++                            # draw spaces to the screen to overwrite screen corruption of setCurrent call
++                            for i in xrange(1,20):
++                                self.screen.drawRootText(1, i, " ".ljust(60))
+ 
+                     # forward port
+                     elif str == 'forward_port_add':

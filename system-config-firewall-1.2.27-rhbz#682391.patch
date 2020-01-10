@@ -1,0 +1,12 @@
+diff -up system-config-firewall-1.2.27/src/fw_config.py.in.rhbz#682391 system-config-firewall-1.2.27/src/fw_config.py.in
+--- system-config-firewall-1.2.27/src/fw_config.py.in.rhbz#682391	2014-06-03 15:23:31.312408968 +0200
++++ system-config-firewall-1.2.27/src/fw_config.py.in	2014-06-03 15:23:44.749449763 +0200
+@@ -69,7 +69,7 @@ OLD_SE_CONFIG = '/etc/sysconfig/selinux'
+ 
+ SYSCTL_CONFIG = '/etc/sysctl.conf'
+ 
+-STD_DEVICES = [ "eth", "ppp", "isdn", "ippp", "tun", "wlan" ]
++STD_DEVICES = [ "ppp", "isdn", "ippp", "tun", "wlan" ]
+ FIREWALL_TYPES = [ "ipv4", "ipv6" ]
+ FIREWALL_TABLES = [ "mangle", "nat", "filter" ]
+ 
