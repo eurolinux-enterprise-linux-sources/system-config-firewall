@@ -1,0 +1,1794 @@
+# translation of system-config-firewall.master.te.po to Telugu
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Sree Ganesh <sthottem@redhat.com>, 2006.
+# Krishna Babu K <kkrothap@redhat.com>, 2007, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-firewall.master.te\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-22 09:36+0200\n"
+"PO-Revision-Date: 2010-06-29 20:16+0530\n"
+"Last-Translator: Krishna Babu K <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr "ఫైర్‌వాల్ అమరికలను చదువుటకు మరియు సవరించుటకు ధృవీకరణము అవసరము"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "ఫైర్‌వాల్ ధృవీకరణము"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "ఫైర్‌వాల్"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "Firewall ఆకృతీకరణ"
+
+#: ../src/convert-config:38 ../src/lokkit:33
+#: ../src/system-config-firewall-tui:33
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"దోషము - %s ను నడుపుటకు మీరు రూట్‌గా వుండాలి."
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "%s కు వ్రాయుటలో విఫలం."
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "%s ను మార్చుతోంది"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"ఈ ప్రోగ్రామ్ ఉచిత సాఫ్టువేర్; ఉచిత సాఫ్టువేర్ వ్యవస్థాపన నుండి ప్రచురింపబడిన GNU జనరల్ పబ్లిక్ లైసెన్సు "
+"తెలిపిన దానికి లోబడి మీరు ఈ ప్రోగ్రామ్ ను తిరిగిపంరిణీ చేయవచ్చు మరియు/లేదా సవరించవచ్చు; లైసెన్సు విడుదల 2 "
+"కాని, లేదా(మీ ఐచ్చికంగా) తర్వాతి ఏ విడుదల నైనా అవలంబించవచ్చు.\n"
+"\n"
+"ఈ ప్రోగ్రామ్ ఉపయోగపడుతుందనే నమ్మకం తో పంపిణీ చేయబడుతోంది, అయితే ఏ హామీ లేకుండా; వ్యాపారసంభందితంగా గాని "
+"లేదా ఒక ప్రయోజనం కొరకు సంపూర్ణతతో ఉందని గాని కూడా హామీ లేదు. ఎక్కువ సమాచారం కొరకు GNU జనరల్ "
+"పబ్లిక్ లైసెన్సు ను చూడండి.\n"
+"\n"
+"ఈ ప్రోగ్రామ్ తో మీరు ఒక GNU జనరల్ పబ్లిక్ లైసెన్సు నకలు ను పొందిఉన్నారు.పొందకపోతే, <http://www."
+"gnu.org/licenses/> ని చూడండి."
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "firewallను ఆకృతీకరించు కానీ క్రియాశీలం చేయకు"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"మీ కంప్యూటరునుండీ ఇతర కంప్యూటర్లకు తెలిపిన సేవలను పొందటానికి, బయటి వాళ్లు మీ కంప్యూటరును "
+"ఉపయోగించకుండా ఉండటానికి ఫైరు వాలును మీరు ఉపయోగించవచ్చు. మీరు ఇంకేమైనా సేవలను "
+"ఉపయోగించుకోవాలనుకుంటున్నారా?"
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "స్థానిక"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "సేవ"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "చట్టం"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr "Conntrack సహాయకి"
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "పోర్టును"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "చట్టం"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "అంతర్ముఖి"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "విడమరుపు"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "ఎంపికచేయి"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "పంపవలిసిన చిరునామా"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "ఈ పోర్ట్‍‌కు"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "ICMP రకము"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "నియమం రకము"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "రకం"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "పట్టీ"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "దస్త్రంపేరు"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "నమ్మకమైన సేవలు"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "(మార్చబడింది)"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "Firewall చేతనమైంది."
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "firewall అచేతనమైనది."
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "కీ:"
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "సిద్ద:"
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr "పోర్టు లేదా పోర్టురేంజ్ '%s' సరైనిదికాదు."
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "దయచేసి ఒక సరైన పోర్టు సంఖ్య లేదా సర్వీసు సంఖ్యను ఇవ్వండి."
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "అక్కడ అమలుకాని మార్పులు ఉన్నాయి,మీరు నిజంగా విడువాలని కోరుకుంటున్నారా?"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "అన్ని %s సాధనాలు"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "ఆకృతీకరించలేదు"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "దోషము"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "ఆకృతీకరణ దస్త్రమునందు పార్శ్‍ దోషము"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "వదిలివేయుము"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "అన్నిటిని వదిలివేయుము"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+msgid "The firewall configuration is not consistent."
+msgstr "Firewall ఆకృతీకరణ స్థిరత్వం లేనిది."
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"ఈ క్రింది దస్త్రములు తప్పిపోయినవి లేదా ఉపయోగంలోలేనివి: \t%s\n"
+"\n"
+"ఈ సమస్యను సరిదిద్దుటకు మీ ఫైర్‌వాల్ ఆకృతీకరణను ఇప్పడే ఆపాదించుము."
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "పాత ఫైర్‌వాల్ ఆకృతీకరణ."
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr ""
+"మీ ఫైర్‌వాల్ ఆకృతీకరణ పాత వర్షన్‌నుండి మార్చబడినది. దయచేసి ఆకృతీకరణను నిర్ధారించి మరియు ఆపాదించుము."
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "సేవిక"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "ప్రారంభకి"
+
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr ""
+"'అవును' మీటను నొక్కటం వల్ల కంప్యూటరు రక్షణ స్థాయి మరియూ ఉన్న ఫైరువాలును తిరిగి రాయటం "
+"జరుగుతుంది.  మీరు నిజంగా దీన్ని చేయాలనుకుంటున్నారా?"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr ""
+"iptabels మరియు ip6tabels యొక్క సేవలు చేతనపరచిబడి వున్నయోలేదో పరిశీలించుట గుర్తుంచుకోండి."
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "ఆకృతీకరణ విఫలం"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "Echo అభ్యర్ధన (పింగ్)"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"ఒక అతిధేయ <i>పింగ్</i> సౌలభ్యంతో చాలావరకు చేరగలిగితే ఈ సందేశం పరిక్షించుటకు ఉపయోగపడుతుంది."
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "Echo ప్రత్యుత్తరం (పాంగ్)"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "ఈ సందేశము <i>Echo అభ్యర్దన</i>కు సమాధానము."
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "గమ్యం చేరువకావటంలేదు"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr "గమ్యం చేరువకాకపోతే ఈ దోషపు సందేశం అతిధేయ లేదా గేట్‌వే చేత ఉద్బవింపబడుతుంది."
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "పారామితి సమస్య"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr ""
+"ఐచ్చికం కోల్పోవుటవలన గాని లేదా చెడ్డ పొడవువలన గాని, IP పీఠిక చెడితే ఈ దోషపు సందేశం ఉద్బవింపబడుతుంది."
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "తిరిగినిర్దేశించు"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr "ఈ దోషపు సందేశం అతిధేయను వేరే రూట్ ద్వారా పాకెట్స్‍‌ను పంపమని సూచిస్తుంది."
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "రూటర్ ప్రకటన"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr ""
+"మల్టీకాస్ట్‍ ఇంటర్‌ఫేస్ యొక్క IP చిరునామాను సమయానుగతంగా ప్రకటించుటకు ఈ సందేశం రూటర్స్‍ చేత "
+"ఉపయోగించబడుతుంది."
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "రూటర్ మనవి"
+
+#: ../src/fw_icmp.py:48
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr ""
+"ఈ సందేశం మల్టికాస్ట్‍‌ లింకుకు అనుబందించబడి <i>రూటర్ ప్రకటన</i> ను అభ్యర్ధించుటకు అతిధేయ చేత "
+"ఉపయోగించబడుతుంది."
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr "సోర్స్‍ క్వెన్చ్‍"
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr "ఈ దోష సందేశం హోస్టుకు అది పంపించే పాకెట్ల తీరును తగ్గించమని చెప్పుటకు వుద్భవించబడింది."
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "సమయం మించిపోయింది"
+
+#: ../src/fw_icmp.py:55
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr ""
+"పాకెట్ యొక్క గాని లేదా విభజిత పాకెట్ యొక్క తిరిగిసంధానించినటువంటి time-to-live మించనప్పుడు ఈ దోషపు "
+"సందేశం ఉద్బవించబడింది."
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "పునఃప్రారంభం నందు మాడ్యూళ్ళ ను అన్‌లోడ్ చేసి మరియు ఆపివేయి."
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr ""
+"స్థిరమైన స్థితి ని పొందుటకు, కెర్నల్ ఫైర్‌వాల్ మాడ్యూళ్ళను పునఃప్రారంభం నందు అన్‌లోడ్ చేసి మరియు ఆపివేయ "
+"వలెను."
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "ఆపివేయునపుడు భద్రపరుచుము"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"చివరి ప్రారంభం నుండి వాస్తవ ఫైర్‌వాల్ ఆకృతీకరణను అన్ని మార్పులతో భద్రపరచండి. తర్వాతి ప్రారంభంకు "
+"ప్రస్తుత స్థితిని వుంచాలి అనుకుంటేనే దీనిని చేయండి."
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "పునఃప్రారంభం నందు భద్రపరుచుము"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"చివరి ప్రారంభం నుండి వాస్తవ ఫైర్‌వాల్ ఆకృతీకరణను అన్ని మార్పులతో భద్రపరచండి. తరువాత ప్రారంభంకు "
+"ప్రస్తుత స్థితిని వుంచాలనుకుంటేనే దీనిని చేయండి."
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "కౌంటర్‌ను భద్రపరుచు మరియు మునుపటివలెఉంచు"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr ""
+"<i>ఆపినప్పుడు దాయుము</i> మరియు <i>పునఃప్రారంభంనందు దాయుము</i> అదనంగా దాయుటకు నియమం "
+"మరియు సృంఖల గణని."
+
+#: ../src/fw_iptables.py:57
+msgid "Numeric status output"
+msgstr "సంఖ్యా స్థితి అవుట్‌పుట్"
+
+#: ../src/fw_iptables.py:58
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr "స్థితి అవుట్‌పుట్ కొరకు చిరునామాలను మరియు పోర్టులను సంఖ్యా రూపం లో ముద్రించు."
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "వెర్బోస్ స్థితి"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"స్థితి అవుట్‌పుట్ నందలి పాకెట్ల సంఖ్య మరియు బైట్స్‍ ఇంకా <i>ఇన్‌పుట్-</i> మరియు <i>అవుట్‌పుట్ పరికరం</"
+"i> గురించి సమాచారాన్ని ముద్రించుము."
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "స్థితి వరుస సంఖ్యలు"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "స్థితి అవుట్‌పుట్ నందు ప్రతి నియమంకు గణని/సంఖ్య ను ముద్రించుము."
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "selinux ఆకృతీకరణ వ్రాయుటలో విఫలం."
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "%s ఆపుట విఫలం."
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "%s ప్రారంభం విఫలం."
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "%s కు తీసివేయుటలో విఫలం."
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "పోర్ట్‍ వ్యాప్తి %s ఏకైకం కాదు."
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr "%s విలువైన వ్యాప్తికాదు (ప్రారంభ పోర్ట్‍ >= ముగింపు పోర్ట్‍)."
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s చెల్లునటువంటి నియమంకాదు."
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "చెల్లని పోర్ట్‍ నిర్వచనం %s."
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "ipv6 nat మద్దతును కలిగిలేదు."
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "చెల్లని సేవ '%s'."
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "option %(option)s: సరికాని icmp రకము '%(value)s'."
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "చెల్లని ఆర్గుమెంట్ %s"
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr "ఐచ్చికం %(option)s: చెల్లని forward_port '%(value)s': %(error)s."
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "ఐచ్చికం %(option)s: సరికాని forward_port '%(value)s'."
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "చెల్లని యింటర్ఫేస్ '%s'."
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "firewall సాధ్యం (సిద్ధం)"
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "firewall అసాధ్యం"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<module>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "iptables గుణకం సాధ్యం"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "iptables గుణకం అసాధ్యం"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<service>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "ఒక సేవ కొరకు ఫైర్‌వాల్‌ను తెరువుము (ఉ.దా, ssh)"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protocol>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "ఆ ప్రత్యేక పోర్టును firewall ద్వారా అనుమతించు (e.g, ssh:tcp)"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<interface>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "traffic అంతా తెలిపిన సాధనంలోకి అనుమతించు"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr "తెలుపబడిన పరికరమునుండి Masquerades రద్దీ. ఇది IPv4 మాత్రమే."
+
+#: ../src/fw_parser.py:189
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "నేపధ్య సాధ్యత, aliasedకి --సాధ్యం"
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<type>:][<table>:]<filename>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"firewall లో కలుపుటకు వినియోగదారుని నియమాల దస్త్రంను తెలుపండి. దీనిని సిద్దనియమాల తర్వాత కలపవలెను. "
+"అప్రమేయ నియమం రకము: ipv4, అప్రమేయ పట్టిక: వడపోత. (ఉదాహరణ: ipv4:filter:/etc/sysconfig/"
+"ipv4_filter_addon)"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"పోర్ట్‍‌ను నియమంతో ఇంటర్‌ఫేస్ కొరకు వేరొక స్థానిక గమ్యం పోర్ట్‍‌కు (గమ్యం చిరునామా ఇవ్వలేదు) గాని లేదా ఐచ్చిక "
+"గమ్యం పోర్ట్‍‌తో ఇతర గమ్యం చిరునామాకు పంపుము. ఇది IPv4 మాత్రమే."
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<icmp type>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr "ఈ ICMP రకమును బ్లాక్ చేయుము. అప్రమేయంగా అన్ని ICMP రకములను ఆమోదించుకు వుంటుంది."
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "ఇంటర్నెట్ నిభందన రక్షణను అచేతనంచేయి (IPsec)"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "ఇంటర్నెట్ ప్రచురణ నిభందనను అచేతనంచేయి (IPP)"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "మల్టికాస్టు DNSను అచేతనంచేయి (mDNS)"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr "SELinux ఐచ్చికములు (తీసివేయబడెను)"
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+"ఎటువంటి అదనపు ఫైర్‌వాల్ ఐచ్చికములు లేకుండా ఈ ఐచ్చికములను వుపయోగించుట ఫైర్‌వాల్ ఆకృతీకరణను "
+"సృష్టించబోదు లేదా అప్రమత్త పరచబోదు, SELinux మాత్రమే ఆకృతీకరించబడును."
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<mode>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "SELinux రీతిని ఆకృతీకరించుము: %s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<type>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr "SELinux రీతి ఆకృతీకరణ: సాధారణ లక్ష్యం లేక ఖచ్చత నియమం"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "అటువంటి ఐచ్చికం లేదు: %s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "%s ఐచ్చికంకు ఒక ఆర్గుమెంటు అవసరము"
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "%(option)s ఐచ్చికం %(count)s ఆర్గుమెంట్లు అవసరము"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "%s ఐచ్చికం విలువను తీసుకోలేదు"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "ఈ సహాయక సందేశాన్ని చుపుము"
+
+#: ../src/fw_parser.py:381
+msgid "Run noninteractively; process only command-line arguments"
+msgstr "పరిచయం లేకుండా ఉపయోగించు; విధానం command-line వాదనలు మాత్రమే"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "ఎక్కువ వెర్బోస్ ఉంచు"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "వర్షన్‌ను చూపుము"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "firewallను ఆకృతీకరించు కానీ క్రొత్త ఆకృతీకరణను సిద్దంచేయకు"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "వాస్తవ అమరికలను పట్టించుకోకు"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"ఫైర్వాల్ చేతనంగాఉంటే non interactive ఫైర్వాల్ నవీకరించు.ఇది ఫైర్వాల్ ను రీస్టార్టు చేస్తుంది. -n మరియు "
+"-f ఐచ్చికాలు పట్టించుకోబడవు."
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr "ఫైర్‌వాల్ అప్రమేయ రకమును అమర్చుము: %s. ఇది ఎ ఆకృతీకరణనైనా తిరిగివ్రాస్తుంది."
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "ముందుగానిర్వచించిన సేవల జాబితా"
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "మద్దతిచ్చు icmp రకములను జాబితాచేయుము."
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "నెట్వర్కు ముద్రణా కక్షిదారు (IPP)"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"ఇంటర్నెట్ ప్రచురణ నిభందన (IPP) పంచిన ప్రచురణకు ఉపయోగం.ఇది ప్రింటర్ గురించి సమాచారాన్ని సేకరిచటానికి "
+"వీలుకలిపిస్తుంది(e.g సామర్ధ్యం మరియు స్థితి) మరియు ప్రింటర్ విధులను నియంత్రించటకు.మీరు కప్సు ద్వారా "
+"వలయ ప్రింటర్ ను ఉపయాగించాలనుకుంటె,ఈ ఐచ్చికంను అచేతనం చేయవద్దు."
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "నెట్వర్కు ముద్రణ సేవిక (IPP)"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"ఇంటర్నెట్ ప్రచురణ నిభందన (IPP) పంచిన ప్రచురణకు ఉపయోగం.IPP (tcp నందు) ముద్రణాయంత్రములను "
+"భాగస్వామ్యపరచు సౌలభాన్ని యిస్తుంది. మీరు నెట్వర్కునందు cups ద్వారా ముద్రణాయంత్రములను "
+"భాగస్వామ్యపరచుటకు అలోచిస్తుంటే, ఈ ఐచ్చింక చేతనంచేయుము."
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "మల్టీకాస్టు DNS (mDNS)"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"DNS ప్రోగ్రామింగ్ అంతర్ముఖి లను,పాకెట్ ఫార్మేట్సు మరియు ఆపరేటింగ్ సిమాన్టిక్సును, కన్వెన్షనల్ DNS సేవిక "
+"లేకుండానే ఉపయోగించే విలును mDNS కలిపిస్తుంది.మీరు Avahi ఉపయోగించలనుకుంటే ,ఈ ఐచ్చికాన్ని "
+"అచేతనంచేయవద్దు."
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"ఇటర్నెట్ ప్రొటోకాల్ సెక్యూరిటి(IPsec) రక్షణను నెట్వర్కు రవాణాలకొరకు ఇంటర్నెట్ ప్రొటోకాల్ (IP) లో సూటిగా "
+"ఇన్కార్పోరేట్ చేస్తుంది.IPsec అదిపంపించే అతిధేయి లేక నెట్వర్కుకు ఎన్క్రిప్టింగ్ మరియు దృవీకరణ విధానాలను "
+"ఇస్తుంది.మీరు vpnc లేక FreeS/WAN ఉపయోగించాలని అనుకుంటే ఐచ్చికం అచేతనం చేయవద్దు."
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"రక్షణ షల్ (SSH) రిమోట్ కంప్యూటరులో ప్రవేశించటానికి మరియూ ఆదేశాలను ఉపయోగించటానికి చట్టం. ఇది రక్షణ ఎన్ "
+"స్క్రిప్టెడ్ సంబంధాలను సమకూర్చుతుంది. మీరు మీ కంప్యూటరును SSH ద్వారా ఫైరువాల్అంతర్ముఖంతో దూరస్థంగా "
+"ఉపయోగించుకోవాలనుకుంటే, ఈ ఐచ్చికాన్ని సాధ్యం చేయండి. మీకు ఈ ఐచ్ఛికాన్ని ఉపయోగించటానికి openssh-server "
+"ప్యాకేజి సంస్థాపన కావలసి ఉంది."
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"HTTP సర్వరు వెబ్ పుట కోసం ఉపయోగించే చట్టం. మీరు మీ వెబ్ సర్వరును అమందరికీ అందుబాటులో "
+"ఉంచాలనుకుంటే,ఈ ఐచ్చికాన్ని సాధ్యం చేయండి. ఈ ఐచ్చికం పుటలను స్థానికంగా చూడటానికి లేదా వెబ్ పుటలను "
+"అభివృద్ధి చేయటానికి కాదు."
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"FTP రిమోట్ ఫైలు బదిలీకి ఉపయోగించే చట్టం. మీరు మీ FTP సర్వరును పబ్లిక్కుగా అందుబాటులో ఉంచాలనుకుంటే, "
+"ఈ ఐచ్ఛికాన్ని సాధ్యంచేయండి.మీకు ఈ ఐచ్ఛికం సఫలంకావటానికి సంస్థాపించబడ్డ vsftpd ప్యాకేజీ కావలసి ఉంది."
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"NFS ఇది మిమ్మల్ని ప్రతి 4 చట్టాన్ని TCP ద్వారా ఫైళ్లను పంచుకోవటానికి అనుమతిస్తుంది.  మీకుNFS ఉపకరణాల "
+"సంస్థాపన మరియూ ఈ ఐచ్ఛికం విజయవంతం కావటానికి సరిగా ఆకృతీకరించబడిన NFS సర్వరు కావలసి ఉంది."
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "రక్షణ WWW (HTTPS)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"HTTPS మార్చబడుతుంది HTTP సర్వరు వెబ్ పుటకు రక్షణ అవసరమైనప్పుడు ఉపయోగించబడింది.  ఉదాహరణకు "
+"ప్రవేశాలకు కావసినస్టోర్లు మరియూ వెబ్ మెయిలు.  ఈ ఐచ్ఛికం స్థానికంగా పుటలను చూడటానికి లేదా వెబ్ పుటలను "
+"అభివృద్ధి చేయటానికీ అవసరం లేదు. ఈ ఐచ్ఛికం వినియోగించబడటానికి సంస్థాపించబడిన httpd ప్యాకేజీలు కావలసి ఉంది."
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "Mail (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"ఇది ఇన్ కమింగ్ SMTP మెయిలు సరఫరాను అనుమతిస్తుంది. మీరు రిమోట్ ఆతిధేయులనుమీకంప్యూటరుకు మెయిళ్లను "
+"సరఫరాచేయటానికి ప్రత్యక్షంగా అనుసంధించాలనుకుంటే, ఈ ఐచ్ఛికాన్ని సాధ్యం చేయండి. మీరుమీ మెయిల్సుని మీ ISP "
+"యొక్క సర్వరు POP3 లేదా IMAPతో లేదా మీరు fetchmail వంటి సాధనాలను ఉపయోగిస్తుంటేపొందాలనుకుంటే ఇది "
+"అక్కర్లేదుసరిగ్గా ఆకృతీకరించబడని SMTP సర్వరు రిమోట్ కంప్యూటర్లను స్పాంను పంపటానికి అనుమతిస్తుందని "
+"గమనించండి."
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "సాంబా కక్షిదారి"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"ఈ ఐచ్చికం విండోస్ ఫైలును మరియు ముద్రణాయంత్రం భాగస్వామ్య నెట్వర్కును మీరు యాక్సిస్ చేయుటకు "
+"అనుమతిస్తుంది. ఈ ఐచ్చికం వుపయోగపడటానికి మీరు సాంబా-కక్షిదారి సంకలనాన్ని సంస్థాపించవలసివుంది."
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "సాంబా"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"ఇది మిమ్మల్ని అందుబాటులో ఉండటానికి అందుబాటు మరియూ విండో ఫైలులో పాల్గొనటానికి మరియూ ముద్రకం భాగస్వామ్య "
+"నెట్వర్కులకు అనుమతిస్తుంది.  మీకు ఈ సంస్థాపనలు విజయవంతం కావటానికి సంస్థాపించబడ్డ సాంబా ప్యాకేలీలు "
+"కావలసి ఉంది."
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "DNS"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"డొమైన్ నేమ్ సిస్టమ్ (DNS) ను అభ్యర్ధిత అతిధేయి మరియు డొమైన్ నేమ్సు ఉత్పత్తికి ఉపయాగిస్తారు. మీరు డొమైన్ నేమ్ "
+"సేవ (e.g. with bind) ఇవ్వాలనుకుంటే,ఈ ఐచ్చికంను చేతన పరచండి."
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "IMAP over SSL"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"ఇంటర్నెట్ మెసేజ్ యాక్సెస్ ప్రొటోకాల్(IMAPs)స్థానిక కక్షిదారును రిమొట్ సర్వర్ లోని ఇ-టపా ను SSL ద్వారా రక్షణతో "
+"వాడటానికి అనుమతినిస్తుంది.మీరు IMAP ని SSL సేవ (e.g. with dovecot) ద్వారా ఇవ్వాలనుకుంటే, "
+"ఐచ్చికంను చేతనపరచండి."
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "POP-3 over SSL"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"పోస్టాఫీస్ ప్రొటోకాల్ వర్షన్ 3 (POP3) రిమొట్ సర్వర్ నుండి TCP/IP ద్వారా ఇ-టపా పొందుటకు వాడే ప్రొటోకాల్.మీరు "
+"POP3 సేవ(e.g.with dovecot) ఇవ్వాలనుకుంటే,ఐచ్చికం చేతనపరచండి."
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"రిమొట్ ఆధెంటికేషన్ డైల్ ఇన్ యూజర్ సర్వీస్(RADIUS) వలయం ద్వారా వినియోగదారుని దృవీకరణకు వాడే ప్రొటోకాల్. దీనిని "
+"మొడెమ్,DSL లేక వైర్లెస్ వినియోగదారుని దృవీకరణకు మాత్రమే వాడతారు.మీరు RADIUS సేవ(e.g. with "
+"freeradius) కలిపించాలనుకుంటే,ఐచ్చికంను చేతనపరచండి."
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"ఓపెన్VPN వర్చవల్ ప్రైవేట్ నెట్వర్కు (VPN) పరిష్కారం.కంప్యూటర్సు మద్యలో ఎన్క్రిప్టెడ్ పాయింట్-టూ-పాయింట్ "
+"టన్నెల్సు సృష్టించుటకు ఇది ఉపయోగపడుతుంది.మీరు VPN సేవ కలిపించాలనుకుంటే,ఐచ్చికం చేతనపరచండి."
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"ట్రివియల్ ఫైల్ ట్రాన్సఫర్ ప్రోటోకాల్ (TFTP) అనునది దస్త్రములను దూరస్థ మిషన్‌కు s సరళ మార్గంలో "
+"బదిలీచేయుటకు వుపయోగించు నిభందన. ఇది సాదారణంగా డిస్కులేని వర్కుస్టేషన్ల బూటింగ్ కొరకు మాత్రమే "
+"వుపయోగించబడుతుంది మరియు ప్రీబూట్ ఎగ్జక్యూషన్ ఎన్విరాన్మెంట్‌ (PXE) నందు డాటా బదిలీకరించుటకు."
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "TFTP కక్షిదారి"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"ఈ ఐచ్చికం మిమ్ములను ట్రివియల్ ఫైల్ ట్రాన్సఫర్ ప్రోటోకాల్ (TFTP) సేవికలను యాక్సెస్ చేయుటకు అనుమతిస్తుంది. "
+"ఈ ఐచ్చికం వుపయోగకరం అగుటకు మీరు tftp ప్యాకేజీ సంస్థాపించవలసి వుంటుంది."
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "Red Hat క్లస్టర్ సూటు"
+
+#: ../src/fw_services.py:174
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"ఈ ఐచ్చికము మిమ్ములను Red Hat క్లస్టర్ సూటును వుపయోగించుటకు అనుమతిస్తుంది. openais, "
+"ricci, మరియు dlm కొరకు పోర్టులు తెరువబడినవి. ఈ ఐచ్చికం వుపయోగకరం కావటానికి మీరు Red Hat "
+"క్లస్టర్ సూటు సంస్థాపించవలసి వుంది."
+
+#: ../src/fw_services.py:179
+msgid "Amanda Backup Client"
+msgstr "ఎమాండా బ్యాకప్ క్లైంట్"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"ఎమాండా బ్యాకప్ క్లైంట్ ఐచ్చికము మిమ్ములను ఎమాండా బ్యాకప్ మరియు ఆర్చీవింగ్ సేవికకు అనుసంధానం కావటానికి "
+"అనుమతించును. ఈ ఐచ్చికము వుపయోగకరం కావటానికి మీరు ఎమాండా-క్లైంట్ ప్యాకేజీ సంస్థాపించవలసి వుంది."
+
+#: ../src/fw_services.py:186
+msgid "Bacula Client"
+msgstr "బాక్యులా క్లైంట్"
+
+#: ../src/fw_services.py:187
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"బాక్యులా సర్వర్‌ స్థానిక మిషన్‌కు అనుసంధానమై బ్యాకప్సును క్రమబద్దీకరించుటకు ఈ ఐచ్చికము అనుమతించును. "
+"ఈ ఐచ్చికము వుపయోగమునకు మీరు బాక్యులా-క్లైంట్ ప్యాకేజీను సంస్థాపించవలసి వుండును."
+
+#: ../src/fw_services.py:190
+msgid "Bacula"
+msgstr "బాక్యులా"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+"బాక్యులా అనునది నెట్వర్కు బ్యాకప్ పరిష్కారము. మీరు బాక్యులా బ్యాకప్, ఫైల్ మరియు నిల్వ సేవలను అందిచవలెనని "
+"యోచిస్తుంటే, ఈ ఐచ్చికాన్ని చేతనముచేయి."
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr "వర్చువల్ మిషన్ మేనేజ్‌మెంట్"
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+"మీరు రిమోట్ వర్చ్యువల్ మిషన్ మేనేజ్‌మెంట్‌ను SASL ధృవీకరణముతో మరియు యెన్క్రిప్షన్‌ (digest-md5 "
+"passwords లేదా GSSAPI/Kerberos)తో అనుమతించాలని అనుకొంటే ఈ ఐచ్చికాన్ని చేతనము చేయండి. ఈ "
+"ఐచ్చికము వుపయోగించుటకు libvirtd సేవ అవసరము."
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr "వర్చ్యువల్ మిషన్ మేనేజ్‌మెంట్ (TLS)"
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+"మీరు రిమోట్ వర్చ్యువల్ మిషన్ మేనేజ్‌మెంట్‌ను TLS యెన్క్రిప్షన్, x509 ధృవీకరణపత్రములు మరియు ఐచ్చిక SASL "
+"ధృవీకరణముతో అనుమతించవలెనని అనుకొంటే ఈ ఐచ్చికాన్ని చేతనము చేయండి. ఈ ఐచ్చికము వుపయోగం కొరకు "
+"libvirtd సేవ అవసరము."
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"ఫైరువాల్ ధృవీకృతంకాని నెట్వర్కు ప్రవేశాన్ని అడ్డుకుంటుంది. ఫైరువాల్అడ్డంకులను అన్ని ఇన్ కమింగ్ "
+"అనుసంధానాలను సాధ్యంచేస్తుంది. ఫైరువాలును అసాధ్యం చేయటం అన్ని అనుసంధానాలకు మద్దతివ్వదు. "
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "Firewall:"
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "సాధ్యం"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "సరే"
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "వినిమయం"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "రద్దు"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"ఏ సేవలు నమ్మదగినవో ఇక్కడ మీరు ప్రతిపాదించవచ్చు.దానర్ధం ఈ సేవలు అన్ని అతిధేయీలు లేక నెట్వర్క్సు నుండి "
+"వీలుగా ఉంటాయి."
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "ఇతర పోర్ట్సు"
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr ""
+"అదనపు పోర్ట్సు లేక పోర్ట రేంజస్ ను కలుపుము,ఏవైతే అన్ని అతిధేయీలను లేక వలయాలను వాడటానికి అవసరమో అవి."
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "జతచేయి"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "సరిచేయి"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "తీసివేయి"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "నమ్మకమైన సేవలు:"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr "సిస్టమ్ ను పూర్తిగా ఉపయోగించుకొను అనుమతి గల ఇంటర్‌ఫేస్ లను నమ్మికైనవిగా గర్తుంచు."
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "Masquerading"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "మారువేషదారణకు ఇంటర్‌ఫేస్ లను గుర్తుంచుము."
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "పోర్టు ఫార్వార్డింగ్"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"ఒక పర్ట్‍ నుండి వేరక పోర్ట్‍‌కు స్థానిక సిస్టమ్ నందు పంపుటకు లేదా స్థానిక సిస్టమ్ నుండి వేరొక సిస్టమ్‌కు "
+"పంపుటకు ప్రవేశాలను పోర్ట్స్‍‌కు జతచేయుము. వేరొక సిస్టమ్‌కు పంపుట ఇంటర్‌ఫేస్ మారువేషంలోవుంటేనే "
+"ఉపయోగకరంగా వుంటుంది. పోర్ట్‍ పంపుట IPv4 మాత్రమే."
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "ICMP వడపోత"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"జాబితానందు ICMP రకాలను గుర్తుంచుము, ఏవైతే తిరస్కరించాలో. అన్ని ఇతర ICMP రకములు ఫైర్‌వాల్ దాటుటకు "
+"అనుమతించబడినవి. అప్రమేయంగా ఏ పరిమితి లేదు."
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "వినియోగదారుని నియమాలు"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"ఫైర్‌వాల్ కు అదనపు నియమాలను కలుపుటకు వినియోగదారి నియమాల దస్త్రాలను ఉపయోగించండి. ఈ నియమాలను అప్రమేయ "
+"నియమాల తర్వాత కలుపబడతాయి.ఫైళ్ళు తప్పనిసరిగా ఇప్టబుల్సు-సేవ్ రూపాన్ని కలిగిఉండాలి."
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "ముందుకు"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "వెనుకకు"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "మూయి"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "హెచ్చిరక"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"చెల్లునటువంటి విలువలు: <port> [-<port>], ఇచట పోర్టు సంఖ్య [0..65535]కాని లేదా సేవ నామముకాని."
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "నియమం '%s' చెల్లునది కాదు."
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "చెల్లునటువంటి విలువలు: tcp, udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "దయచేసి పోర్టుకాని లేదా పోర్టు స్థాయికాని మరియు నియమంను ప్రవేశపెట్టండి."
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "పోర్టు/పోర్టు పరిమితి:"
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "చట్టం:"
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr "మీ అవసరములకు తగినట్లు ములం మరియు గమ్యం ఐచ్చికాలను దయచేసి ఎంపికచేసికొనుము."
+
+#: ../src/fw_tui.py:407
+msgid "Source (all needed)"
+msgstr "మూలము (అన్ని అవసరము)"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "ఇంటర్‌ఫేస్:"
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "గమ్యము (కనీసం వొకటి అవసరము)"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "IP చిరునామా:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "ఇంటర్‌ఫేస్ '%s' చెల్లునది కాదు."
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "చిరునామా '%s' చెల్లునది కాదు."
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr "దయచేసి నియమం రకమును యెంపికచేయుము, ఫైర్‌వాల్ పట్టిక మరియు ఫైలు నిభందనలను కలిగివుంటాయి."
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "ఫైర్‌వాల్ పట్టిక"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "ఫైలు"
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "నియమం రకము '%s' చెల్లునది కాదు."
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "చెల్లునటువంటి విలువలు: %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "ఫైర్‌వాల్ పట్టిక '%s' చెల్లునది కాదు."
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "ఫైలు '%s' లేదు."
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "ipv6 nat మద్దతును కలిగిలేదు."
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "అవును"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "కాదు"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "కొనసాగించుటకు enter కొట్టుము"
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "నిష్క్రమించు"
+
+#: ../src/lokkit:50
+msgid "Predefined Services with Default Environment:"
+msgstr "అప్రమేయ వాతావరణంతో ముందుగానిర్వచించిన సేవలు:"
+
+#: ../src/lokkit:59
+msgid "Supported icmp types:"
+msgstr "మద్దతిచ్చు icmp రకములు:"
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>ప్రాధమిక ఫైర్‌వాల్ అమరికలు</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>ఆకృతీకరణ</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>గమ్యం</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>సమాచారం</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>మూలం</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>వినియోగదారి కుశలత స్థాయి</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr "<b>మీ ప్రస్తుత ఆకృతీకరణ ఖాళీగావుంది, రద్దీ మొత్త బ్లాక్‌ చేయబడుతోంది.</b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>ఫైర్‌వాల్ ఆకృతీకరణ విజార్డ్‍</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"ఆ <i>\"నెట్వర్కు ప్రవేశం లేనటువంటి సిస్టమ్\"</i> కి ఫైర్‌వాల్ అవసరం అసలు అక్కర్లేదు.దీనిని "
+"ఎన్నుకోవడంవలన ఫైర్‌వాల్ అచేతనం చేయబడుతుంది. లేదంటే <i>\"నెట్వర్కు ప్రవేశం ఉన్నటువంటి సిస్టమ్ \"</"
+"i> ని ఎంచుకోండి."
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "ప్రవేశమును జతపరచుము"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "ఇంటర్ఫేస్ జతపరచుము"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr "అవసరిమైన పోర్టులకు లేదా పోర్టు పరిమితులకు మాత్రమే, వాడుకొను అనుమతిని కలిపించు."
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "అవసరమైన సేవలకు మాత్రమే, వాడుకొను అనుమతిని కలిపించు."
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "అమలు"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "మార్పలను ఆపాదించు"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"ప్రారంభకుడు\n"
+"నిపుణుడు"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "సేవా అమరికలను ఆకృతీకరించుము"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "అనుసంధానం జాడ తెలుసుకొనుటకు ఫైర్‌వాల్ సహాయక మాడ్యూళ్ళ ను ఆకృతీకరించుము"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "ipపట్టికలను మరియు ip6పట్టికల సేవ అమరికలను ఆకృతీకరించుము"
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "వినియోగదారుని నియమాల దస్త్రము"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "డెస్క్‍‌టాప్"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"డెస్క్‍‌టాప్\n"
+"సేవిక"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "అసాధ్యం"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "ఫైర్‌వాల్ ను అచేతనం చేయి"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "ప్రవేశమును సరిచేయుము"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "సాధ్యం"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "ఫైర్‌వాల్ ను చేతనం చేయి"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "ఫైర్‌వాల్ ను చేతనం చేయి"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "నిపుణుడు"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "దస్త్రం:"
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "ఫైర్‌వాల్ ఆకృతీకరణ ప్రారంభం"
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "ఫైర్‌వాల్ ఆకృతీకరణ విజార్డు"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "ఫైర్‌వాల్ పట్టిక:"
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "వేరొక పోర్ట్‍‌కు పంపుము"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"మీ మార్పులను ఆపాదించుటకు <i>సరే</i> నొక్కండి. మీరు ఫైర్‌వాల్‌ను పునఃప్రారంభించవలసిన అవసరం లేదు, "
+"మార్పులు అవి ఆపాదించబడగానే ప్రభావితం అవుతాయి."
+
+#: ../src/system-config-firewall.glade.h:47
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr ""
+"మీరు <i>ఆకృతీకరణను ఉంచు</i> బటన్‌ను శుభ్రంచేస్తే, వాస్తవ ఫైర్‌వాల్ ఆకృతీకరణ తిరిగివ్రాయబడుతుంది."
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr ""
+"మీరు స్థానిక ఫార్వార్డింగ్‌ను చేతనం చేస్తే, మీరు పోర్ట్‍‌ను తెలుపవలసి వుంటుంది. మూలం పోర్ట్‍‌కు ఈ పోర్ట్‍ "
+"భిన్నంగా వుండాలి."
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr "మీరు మారువేషదారణ ను సాధ్య పరిస్తే, మీ IPv4 నెట్వర్కులకు IP ఫార్వార్డింగ్ కూడా సాధ్యమవుతుంది."
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"మీకు తదుపరి ఫైర్‌వాల్ అమరికలు అవసరమైతే, దయచేసి మీ ఆకృతీకరణ ను చేతి తో సవరించుకొనండి, అయితే "
+"గుర్తుంచుకోండి, ఈ సాధనం మీరు వినియోగాదారిగా మలుచుకున్న ఆకృతీకరణను లోడుచేయలేదు. మీరు ఈ సాధనంను "
+"వినియోగించనట్లైతే, మీ యొక్క అన్ని మానవీయ మార్పులు కూడు పోతాయి.మీరు మీ మానవీయ ఆకృతీకరణ మార్పులను పొగొట్ట "
+"కూడదంటే, ఈ ప్రోగ్రామ్ ను ఆపాదించకుండా వదిలివేయండి."
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "ఆకృతీకరణ ను ఉంచుము"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "నింపుము"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "Firewall సిద్ద ఆకృతీకరణ లోడ్ చేయి (_D)"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "స్థానిక ఫార్వార్డింగ్"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "దూరస్థ సిస్టమ్‌నందు గమ్యపు పోర్ట్‍‌ను తెరుచుటకు ఖచ్చితంగా వుండండి."
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"మీరు అతిధేయ నుగాని లేదా రూటర్ ను గాని మీ స్థానిక నెట్వర్కును ఇంటర్‌నెట్ కు అనుసంధానించుటకు  "
+"మారువేషదారణ ఉపయోగకరంగా ఉంటుంది.మీ స్థానిక నెట్వర్కు కనిపించదు మరియు ఇంటర్‌నెట్ కు ఒక అతిధేయ లాగా "
+"కనబడుతుంది. మారువేషదారణ IPv4 మాత్రమే."
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "ప్రవేశమును క్రిందకు కదుపుము"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "ప్రవేశమును పైకి కదుపుము"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "ఏ ఆకృతీకరణ లేదు"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr ""
+"దయచేసి గుర్తుంచుకోండి,ఎక్కడైతే మీరు పాల్గొన్నవారందరిని నమ్మగలుగుతారో,అక్కడ మాత్రమే మీరు మీ సిస్టమ్ "
+"ఇంటర్‌ఫేస్ లను తెరువ వలెను."
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"దయచేసి తర్వాతి ఆకృతీకరణ విధానంలో ఎదురయ్యే ప్రశ్నలకు సమాధానం ఇవ్వండి.ఈ విజార్డు మిమ్ముల్ని ముఖ్య "
+"అప్లికేషన్ దగ్గరకు తీసుకుపోతుంది మరియు మీ అమర్పు కి అవసరం లేని అన్ని ఆకృతీకరణ ఐచ్చికాలను మరుగున "
+"ఉంచుతుంది."
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr "దయచేసి వినియోగాదారి నియమాలను ఆపాదించిన తర్వాత మీ ఫైర్‌వాల్ అమరికలను పరిశీలించండి."
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr "దయచేసి అప్రమేయ ఆకృతీకరణను <i>ఐచ్చికాల</i> మెనూ నుండి నింపుము లేదా విజార్డ్‍‌ను ఉపయోగించుము."
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr "మీ ఫైర్‌వాల్ ను ఉపయోగించక మునుపే పరిశీలించవలెనని దయచేసి గుర్తుంచుకోండి."
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr "జాబితానుండి ఒక ప్రవేశాన్ని ఎన్నుకొనండి లేదా మున్ముందు కొరకు ఇంటర్‌ఫేస్ ప్రవేశపెట్టండి."
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr "జాబితానుండి ఒక ప్రవేశాన్ని ఎన్నుకొనండి లేదా పోర్టు మరియు ప్రొటోకాల్ ను తర్వాతి దానిలో ప్రవేశశ పెట్టండి."
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr "దయచేసి ఆకృతీకరణను వుంచుట ఎంపికచేయుము లేదా అప్రమేయ ఆకృతీకరణను నింపుటకు ఎంచుకొనుము."
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "దయచేసి మీ యొక్క ఫైర్‌వాల్ కుశలతలను తెలియజేయండి."
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "పోర్ట్‍ మరియు నియమం"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "పోర్టు:"
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "నియమం రకము:"
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "తిరిగితెచ్చు"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "ప్రస్తుత ఆకృతీకరణను తిరిగిలోడు చేయి"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "ప్రవేశమును తీసివేయి"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"మీరు ఫైర్‌వాల్ ఆకృతీకరణలలో సిద్దహస్తులై మరియు వినియోగాదారు గా మీరు మలుచుకున్న నియమాలను "
+"కలుపవలెననుకుంటే <i>\"నిపుణుడు\"</i> ను ఎంచుకొనండి.లేదంటే <i>\"ప్రారంభకుడు\"</i> ను "
+"ఎన్నుకొండి."
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "ఒక దస్త్రాన్ని ఎన్నుకొనుము"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "సేవా అమరికలు"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "విజార్డు ప్రారంభించు"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "ఆకృతీకరణ విజార్డును ప్రారంభించు"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"నెట్వర్కు ప్రవేశం లేనటువంటి సిస్టమ్\n"
+"నెట్వర్కు ప్రవేశం ఉన్నటువంటి సిస్టమ్"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "TODO"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"ఇంటర్నెట్ కంట్రోల్ మెసేజ్ ప్రోటోకాల్ (ICMP) ముఖ్యంగా నెట్వర్క్‍‌డ్ కంప్యూటర్స్‍ మద్య దోషపు సందేశాలను "
+"పంపుటకు ఉపయోగించబడుతుంది, అయితే అదనంగా పింగ్ అభ్యర్దనలు మరియు ప్రత్యుత్తరాలు వంటి సమాచార "
+"సందేశాలు కు."
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr "ఈ ప్రోగ్రామ్ మీ సిస్టమ్ కు ప్రాధమిక ఫైర్‌వాల్ ను అమర్చుటలో సహాయపడుతుంది."
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr "ఈ విజార్డు మీ సిస్టమ్ కొరకు మరియు అవసరాలకు సరియైన ఫైర్‌వాల్ ఆకృతీకరణచేయుటకు సహాయం చేస్తుంది."
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "వినియోగదారుడు నిర్వచించిన"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "వినియోగదారి కుశలత స్థాయి"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "ఏ మాదిరి సిస్టమ్ మీరు కలిగిఉన్నారు?"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "విజార్డు"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr "మీరు అమరికలను తరువాత <i>ఐచ్చికాలు</i> మెనూనందు మార్చగలరు."
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "గురించి (_A)"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "దస్త్రం (_F)"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "సహాయం (_H)"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "ఐచ్చికాలు (_O)"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "విడువు (_Q)"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "ఆకృతీకరణ విజార్డును ప్రారంభించు(_S)"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "ఆకృతీకరణ"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "సవరించబడిన లేబుల్"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr "system-config-firewall"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr ""
+"Sree Ganesh <sthottem@redhat.com>, 2006.Krishna Babu K <kkrothap@redhat."
+"com>, 2007, 2008."

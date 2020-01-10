@@ -1,0 +1,1848 @@
+# translation of ru.po to Russian
+# translation of system-config-firewall.master.ru.po to
+# translation of ru.po to
+# Copyright (C) YEAR ORGANIZATION.
+#
+# Leonid Kanter <leon@geon.donetsk.ua>, 2003.
+# Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006, 2008.
+# Yulia <ypoyarko@redhat.com>, 2007, 2008, 2009, 2010.
+# Alexey Kostyuk <unitoff@gmail.com>, 2009.
+# Andrey Zaytsev <andzaytsev@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: ru\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-22 09:36+0200\n"
+"PO-Revision-Date: 2010-06-30 12:14\n"
+"Last-Translator: Yulia <ypoyarko@redhat.com>\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.4\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr ""
+"Для чтения и изменения настроек межсетевого экрана необходима аутентификация"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "Авторизация межсетевого экрана"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "Межсетевой экран"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "Настройка межсетевого экрана"
+
+#: ../src/convert-config:38 ../src/lokkit:33
+#: ../src/system-config-firewall-tui:33
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"ОШИБКА - Для запуска %s необходимы права root."
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "Не удалось записать %s."
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "Выполняется преобразование %s"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Эта программа является открытым программным обеспечением. Ее можно "
+"распространять и модифицировать с учетом условий лицензии GNU версии 2 или "
+"более поздней, опубликованной компанией Free Software Foundation.\n"
+"\n"
+"Эта программа предоставляется БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, в том числе не "
+"гарантируется ее пригодность для каких-либо конкретных целей. За подробной "
+"информацией обратитесь к лицензии GNU.\n"
+"\n"
+"Копия лицензии предоставляется с этой программой. Ее также можно найти по "
+"адресу <http://www.gnu.org/licenses/>."
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "Настроить правила межсетевого экрана"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"Межсетевой экран позволяет разрешить доступ другим компьютерам к выбранным "
+"службам на вашем компьютере и запретить неавторизованный доступ извне. К "
+"каким службам следует разрешить доступ?"
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "локальный"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "Служба"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "Порт/Протокол"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr "Помощник по системе Conntrack"
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "Порт"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "Протокол"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "Интерфейс"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "Описание"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "Выбрать"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "На адрес"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "На порт"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "Тип ICMP"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "Тип протокола"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "Тип"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "Таблица"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "Имя файла"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "Доверенные службы"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "(изменен)"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "Межсетевой экран включен."
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "Межсетевой экран отключен."
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "Ключ:"
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "По умолчанию:"
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr "Неверный порт или диапазон портов '%s'."
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "Укажите корректный номер порта, имя службы или диапазон."
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "Изменения не были применены. Вы действительно хотите выйти?"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "Все устройства %s"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "Не настроен"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "Ошибка"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "Ошибка при анализе файла конфигурации"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "Игнорировать"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "Игнорировать все"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+msgid "The firewall configuration is not consistent."
+msgstr "Несоответствие конфигурации межсетевого экрана."
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"Следующие строки отсутствуют или некорректны:\n"
+"\t%s\n"
+"\n"
+"Примените настройки экрана, чтобы решить эту проблему."
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "Старая конфигурация межсетевого экрана."
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr ""
+"Ваши настройки межсетевого экрана преобразованы из старой версии. Примените "
+"их, предварительно проверив."
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "Сервер"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "Начинающий"
+
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr ""
+"Нажатие кнопки «Да» приведет к перезаписи существующей конфигурации "
+"межсетевого экрана. Вы уверены, что хотите сделать это?"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr "Не забудьте проверить, что службы iptables и ip6tables включены"
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "Ошибка конфигурации"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "Эхо-запрос (пинг)"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"Это сообщение будет использоваться для проверки возможности доступа к узлу с "
+"помощью утилиты <i>ping</i>."
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "Эхо-ответ (pong)"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "Это ответ на <i>эхо-запрос</i>."
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "Цель недоступна"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr "Это сообщение генерируется узлом или шлюзом, если цель недоступна."
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "Проблема параметра"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr ""
+"Это сообщение об ошибке генерируется, если неверен заголовок IP, например, "
+"отсутствует параметр или его длина неверна."
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "Перенаправление"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr ""
+"Это сообщение об ошибке информирует шлюз о том, что надо направить пакет по "
+"другому маршруту."
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "Объявление маршрутизатора"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr ""
+"Это сообщение используется маршрутизаторами для периодического объявления IP-"
+"адреса широковещательного интерфейса."
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "Запрос маршрутизатора"
+
+#: ../src/fw_icmp.py:48
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr ""
+"Это сообщение используется узлом, соответствующим многоадресной ссылке, для "
+"запроса <i>объявления маршрутизатора</i>."
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr "Замедление источника"
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr ""
+"Это сообщение об ошибке говорит узлу уменьшить скорость отправки пакетов."
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "Время превышено"
+
+#: ../src/fw_icmp.py:55
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr ""
+"Это сообщение об ошибке генерируется в случае превышения значения «time-to-"
+"live» пакета или повторно собранного фрагментированного пакета."
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "Выгрузить модули при перезапуске и остановке"
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr ""
+"Для обеспечения корректного состояния необходимо выгрузить модули при "
+"перезапуске и остановке межсетевого экрана."
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "Сохранить при остановке"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Сохранить активную конфигурацию экрана со всеми изменениями на момент "
+"последнего запуска перед его остановкой. Это стоить делать, только если "
+"необходимо сохранить активное состояние для следующего запуска."
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "Сохранить при перезапуске"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Сохранить активную конфигурацию экрана со всеми изменениями на момент "
+"последнего запуска перед его перезапуском. Это стоить делать, только если "
+"необходимо сохранить активное состояние для следующего запуска."
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "Сохранить и восстановить счетчик"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr ""
+"<i>Сохранить при остановке</i> и <i>Сохранить при перезапуске</i> "
+"дополнительно сохраняют правило и счетчик цепочки."
+
+#: ../src/fw_iptables.py:57
+msgid "Numeric status output"
+msgstr "Числовой формат статуса"
+
+#: ../src/fw_iptables.py:58
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr "Выводит адреса и порты в числовом формате."
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "Подробный формат статуса"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"Отображает информацию о числе пакетов и байтов, а также <i>inputdevice</i> и "
+"<i>outputdevice</i> в выводе статуса."
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "Номера строк"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "Отображает счетчик/ число для каждого правила в выводе статуса."
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "Не удалось записать конфигурацию SELinux."
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "Не удалось остановить %s."
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "Не удалось запустить %s."
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "Не удалось удалить %s."
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "диапазон портов '%s' не является уникальным."
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr ""
+"%s не является допустимым диапазоном (номер начального порта должен быть "
+"больше номера конечного порта)"
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s не является допустимым протоколом."
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "неверное определение порта: %s."
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "ipv6 не поддерживает nat."
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "неверная служба «%s»."
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "параметр %(option)s: неверный тип icmp '%(value)s'."
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "Неверный аргумент %s"
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr "параметр %(option)s: неверный forward_port '%(value)s': %(error)s."
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "параметр %(option)s: неверный forward_port '%(value)s'."
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "неверный интерфейс «%s»."
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "Включить межсетевой экран (по умолчанию)"
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "Отключить межсетевой экран"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<module>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "Задействовать модуль  iptables"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "Отключить модуль для iptables"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<service>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "Открыть межсетевой экран для служб (например, ssh)"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protocol>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "Открыть указанные порты через межсетевой экран (например, ssh:tcp)"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<interface>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "Разрешить весь трафик через указанное устройство"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr ""
+"Выполнять маскарад всего трафика из указанного устройства. Только для IPv4."
+
+#: ../src/fw_parser.py:189
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "Обратная совместимость, псевдоним --enabled"
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<type>:][<table>:]<filename>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"Позволяет определить произвольный файл правил для включения в правила "
+"межсетевого экрана. Новые правила будут добавлены после существующих. "
+"Стандартный тип протокола: ipv4. Стандартная таблица: filter.  Пример: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"Перенаправляет порт с протоколом для интерфейса другому локальному порту "
+"(если целевой адрес не задан) или другому адресу (можно дополнительно "
+"указать порт). Только для IPv4."
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<icmp type>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr "Заблокировать этот тип ICMP. По умолчанию разрешаются все типы ICMP."
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "Отключить IPsec (Internet Protocol Security)"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "Отключить IPP (Internet Printing Protocol)"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "Отключить mDNS (Multicast DNS)"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr "Параметры SELinux (устаревшие)"
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+"Использование этих параметров без указания дополнительных параметров не "
+"приведет к созданию или изменению настроек межсетевого экрана, будет только "
+"настроен SELinux."
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<mode>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "Определить режим SELinux: %s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<type>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr "Определить тип политики SELinux: обычно целевая или же строгая"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "нет такой опции: %s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "параметр %s требует указания одного аргумента"
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "параметр %(option)s требует указания %(count)s аргументов"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "параметр %s не принимает значение"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "Показать данное сообщение помощи"
+
+#: ../src/fw_parser.py:381
+msgid "Run noninteractively; process only command-line arguments"
+msgstr ""
+"Выполнять неинтерактивно; обрабатывать только аргументы командной строки"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "Подробный вывод"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "Показать версию"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "Настроить межсетевой экран, но не активировать новые настройки"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "Игнорировать действительные настройки"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"Если межсетевой экран активен, обновить его неинтерактивно. Опции «-n» и «-f» "
+"будут проигнорированы."
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr ""
+"Задать исходный тип экрана: %s. При этом текущая конфигурация будет "
+"переопределена."
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "Показать предопределенные службы."
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "Показать поддерживаемые типы icmp."
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "Клиент сетевой печати (IPP)"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"Протокол печати IPP (Internet Printing Protocol) используется для "
+"осуществления распределенной печати. IPP (через tcp) дает возможность "
+"получить информацию о принтере (например, его возможности и состояние), а "
+"также может управлять заданиями печати. Если вы намереваетесь настроить "
+"сетевой принтер для печати через cups, не отключайте эту опцию."
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "Сервер сетевой печати (IPP)"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"Протокол печати IPP (Internet Printing Protocol) используется для "
+"осуществления распределенной печати. IPP (через tcp) дает возможность "
+"совместно использовать принтеры в сети. Если вы намереваетесь настроить "
+"сетевой принтер для печати через cups, включите эту опцию."
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "mDNS (Multicast DNS)"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"mDNS предоставляет возможность использования интерфейсов программирования "
+"DNS, форматов пакетов и операционной семантики в небольших сетях без "
+"стандартного DNS-сервера. Если вы намереваетесь работать с Avahi, не "
+"отключайте данную опцию."
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"IPsec (Internet Protocol Security) обеспечивает защиту при сетевой передаче "
+"напрямую к IP (Internet Protocol) и предоставляет методы шифрования данных и "
+"аутентификации целевого узла или сети. Если вы намереваетесь использовать "
+"сервер vpnc или FreeS/WAN, не отключайте данную опцию."
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"Secure Shell (Secure Shell) -- это протокол для подключения и выполнения "
+"команд на удаленных системах. Он обеспечивает безопасное шифрованное "
+"взаимодействие. Если вы планируете подключаться к машине удаленно по SSH "
+"через защищенный экраном интерфейс, включите эту опцию. Вам также "
+"понадобится установить пакет openssh-server, для того чтобы обеспечить "
+"работу SSH-сервера на вашем компьютере."
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"HTTP -- это протокол, используемый для работы с веб-страницами. Если вы "
+"планируете сделать ваш веб-сервер публично доступным, включите эту опцию. "
+"Эта опция не требуется для просмотра локальных страниц или разработки веб-"
+"страниц."
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"FTP -- это протокол используемый для передачи файлов по сети. Если вы "
+"планируете сделать ваш FTP сервер публично доступным, включите эту опцию. "
+"Вам потребуется установить пакет vsftpd для работы FTP сервера на вашем "
+"компьютере."
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"Протокол NFS4 используется для обеспечения совместного доступа к файлам с "
+"помощью TCP. Вам потребуется установить утилиты NFS и верно настроить ваш "
+"NFS сервер, для того чтобы данная настройка вступила в силу."
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "Безопасный WWW (HTTPS)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"HTTPS &mdash; это модификация HTTP, используемая для предоставления веб-"
+"страниц, если безопасность играет важную роль. Примером являются сайты, для "
+"входа на которые требуется ввести пароль, такие как магазины или эл.почта "
+"Web Mail. Эта опция не требуется для просмотра локальных страниц или "
+"разработки веб-страниц. Вам также потребуется установить пакет httpd для "
+"работы веб-сервера на вашем компьютере."
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "Почта (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"Эта опция разрешает входящую доставку SMTP почты. Если вам требуется "
+"разрешить удаленным узлам подключаться непосредственно к вашей системе для "
+"доставки почты, включите эту опцию. Вам не нужно включать эту опцию если вы "
+"получаете почту с сервера провайдера (ISP) по протоколам POP3 или IMAP, или "
+"если вы используете утилиты типа fetchmail. Обратите внимание, что "
+"некорректно настроенный SMTP сервер может разрешить удаленным машинам "
+"использовать ваш сервер для рассылки спама."
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "Клиент Samba"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"Эта опция позволяет получить доступ и работать в сети Windows с общим "
+"доступом к файлам и принтерам.  Вам потребуется установить пакет samba-"
+"client, для того чтобы данная настройка вступила в силу."
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "Samba"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"Эта опция позволяет получить доступ и работать в сети Windows с общим "
+"доступом к файлам и принтерам.  Вам потребуется установить пакет Samba, для "
+"того чтобы данная настройка вступила в силу."
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "DNS"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"DNS (Domain Name System) используется для предоставления и запроса имен "
+"доменов и узлов. Включите эту опцию, если вы намереваетесь использовать "
+"службу имен доменов (например, с bind)."
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "IMAP через SSL"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"Протокол IMAPs (Internet Message Access Protocol по SSL) позволяет "
+"локальному клиенту получить доступ к электронной почте на удаленном сервере "
+"по безопасному соединению. Если вы намереваетесь предоставлять службы IMAPs "
+"(например, dovecot), включите эту опцию."
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "POP-3 через SSL"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"Протокол POP3 (Post Office Protocol 3) используется для получения "
+"электронной почты с удаленного сервера по соединению TCP/IP. Включите эту "
+"опцию, если вы намереваетесь предоставлять службы POP3 (например, dovecot)."
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"Протокол RADIUS (Remote Authentication Dial In User Service) используется "
+"для удаленной аутентификации пользователей, подключаемых через модем, DSL "
+"или беспроводное соединение. Если вы намереваетесь предоставлять службы "
+"RADIUS, включите эту опцию."
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"OpenVPN представляет собой решение для виртуальных частных сетей (VPN, "
+"Virtual Private Network) и используется для создания прямых туннелей между "
+"компьютерами. Включите эту опцию, если вы намереваетесь предоставлять службы "
+"VPN."
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"Протокол TFTP (Trivial File Transfer Protocol) упрощает передачу файлов "
+"удаленной машине и их получение. Обычно TFTP используется только для "
+"загрузки бездисковых систем и для передачи данных в окружении PXE (Preboot "
+"eXecution Environment)."
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "Клиент TFTP"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"Эта опция позволяет получить доступ к серверам TFTP. Но для этого "
+"потребуется установить пакет tftp."
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "Red Hat Cluster Suite"
+
+#: ../src/fw_services.py:174
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"Эта опция позволяет воспользоваться возможностями Red Hat Cluster Suite. "
+"Порты будут открыты для openais, ricci, dlm, но для этого потребуется "
+"установить Red Hat Cluster Suite."
+
+#: ../src/fw_services.py:179
+msgid "Amanda Backup Client"
+msgstr "Клиент резервного копирования Amanda"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"Клиент резервного копирования Amanda позволяет подключиться к серверу "
+"резервного копирования и архивирования Amanda. Для использования этой "
+"возможности должен быть установлен пакет amanda-client."
+
+#: ../src/fw_services.py:186
+msgid "Bacula Client"
+msgstr "Клиент Bacula"
+
+#: ../src/fw_services.py:187
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"Эта опция разрешает подключение сервера Bacula к локальной машине для "
+"планирования резервного копирования. Требует установки пакета bacula-client."
+
+#: ../src/fw_services.py:190
+msgid "Bacula"
+msgstr "Bacula"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+"Bacula позволяет осуществлять резервное копирование по сети. Выберите, если "
+"вы планируете использовать возможности Bacula."
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr "Управление виртуальными машинами"
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+"Выберите, чтобы разрешить удаленное управление виртуальными машинами с "
+"использованием шифрования (паролей digest-md5 или GSSAPI/Kerberos) и "
+"аутентификации SASL. Требует наличия службы libvirtd."
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr "Управление виртуальными машинами (TLS)"
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+"Выберите, чтобы разрешить удаленное управление виртуальными машинами с "
+"использованием шифрования TLS, сертификатов x509 и аутентификации SASL. "
+"Требует наличия службы libvirtd."
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"Межсетевой экран защищает от несанкционированного вторжения из сети. Его "
+"активация блокирует все входящие соединения. Отключение экрана разрешает все "
+"соединения и не рекомендуется."
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "Межсетевой экран:"
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "Включен"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "OK"
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "Настроить"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"Здесь можно задать доверенные службы, которые будут доступны из любых сетей "
+"и узлов."
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "Другие порты"
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr ""
+"Добавьте дополнительные порты или диапазоны портов, которые должны быть "
+"доступны из других сетей или узлов."
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "Добавить"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "Правка"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "Удалить"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "Доверенные интерфейсы"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr ""
+"Отметьте интерфейсы, которым нужно предоставить полный доступ к системе."
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "Маскарад"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "Отметить интерфейсы для маскарада."
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "Перенаправление портов"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"Добавьте записи для перенаправления портов либо с одного порта другому в "
+"локальной системе, либо из локальной системы другой системе. Перенаправление "
+"другой системе имеет смысл при маскараде интерфейса. Перенаправление портов "
+"используется только для IPv4."
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "Фильтр ICMP"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"Отметьте в списке типы ICMP, которым следует отказать в прохождении через "
+"межсетевой экран. По умолчанию ограничений нет."
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "Пользовательские правила"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"Для добавления дополнительных правил межсетевого экрана используйте "
+"произвольные файлы с правилами. Эти файлы должны быть в формате iptables-"
+"save."
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "Вперед"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "Назад"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"Допустимые значения: <порт>[-<порт>], где порт - это либо число [0..65535], "
+"либо название службы."
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "Протокол '%s' не является допустимым."
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "Допустимые значения: tcp, udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "Укажите номер порта или диапазон и протокол."
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "Порт/ диапазон портов:"
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "Протокол:"
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr "Выберите параметры источника и цели."
+
+#: ../src/fw_tui.py:407
+msgid "Source (all needed)"
+msgstr "Источник (требуются все)"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "Интерфейс:"
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "Цель (как минимум одна)"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "Адрес IP:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "Недопустимый интерфейс '%s'."
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "Адрес '%s' не является допустимым."
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr "Выберите тип протокола, таблицу межсетевого экрана и файл с правилами."
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "Таблица экрана"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "Файл"
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "Тип протокола '%s' на является допустимым."
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "Допустимые значения: %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "Таблица экрана '%s' не является допустимой."
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "Файл '%s' не существует."
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "IPv6 не включает поддержку nat."
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "Да"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "Нет"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "Нажмите Enter для продолжения."
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "Выход"
+
+#: ../src/lokkit:50
+msgid "Predefined Services with Default Environment:"
+msgstr "Предопределенные службы в стандартном окружении:"
+
+#: ../src/lokkit:59
+msgid "Supported icmp types:"
+msgstr "Поддерживаемые типы icmp:"
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>Основные настройки межсетевого экрана</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>Конфигурация</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>Цель</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>Информация</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>Источник</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>Уровень пользователя</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr ""
+"<b>В настоящий момент конфигурация пуста, весь трафик будет заблокирован.</b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>Мастер настройки межсетевого экрана</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"<i>Система без сетевого доступа</i> не нуждается в сетевом экране. Ее выбор "
+"отключит использование экрана. В противном случае выберите вариант "
+"<i>Система с сетевым доступом</i>."
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "Добавить запись"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "Добавить интерфейс"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr "Разрешить доступ только к необходимым портам или диапазонам портов."
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "Разрешить доступ только к необходимым службам."
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "Применить"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "Применить изменения"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"Начинающий\n"
+"Эксперт"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "Настройки служб"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "Настроить вспомогательные модули экрана для отслеживания подключений"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "Настроить параметры служб iptables и ip6tables."
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "Пользовательский файл правил"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "Рабочая станция"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"Рабочая станция\n"
+"Сервер"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "Выключить"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "Отключить межсетевой экран"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "Изменить запись"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "Включить"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "Включить межсетевой экран"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "Включить межсетевой экран"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "Эксперт"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "Файл:"
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "Активация конфигурации межсетевого экрана"
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "Мастер настройки межсетевого экрана"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "Таблица экрана:"
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "Направить другому порту"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"Для применения изменений нажмите <i>OK</i>. Нет необходимости в рестарте "
+"экрана, изменения вступят в силу немедленно."
+
+#: ../src/system-config-firewall.glade.h:47
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr ""
+"Если вы отмените выбор <i>оставить конфигурацию</i>, то существующие "
+"настройки экрана будут переопределены."
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr ""
+"Если вы включите локальное перенаправление, то необходимо указать порт. Этот "
+"порт должен отличаться от порта источника."
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr ""
+"Если вы включите возможность маскарада, то для сетей IPv4 будет активировано "
+"перенаправление IP."
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"Для изменения других настроек придется отредактировать их вручную. Стоит "
+"помнить, однако, что эта утилита не обладает возможностью загрузки "
+"произвольной конфигурации, как следствие, при ее использовании все "
+"изменения, сделанные вручную, будут потеряны. Чтобы сохранить ручные "
+"настройки, выйдите из программы без применения изменений."
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "Оставить конфигурацию"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "Загрузить"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "Загрузить настройки по _умолчанию"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "Локальное перенаправление"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "Откройте целевой порт в удаленной системе."
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"Возможность маскарада (только для IPv4) позволяет настроить узел или "
+"маршрутизатор, подключающий локальную сеть к Интернету. Локальная сеть при "
+"этом не будет видна извне, будет лишь доступен один адрес."
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "Переместить вниз"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "Переместить вверх"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "Нет настроек"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr ""
+"Отметьте интерфейсы, только если вы доверяете всем участникам в "
+"соответствующей сети."
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"Ответьте на заданные мастером вопросы. Затем вы вернетесь к основному "
+"приложению, при этом все неиспользуемые параметры будут спрятаны."
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr ""
+"Проверьте настройки межсетевого экрана после применения пользовательских "
+"правил."
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr ""
+"Загрузите стандартные настройки из меню <i>Параметры</i> или используйте "
+"мастер настройки."
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr "Прежде чем использовать настройки экрана, проверьте их."
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr "Выберите запись из списка или вручную укажите интерфейс."
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr "Выберите запись из списка или введите порт и протокол."
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr "Можно сохранить конфигурацию или загрузить текущую конфигурацию."
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "Укажите ваш опыт работы с межсетевым экраном."
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "Порт и протокол"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "Порт:"
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "Тип протокола:"
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "Перезагрузить"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "Перезагрузить текущую конфигурацию"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "Удалить запись"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"Выберите <i>Эксперт</i>, если вы знакомы с настройками межсетевого экрана "
+"или намереваетесь добавить произвольные правила. В противном случае выберите "
+"<i>Начинающий</i>."
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "Выберите файл"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "Настройки служб"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "Запустить мастер"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "Запустить мастер настройки"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"Система без сетевого доступа\n"
+"Система с сетевым доступом"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "СДЕЛАТЬ"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"Протокол ICMP (Internet Control Message Protocol) обычно используется для "
+"обмена сообщениями об ошибках между компьютерами в сети, но с его помощью "
+"также можно отправлять информационные сообщения, такие как запросы и ответы "
+"ping."
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr "Эта программа поможет настроить межсетевой экран для вашей системы."
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr ""
+"Мастер настройки поможет создать конфигурацию экрана для вашей системы."
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "Определенный пользователем"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "Уровень пользователя"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "Тип вашей системы?"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "Мастер"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr "Настройки можно будет изменить в меню <i>Параметры</i>."
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "О п_рограмме"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "_Файл"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "_Справка"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "_Параметры"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "В_ыход"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "_Запустить мастер настройки"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "конфигурация"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "измененная метка"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr "system-config-firewall"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr ""
+"Leonid Kanter <leon@geon.donetsk.ua>Andrew Martynov <andrewm@inventa."
+"ru>Yulia <ypoyarko@redhat.com>Alexey Kostyuk <unitoff@gmail.com>Andrey "
+"Zaytsev <andzaytsev@gmail.com>"
