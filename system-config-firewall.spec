@@ -16,7 +16,7 @@
 Summary: A graphical interface for basic firewall setup
 Name: system-config-firewall
 Version: 1.2.27
-Release: 3%{?dist}.2
+Release: 3%{?dist}.3
 URL: http://fedorahosted.org/system-config-firewall
 License: GPLv2+
 ExclusiveOS: Linux
@@ -25,6 +25,8 @@ BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch: noarch
 Source0: https://fedorahosted.org/released/system-config-firewall/%{name}-%{version}.tar.bz2
 Patch1: system-config-firewall-1.2.27-rhbz#624400.patch
+# replace pickle by json (CVE-2011-2520):
+Patch2: system-config-firewall-1.2.27-rhbz#717985.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: intltool
@@ -79,6 +81,7 @@ system-config-firewall-tui is a text user interface for basic firewall setup.
 %prep
 %setup -q
 %patch1 -p1 -b .rhbz#624400
+%patch2 -p1 -b .rhbz#717985
 
 %build
 %configure %{?with_usermode: --enable-usermode} \
@@ -100,6 +103,10 @@ desktop-file-install --vendor system --delete-original \
 rm -rf %{buildroot}
 
 %post
+if [ $1 -eq 2 ]; then
+   # kill the D-BUS mechanism on update
+   killall -TERM system-config-firewall-mechanism.py >&/dev/null || :
+fi
 touch --no-create %{_datadir}/icons/hicolor
 if [ -x /usr/bin/gtk-update-icon-cache ]; then
   gtk-update-icon-cache -q %{_datadir}/icons/hicolor
@@ -172,6 +179,11 @@ fi
 %{_datadir}/system-config-firewall/fw_tui.*
 
 %changelog
+* Mon Jul 11 2011 Thomas Woerner <twoerner@redhat.com> 1.2.27-3.3
+- fixed possible privilege escalation flaw via use of python pickle
+  (CVE-2011-2520), replaced pickle by json (rhbz#717985)
+- stop D-BUS firewall mechanism on update
+
 * Mon Nov 22 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-3
 - reverted fix for rhbz#565625
 
