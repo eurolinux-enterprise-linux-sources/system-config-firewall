@@ -16,7 +16,7 @@
 Summary: A graphical interface for basic firewall setup
 Name: system-config-firewall
 Version: 1.2.27
-Release: 7.1%{?dist}
+Release: 7.2%{?dist}
 URL: http://fedorahosted.org/system-config-firewall
 License: GPLv2+
 ExclusiveOS: Linux
@@ -157,7 +157,6 @@ fi
 %endif
 %{_datadir}/system-config-firewall/fw_gui.*
 %{_datadir}/system-config-firewall/fw_dbus.*
-%{_datadir}/system-config-firewall/fw_nm.*
 %{_datadir}/system-config-firewall/gtk_*
 %{_datadir}/system-config-firewall/*.glade
 %attr(0755,root,root) %{_datadir}/system-config-firewall/system-config-firewall-mechanism.*
@@ -182,6 +181,7 @@ fi
 %{_datadir}/system-config-firewall/fw_icmp.*
 %{_datadir}/system-config-firewall/fw_iptables.*
 %{_datadir}/system-config-firewall/fw_lokkit.*
+%{_datadir}/system-config-firewall/fw_nm.*
 %{_datadir}/system-config-firewall/fw_parser.*
 %{_datadir}/system-config-firewall/fw_selinux.*
 %{_datadir}/system-config-firewall/fw_services.*
@@ -195,6 +195,10 @@ fi
 %{_datadir}/system-config-firewall/fw_tui.*
 
 %changelog
+* Fri Nov 14 2014 Thomas Woerner <twoerner@redhat.com> 1.2.27-7.2
+- moved fw_nm into the base sub package to fix a bug introduced with the
+  RHBZ#720831 fix (RHBZ#1164223)
+
 * Mon Jun 23 2014 Thomas Woerner <twoerner@redhat.com> 1.2.27-7.1
 - bump release for fast track errata
 
