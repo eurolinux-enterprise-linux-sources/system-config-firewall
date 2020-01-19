@@ -1,0 +1,9 @@
+[Desktop Entry]
+_Name=Firewall
+_Comment=Firewall Configuration
+Icon=preferences-system-firewall
+Categories=System;Settings;Security;
+Exec=/usr/bin/system-config-firewall
+Type=Application
+StartupNotify=true
+Terminal=false

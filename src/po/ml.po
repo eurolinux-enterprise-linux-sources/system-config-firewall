@@ -1,0 +1,1841 @@
+# translation of system-config-firewall.master.ml.po to
+# translation of ml.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Ani Peter <apeter@redhat.com>, 2006, 2007, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-firewall.master.ml\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-21 16:12+0100\n"
+"PO-Revision-Date: 2010-06-30 09:25+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr ""
+"ഫയര്‍വോള്‍ ക്രമീകരണങ്ങള്‍ വായിച്ചു് മാറ്റങ്ങള്‍ വരുത്തുന്നതിനായി നിങ്ങള്‍ക്കു് ആധികാരികത ഉറപ്പാക്കേണ്ടതുണ്ടു്"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "ഫയര്‍വോള്‍ ആധികാരികത ഉറപ്പാക്കല്‍"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "ഫയര്‍വോള്‍"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "ഫയര്‍വോള്‍ ക്രമീകരണം"
+
+#: ../src/convert-config:38 ../src/lokkit:34
+#: ../src/system-config-firewall-tui:34
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"പിശക്- %s പ്രവര്‍ത്തിപ്പിക്കുന്നതിനായി നിങ്ങള്‍ റൂട്ട് ആയിരിക്കണം."
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "%s എഴുതുന്നതില്‍ പരാജയം."
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "%s വേര്‍തിരിക്കുന്നു"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"ഇത് ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയര്‍ ആണ്; നിങ്ങള്‍ക്ക് ഇത് ഫ്റീ സോഫ്റ്റ്‌വെയര്‍ഫൌണ്ടേഷന്‍ പ്രസിദ്ധീകണത്തിന്റെ "
+"GNU ജനറല്‍ പബ്ലിക് ലൈസന്‍സ്  ലക്കം-2 അല്ലെങ്കില്‍ അത് കഴിഞ്ഞുള്ളവയുടെ നിബന്ധനകള്‍ അനുസരിച്ച് വീണ്ടും "
+"വിതരണം ചെയ്യുകയോ മാറ്റം വരുത്തുകയോ ചെയ്യാവുന്നതാണ്.\n"
+"\n"
+"ഈ പ്രോഗ്രാമിന് വാറണ്ടി ലഭ്യ‌ല്ല. കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി GNU ജനറല്‍ പബ്ലിക് ലൈസന്‍സ് കാണുക.\n"
+"\n"
+"ഈ പ്രോഗ്രാമിനൊപ്പം നിങ്ങള്‍ക്ക് GNU ജനറല്‍ പബ്ലിക് ലൈസന്‍സിന്റെ ഒരു പകര്‍പ്പും ലഭിച്ചിരിക്കണം. "
+"ഇല്ലായെങ്കില്‍, <http://www.gnu.org/licenses/> കാണുക.‌"
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "ഫയര്‍വോള്‍ നി്‍നിയമങ്ങള്‍ ീ്രമികരിക്കുക"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"മറ്റുളള കമ്പ്യൂട്ടറുകള്‍ക്ക് നിങ്ങളുടെ കമ്പ്യൂട്ടറില്‍ നിന്നും നിങ്ങള്‍ തീരുമാനിക്കുന്ന വിവരങ്ങള്‍ "
+"പങ്കുവയ്ക്കുന്നതിനോ, അല്ലെങ്കില്‍ നിങ്ങളുടെ അനുവാദമില്ലാതെ നിങ്ങളുടെ കമ്പ്യൂട്ടറില്‍ പ്രവേശിക്കാന്‍ "
+"കഴിയാത്തവിധമോ ഫയര്‍വോള്‍ ഉപയോഗപ്പെടുത്താം. മറ്റ് കമ്പ്യൂട്ടറുകളുമായി പങ്കുവയ്ക്കാന്‍ നിങ്ങള്‍ "
+"തീരുമാനിച്ച വിവരങ്ങള്‍ തെരഞ്ഞെടുക്കുക."
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "പ്രാദേശികം"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "സേവനം"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "പോര്‍ട്ട്/സമ്പ്രദായം:"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr "കോണ്‍ട്രാക് സഹായി"
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "പോര്‍ട്ട്"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "സമ്പ്രദായം"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "വിനിമയതലം"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "വിവരണം"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "തെരഞ്ഞെടുക്കുക"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "ഏത്തിച്ചേരണ്ട വിലാസം:"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "ഏത്തിച്ചേരണ്ട  പോര്‍ട്ട്"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "ICMP തരത്തിലുള്ള"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "സമ്പ്രദായ ഇനം"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "തരം"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "പട്ടിക"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "ഫയല്‍ നാമം"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "വിശ്വസനീയമായസര്‍വീസുകള്‍:"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "(മാറ്റം വരുത്തിയ)"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "ഫയര്‍വോള്‍ സജ്ജമാക്കിയിരിക്കുന്നു."
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "ഫയര്‍വോള്‍ പ്രവര്‍ത്തന രഹിതമാക്കിയിരിക്കുന്നു."
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "കീ:"
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "സ്വതവേയുള്ള: "
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr " പോര്‍ട്ട് അല്ലെങ്കില്‍ പോര്‍ട്ട് പരിധി'%s' അസാധുവാണു് ."
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "ശരിയായ പോര്‍ട്ട് നമ്പര്‍, സര്‍വീസ് പേര് അല്ലെങ്കില്‍ പരിധി നല്‍കുക."
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "കമ്പ്യൂട്ടറില്‍ പ്രയോഗിക്കാത്ത മാറ്റങ്ങള്‍ ഉണ്ട്, നിങ്ങള്‍ക്ക് പുറത്ത് കടക്കണമെന്ന് ഉറപ്പാണോ?"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "എല്ലാ %s ഉപകരണങ്ങളും"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "ക്രമീകരിച്ചിട്ടില്ല"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "പിഴവ്"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "ക്രമീകരണ ഫയലില്‍ വ്യാകരണപ്പിപിശക്"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "അവഗണിക്കുക"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "എല്ലാം അവഗണിക്കുക"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+msgid "The firewall configuration is not consistent."
+msgstr "ഫയര്‍വോള്‍ ക്രമീകരണം പൊരുത്തമുള്ളതല്ല."
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"താഴെ പറയുന്ന ഫയലുകള്‍ ലഭ്യ‌‌ല്ല അല്ലെങ്കില്‍ ഉപയോഗത്തിലില്ല:\n"
+"\t%s\n"
+"\n"
+"നിങ്ങളുടെ ഫയര്‍വോള്‍ ക്രമീകരണം ഉപയോഗിച്ച് ഈ പ്രശ്നം പരിഹരിക്കുക."
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "പഴയ ഫയര്‍വോള്‍ ക്രമീകരണം."
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr ""
+"പഴയതില്‍നിന്നും വേര്‍തിരിച്ച ഒരു പതിപ്പാണ് നിങ്ങളുടെ ഫയര്‍വോള്‍ ക്രമീകരണം. ദയവായി ഇവ ശരിയാണോ "
+"എന്നുറപ്പാക്കിയ ശേഷം ഉപയോഗിക്കുക."
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "സേവനദാതാവ്"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "തുടക്കകാരന്‍"
+
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr ""
+"'ഉവ്വ്' ക്ലിക്ക് ചെയ്താല്‍ നിലവിലുളള ഫയര്‍വോള്‍ ക്രമീകരണങ്ങള്‍ മാറ്റി എഴുതപ്പെടുന്നു. ഉറപ്പായും "
+"നിങ്ങള്‍ക്കിതു് ചെയ്യണമോ?"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr ""
+"iptables, ip6tables എന്നീ സേവനങ്ങള്‍ പ്രബലമായിട്ടുണ്ടോ എന്ന് പരിശോധിക്കുവാന്‍ ദയവായി "
+"മറക്കരുത്."
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "ക്രമീകരണം പരാജയപ്പെട്ടിരിക്കുന്നു"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "എക്കോ റിക്വസ്റ്റ് (ping)"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"<i>ping</i> പ്രയോഗം ഉപയോഗിച്ച് ആതിഥേയന്‍ ലഭ്യ‌മാണോ എന്ന് പരിശോധിക്കുന്നതിനായി ഈ സന്ദേശം "
+"ഉപയോഗിക്കുന്നു."
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "എക്കോ റിപ്ലൈ (pong)"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "<i>എക്കോ റിക്വസ്റ്റിനുള്ള</i> മറുപടി ആകുന്നു ഈ സന്ദേശം."
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "ലക്ഷ്യം എത്തിച്ചേരാനാവാത്തത്"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr ""
+"ലക്ഷ്യം എത്തിച്ചേരാനാവാത്തതാണെങ്കില്‍ അതിഥേയന്‍ അല്ലെങ്കില്‍ ഗേറ്റ്‌വേ ഇത്തരം പിശക് "
+"ചൂണ്ടിക്കാണിക്കുന്ന സന്ദേശം സൃഷ്ടിക്കും "
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "പാരാമീറ്റര്‍ പ്രശ്നം"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr ""
+"ഐപി ഹെഡര്‍ മോശമാണ് എങ്കില്‍, ഒന്നുകില്‍ നഷ്ടപ്പെട്ട ഐഛികം അല്ലെങ്കില്‍ തെറ്റായ നീളം എങ്കില്‍ ഈ "
+"പിശക് സന്ദേശം ലഭിക്കുന്നു."
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "തിരിച്ച് വിടുക"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr ""
+"മറ്റൊരു മാര്ഗ്ഗത്തിലേക്ക് പാക്കറ്റുകള്‍ അയയ്ക്കുന്ന വിവരം ഒരു ആതിഥേയനെ അറിയിക്കുന്നതിന് ഈ പിശക് "
+"സന്ദേശം സഹായിക്കുന്നു."
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "റൂട്ടറിനുള്ള പരസ്യം"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr ""
+"ഒരു മള്‍ട്ടികാസ്റ്റ് വിനിമയതലത്തിനുള്ള ഐപി വിലാസം സമയാസമത്ത് അറിയിക്കുന്നതിന് റൂട്ടറുകള്‍ ഈ "
+"സന്ദേശം ഉപയോഗിക്കുന്നു."
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "റൂട്ടര്‍ അഭ്യ‌ര്‍ത്ഥന"
+
+#: ../src/fw_icmp.py:48
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr ""
+"<i>റൂട്ടര്‍ പരസ്യം</i> ആവശ്യപ്പെടുന്നതിനായി multicast ലിങ്കിലേക്ക് ഘടിപ്പിച്ചിട്ടുള്ള ഒരു "
+"ഹോസ്റ്റ് ഉപയോഗിക്കുന്ന സന്ദേശമാകുന്നു ഇത്. "
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr "ഉറവിട ശമനം"
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr ""
+"പാക്കേജുകള്‍ അയയ്ക്കുന്ന സമയം കുറക്കാന്‍, ഒരു ആതിഥേയനോട് ആവശ്യ‌പ്പെടുന്നതിന് സൃഷ്ടിക്കപ്പെട്ട പിശക് "
+"സന്ദേശം ആണിത്."
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "സമയപരിധി കഴിഞ്ഞിരിക്കുന്നു"
+
+#: ../src/fw_icmp.py:55
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr ""
+"ഒരു പാക്കറ്റില്‍ നിന്നോ ചിതറിയ പാക്കറ്റ് വീണ്ടും ക്രമപ്പെടുത്തുന്നതില്‍ നിന്നോ വിടാനുള്ള സമയം "
+"അതിക്രമിച്ചെങ്കില്‍ മാത്രമേ ഇത്തരം പിശക് സന്ദേശം ഉണ്ടാകുകയുള്ളൂ."
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "വീണ്ടും ആരംഭിക്കുമ്പോളും അവസാനിപ്പിക്കുമ്പോളും ഘടകങ്ങള്‍ ഇറക്കിവെക്കുക"
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr ""
+"ശരിയായ അവസ്ഥയില്‍ ആകണമെങ്കില്‍, വീണ്ടും ആരംഭിക്കുമ്പോഴും നിര്‍ത്തുമ്പോഴും കേര്‍ണലിന് "
+"ഫയര്‍വോള്‍ ‍ഘടകങ്ങള്‍ വീണ്ടും ലഭ്യ‌മാക്കേണ്ടതാകുന്നു."
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "നിര്‍‍ത്തുമ്പോള്‍ സൂക്ഷിക്കുക"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"ഈ തവണ ആരംഭിച്ച ശേഷം നിര്‍ത്തുന്നത് വരെയുള്ള എല്ലാ മാറ്റങ്ങളും ഉള്‍‌പ്പെടുത്തിയ യഥാര്‍ത്ഥ ഫയര്‍വോള്‍ "
+"ക്രമീകരണം സൂക്ഷിക്കുക.  അടുത്തതവണ ആരംഭിക്കുമ്പോഴത്തേക്ക് സജീവ അവസ്ഥ നിലനിര്‍ത്തുവാന്‍ നിങ്ങള്‍ "
+"ആഗ്രഹിക്കുന്നു എങ്കില്‍ മാത്രം ഇത് ചെയ്താല്‍ മതി."
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "വീണ്ടും ആരംഭിക്കുമ്പോള്‍ സൂക്ഷിക്കുക"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"ഈ തവണ ആരംഭിച്ച ശേഷം വീണ്ടും ആരംഭിക്കുന്നത് വരെയുള്ള എല്ലാ മാറ്റങ്ങളും ഉള്‍‌പ്പെടുത്തിയ യഥാര്‍ത്ഥ "
+"ഫയര്‍വോള്‍ ക്രമീകരണം സൂക്ഷിക്കുക. അടുത്തതവണ ആരംഭിക്കുമ്പോഴത്തേക്ക് സജീവ അവസ്ഥ നിലനിര്‍ത്തുവാന്‍ "
+"നിങ്ങള്‍ ആഗ്രഹിക്കുന്നു എങ്കില്‍ മാത്രം ഇത് ചെയ്താല്‍ മതി."
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "കൌണ്ടര്‍ കമ്പ്യൂട്ടറില്‍ സൂക്ഷിച്ച് വീണ്ടും ലഭ്യ‌മാക്കുക"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr ""
+"<i>നിര്‍ത്തുമ്പോള്‍ സൂക്ഷിക്കുക</i> , <i>വീണ്ടും ആരംഭിക്കുമ്പോള്‍ സൂക്ഷിക്കുക</i>  നിയമവും ചെയിന്‍ "
+"കൌണ്ടറും കൂടുതലായി സൂക്ഷിക്കുന്നു."
+
+#: ../src/fw_iptables.py:57
+msgid "Numeric status output"
+msgstr " സാംഖ്യ‌പദവി ഔട്ട്പുട്ട്"
+
+#: ../src/fw_iptables.py:58
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr ""
+"പദവി ഔട്ടപുട്ടായി അയയ്ക്കുന്നതിന് വിലാസങ്ങളും പോര്‍ട്ടുകളും അക്കങ്ങളുടെ രീതിയില്‍ പ്രിന്റ് ചെയ്യുക."
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "വെര്‍‍ബോസ് നിലവാരം"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"പാക്കറ്റുകളുടേയും ബൈറ്റുകളുടേയും എണ്ണം, സ്റ്റേറ്റസ് ഔട്ട്പുട്ടിലുള്ള <i>input-</i>, "
+"<i>outputdevice</i> എന്നിവ പ്രിന്റ് ചെയ്യുക."
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "സ്റ്റേറ്റസ് വരി എണ്ണങ്ങള്‍"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "സ്റ്റേറ്റസ് ഔട്ടപുട്ടിന്റെ എല്ലാ നിയമത്തിനും ഒരു കൌണ്ടര്‍/അക്കം പ്രിന്റ് ചെയ്യുക."
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "selinux ക്രമീകരണം എഴുതുന്നതില്‍ പരാജയം."
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "%s നിര്‍‍ത്തുന്നതില്‍ പരാജയം."
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "%s  ആരംഭിക്കുന്നതില്‍ പരാജയം."
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "%s നീക്കം ചെയ്യുന്നതില്‍ പരാജയം."
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "പോര്‍ട്ട് പരിധി %s അസാധാരണമല്ല."
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr "%s ശരിയായ പരിധിയിലുള്ളതല്ല (ആരംഭത്തിലുള്ള പോര്‍ട്ട് >= അവസാനിക്കുന്ന പോര്‍ട്ട്)."
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s ശരിയായ ഒരു സമ്പ്രദായമല്ല."
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "തെറ്റായ പോര്‍ട്ട് വ്യാഖ്യാനം %s."
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "ipv6-ന് nat പിന്തുണ ലഭ്യ‌ല്ല."
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "അസാധുവായ സേവനങ്ങള്‍ '%s'."
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "ഐഛികം %(option)s: തെറ്റായ icmp തരം '%(value)s'."
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "തെറ്റായ ആര്‍ഗ്യുമെന്റ് %s"
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr "ഐഛികം %(option)s: തെറ്റായ ഫോര്‍വേര്‍ഡ് _പോര്‍ട്ട്  '%(value)s': %(error)s.'"
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "ഐഛികം %(option)s: തെറ്റായ ഫോര്‍വേര്‍ഡ് _പോര്‍ട്ട് '%(value)s'."
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "അസാധുവായ ഇന്റര്‍ഫെയിസ് '%s'."
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "(സഹജമായ)ഫയര്‍വോള്‍ പ്രവര്‍ത്തന സജ്ജമാക്കുക "
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "ഫയര്‍വോള്‍ പ്രവര്‍ത്തന രഹിതമാക്കുക"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<module>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "iptables-ന്റെ ഘടകം പ്രവര്‍ത്തന സജ്ജമാക്കുക"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "ഒരു iptables-ന്റെ ഘടകം പ്രവര്‍ത്തന രഹിതമാക്കുക"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<service>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "ഒരു സേവനത്തിനായി ഫയര്‍വോള്‍ തുറക്കുക (ഉദാ, ssh)"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protocol>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "ഫയര്‍വോളിലുള്ള പ്രത്യേ‌ക പോര്‍ട്ടുകള്‍ തുറക്കുക (ഉദാ, ssh:tcp)"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<interface>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "പറഞ്ഞിരിക്കുന്ന ഉപകരണം എല്ലാ ട്രാഫിക്കിലും അനുവദിക്കുക"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr "നിഷ്കര്‍ഷിച്ച ഉപകരണത്തില്‍ നിന്നും ട്രാഫിക്ക് തെറ്റിച്ചുകൊണ്ടുപോകുന്നു..ഇത്  IPv4 മാത്രം ആണ്."
+
+#: ../src/fw_parser.py:189
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "പുറകോട്ടുളള അനുയോജ്യ‌‌ത, ചെല്ലപ്പേര് -സജീവമാക്കി"
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<type>:][<table>:]<filename>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"നിങ്ങള്‍ ഉണ്ടാക്കിയ നിയമങ്ങളുടെ ഒരു ഫയല്‍ ഫയര്‍വോളില്‍ ഉള്‍പ്പെടുത്തുക. സ്വതവേയുള്ള ‌നിയമങ്ങള്‍ക്ക് ശേഷം "
+"ഇത് ഉള്‍‌പ്പെടുത്തുന്നതാണ്. സ്വതവേയുള്ളത്: ipv4, തനത് പട്ടിക: അരിപ്പ. (ഉദാഹരണം: ipv4:filter:/"
+"etc/sysconfig/ipv4_filter_addon)"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"മറ്റു പ്രാദേശിക ലക്ഷ്യ പോര്‍ട്ട് (ലക്ഷ്യ പോര്‍ വിലാസം തന്നിട്ടില്ല) അല്ലെങ്കില്‍ ഐഛികമായ "
+"ലക്ഷ്യപോര്‍ട്ടോടു കൂടിയ ഒരു മേല്‍വിലാസത്തിലേക്ക് വിനിമയതലത്തിന്റെ നിയമാവലിയോടുകൂടിയ പോര്‍ട്ട് "
+"അയയ്ക്കുക. ഇത് IPv4 മാത്രമാണ്."
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<icmp type>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr "ഈ ICMP തരത്തിലുള്ളവ തടയുക.  എല്ലാ തരത്തിലുള്ള ICMP സ്വീകരിക്കലാണ് സഹജം."
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "ഇന്റര്‍നെറ്റ് ‍നെറ്റ് പ്രോട്ടോക്കോള്‍ സെക്യൂരിറ്റി (IPsec)പ്രവര്‍ത്തന രഹിതമാക്കുക"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "ഇന്റര്‍നെറ്റ് പ്രിന്റിങ് പ്രോട്ടോക്കോള്‍ (IPP)പ്രവ‍ര്‍ത്തന രഹിതമാക്കുക"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "മള്‍ട്ടികാസ്റ്റ് DNS (mDNS) പ്രവര്‍ത്തന രഹിതമാക്കുക"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr "SELinux ഐച്ഛികങ്ങള്‍ (നീക്കം ചെയ്തിരിക്കുന്നു)"
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+"അധികമായ ഫയര്‍വോള്‍ ഐച്ഛികങ്ങളില്ലാതെ ഇവ ഉപയോഗിക്കുന്നതു് ഫയര്‍വോള്‍ ക്രമീകരണത്തിനു് ഒരു മാറ്റങ്ങളും "
+"വരുത്തുന്നതല്ല. SELinux മാത്രം ക്രമീകരിക്കപ്പെടുന്നുള്ളൂ."
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<mode>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "SELinux രീതി ക്രമീകരിക്കുക: %s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<type>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr ""
+"SELinux തരത്തിലുള്ളത് ക്രമീകരിക്കുക: സാധാരണയായി ലക്ഷ്യ‌മാക്കുന്ന അല്ലെങ്കില്‍ നിര്‍ബന്ധമുള്ള നയം"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "ഇങ്ങനെ ഒരു ഐഛികം ഇല്ല: %s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "%s ഐഛികത്തിന് ഒരു ആര്‍ഗ്യുമെന്റ് ആവശ്യ‌മുണ്ട്"
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "%(option)s ഐച്ഛികത്തിന് %(count)s ആര്‍ഗ്യുമെന്റുകള്‍ ആവശ്യ‌മുണ്ട്"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "%s ഐഛികം ഒരു മൂല്യം എടുക്കുന്നില്ല"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "ഈ സഹായ സന്ദേശം കാണിക്കുക"
+
+#: ../src/fw_parser.py:381
+msgid "Run noninteractively; process only command-line arguments"
+msgstr ""
+"ഇന്ററാക്റ്റീവ് രീതിയിലല്ലാതെ പ്രവര്‍ത്തിപ്പിക്കുകകുക; കമാന്‍ഡ്-ലൈന്‍ ആര്‍ഗ്യുമെന്റുകള്‍ മാത്രം "
+"പ്രവര്‍ത്തിപ്പിക്കുക"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "കൂടുതല്‍ verbose ആകുക"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "ലക്കം ഏതെന്ന് കാണിക്കുക"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "ഫയര്‍വോള്‍ ക്രമീകരകിക്കുക, പക്ഷേ പുതിയ ക്രമീകരണം സജീവമാക്കുവാന്‍ പാടില്ല"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "യഥാര്‍ത്ഥിലുള്ള ഒരുക്കങ്ങള്‍ അവഗണിക്കുക"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"ഫയര്‍വോള്‍ സജ്ജമെങ്കില്‍, ഫയര്‍വോള്‍ നോണ്‍-ഇന്ററാക്റ്റീവ് ആയി പുതുക്കുക. ഇങ്ങനെ ഫയര്‍വോള്‍ വീണ്ടും "
+"ആരംഭിക്കുന്നു. -n, -f എന്നീ ഐഛികങ്ങള്‍‍ അവഗണിക്കുന്നു."
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr "സ്വതവേയുള്ള ഫയര്‍വോള്‍ സജ്ജമാക്കുക: %s. നിലവിലുള്ള ക്രമീകരണം ഇത് തിരുത്തി എഴുതുന്നു."
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "മുന്‍നിര്‍വ്വചിച്ചിട്ടുള്ള സേവനങ്ങള്‍ ലഭ്യമാക്കുക."
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "പിന്തുണയുള്ള icmp തരങ്ങള്‍ ലഭ്യമാക്കുക."
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "നെറ്റ്‌വര്‍ക്ക് പ്രിന്റിംഗ് ക്ലയന്റ് (IPP)"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"പല കമ്പ്യൂട്ടറുകള്‍ക്ക് ഒരേ പ്രിന്റര്‍ ഉപയോഗിച്ച് പ്രിന്റ് ചെയ്യുവാന്‍ സഹായിക്കുന്ന സംവിധാനം ആണ് "
+"ഇന്റര്‍നെറ്റ് പ്രിന്റിംഗ് പ്രോട്ടോക്കോള്‍ (IPP). ഒരു പ്രിന്റ് സംബന്ധിച്ചുള്ള വിവരങ്ങള്‍ (ഉദാ. "
+"പ്രിന്റിംഗിന്റെ കഴിവും നിലവാരവും) ലഭ്യ‌മാക്കുന്നതിനായും പ്രിന്ററിന്റെ ജോലികള്‍ "
+"നിയന്ത്രിക്കുന്നതിനായും ഇത് സഹായിക്കുന്നു (udp-യേക്കാളുപരി). നിങ്ങള്‍ക്ക് cups ഉപയോഗിച്ച്ഒരു "
+"നെറ്റ്‌വര്‍ക്ക് പ്രിന്ററര്‍ ഉപയോഗിക്കണം എങ്കില്‍, ഈ ഐഛികം പ്രവര്‍ത്തന രഹിതമാക്കരുത്."
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "നെറ്റ്‌വര്‍ക്ക് പ്രിന്റിങ് സര്‍വര്‍ (IPP)"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"പല കമ്പ്യൂട്ടറുകള്‍ക്ക് ഒരേ പ്രിന്റര്‍ ഉപയോഗിച്ച് പ്രിന്റ് ചെയ്യുവാന്‍ സഹായിക്കുന്ന സംവിധാനം ആണ് "
+"ഇന്റര്‍നെറ്റ് പ്രിന്റിംഗ് പ്രോട്ടോക്കോള്‍ (IPP). ഒരു നെറ്റ്‌വര്‍ക്കില്‍ പ്രിന്ററുകള്‍ പങ്കിടുവാന്‍ IPP (tcp-"
+"യേക്കാളുപരി) സഹായിക്കുന്നു. നിങ്ങള്‍ക്ക് cups ഉപയോഗിച്ച് ഒരു നെറ്റ്‌വര്‍ക്കില്‍ പ്രിന്റര്‍ "
+"പങ്കിടണമെങ്കില്‍ ഈ ഐഛികം പ്രവര്‍ത്തന രഹിതമാക്കരുത്."
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "മള്‍ട്ടികാസ്റ്റ് DNS (mDNS)"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"ഒരു ചെറിയ നെറ്റ്‌വര്‍‍ക്കില്‍ DNS സര്‍‍വറില്ലാതെ DNS പ്രോഗ്രാമിംഗിനുള്ള സംയോജക ഘടകങ്ങള്‍, പാക്കറ്റ് "
+"മാതൃകകള്‍, ഓപ്പറേറ്റിംഗ് സെമാന്റിക്സ് എന്നിവ ലഭ്യ‌മാക്കുന്നതിന് mDNS സഹായിക്കുന്നു. നിങ്ങള്‍ക്ക് "
+"Avahi ഉപയോഗിക്കണമെങ്കില്‍, ഈ ഐഛികം പ്രവര്‍ത്തന രഹിതമാക്കരുത്."
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"നെറ്റ്‌വര്‍‍ക്കിനുള്ള സുരക്ഷ നേരിട്ട് ഇന്റര്‍നെറ്റിന്റെ ചട്ടക്കൂട്ടിലേക്ക് (IP) നല്‍കുന്നതിനായി "
+"ഇന്റര്‍നെറ്റ്പ്രോട്ടോക്കോള്‍ സെക്യൂരിറ്റി (IPsec) സഹായിക്കുന്നു. ഏത് ആതിഥേയ അല്ലെങ്കില്‍ "
+"നെറ്റ്‌വര്‍‍ക്കിലേക്ക് അയയ്ക്കുന്നുവോ, അതിനുള്ള എന്‍ക്രിപ്റ്റ് ഡേറ്റായും തിരിച്ചറിയല്‍ സംവിധാനവും IPsec "
+"ലഭ്യ‌മാക്കുന്നു. നിങ്ങള്‍ക്ക് ഒരു vpnc സര്‍വര്‍ അല്ലെങ്കില്‍ FreeS/WAN ഉപയോഗിക്കണമെങ്കില്‍, ഈ ഐഛികം "
+"പ്രവര്‍ത്തന രഹിതമാക്കരുത്."
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"ഒരു സുരക്ഷിതമായ ചട്ടക്കൂട്ടില്‍ നിന്നുകൊണ്ട് വിദൂരത്തിലുളള കമ്പ്യൂട്ടറുമായി ബന്ധപ്പെട്ട് നിര്‍ദ്ദേശ "
+"നിര്‍വഹണങ്ങള്‍ നടത്തുവാന്‍ സഹായിക്കുന്ന ഒരു സംവിധാനമാണ് സെക്ക്യൂര്‍ ഷെല്‍(SSH).ഇതു് കമ്പ്യൂട്ടറില്‍ കൂടി "
+"നടക്കുന്ന ആശയ വിനിമയങ്ങളെ സാധാരണമായ ഒരു രഹസ്യഭാഷയിലേക്ക് മാറ്റി സുരക്ഷിതത്വം ഉറപ്പ് "
+"വരുത്തുന്നു. SSH സംവിധാനത്തില്‍ക്കൂടി ഫയര്‍വോള്‍ മുഖേന ദൂരെ എവിടെയെങ്കിലുമുളള കമ്പ്യൂട്ടറില്‍ നിന്നും "
+"നിങ്ങളുടെ കമ്പ്യൂട്ടറുമായി ബന്ധപ്പെടണമെങ്കില്‍ SSH പ്രവര്‍ത്തന സജ്ജമാക്കുക. ഇതു് ശരിയായ വിധത്തില്‍ "
+"ഉപയോഗിക്കണമെങ്കില്‍, openssh-server പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്തിരിക്കണം."
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"Web പേജുകളെ സഹായിക്കുവാന്‍ വേണ്ടിയുളള ഒരു സമ്പ്രദായമാണ് HTTP. നിങ്ങളുടെ Web സര്‍വറിനെ "
+"പുറംലോകത്തിന് തുറന്ന് കൊടുക്കണമെങ്കില്‍ മാത്രം HTTP പ്രവര്‍ത്തന സജ്ജമാക്കുക. ഇതിന് വേണ്ടി httpd "
+"പാക്കേജ്  ഇന്‍സ്റ്റോള്‍ ചെയ്യുക. പ്രാദേശിക (ഇന്റര്‍നെറ്റില്‍ കൂടിയാലാത്ത) പേജുകള്‍ കാണുന്നതിനോ, വെബ് "
+"പേജുകള്‍ സൃഷടിക്കുന്നതിനോ HTTP ആവശ്യ‌ല്ല."
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"ദൂരത്ത് നിന്ന് കൊണ്ട് ഒരു കമ്പ്യൂട്ടറില്‍ നിന്നും മറ്റൊരു കമ്പ്യൂട്ടറിലേക്ക് ഫയലുകള്‍ മാറ്റുവാന്‍ "
+"ഉപയോഗിക്കുന്ന ഒരു സമ്പ്രദായമാണ് FTP പ്രോട്ടോക്കോള്‍. നിങ്ങളുടെ FTP സര്‍വര്‍ പൊതുജനാവശ്യ‌ത്തിനായി "
+"തുറന്ന് കൊടുക്കാന്‍ ആഗ്രഹിക്കുന്നുവെങ്കില്‍ ഈ സംവിധാനം ഉപയോഗിക്കുക. ഇതിനായി vsftpd പാക്കേജ് "
+"ഇന്‍സ്റ്റോള്‍ ചെയ്യുക."
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"TCP സംവിധാനത്തില്‍ കൂടി ഫയലുകള്‍ പങ്ക് വെയ്ക്കുവാന്‍ NFS4 സമ്പ്രദായം സഹായിക്കുന്നു. ഇതിനായി "
+"ആവശ്യ‌മുള്ള ഉപകരണങ്ങള്‍ക്കായി NFS ശരിയായി ഇന്‍സ്റ്റോള്‍ ചെയ്ത് NFS സര്‍വര്‍ ക്രമീകരിക്കേണ്ടതാണ്. "
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "സെക്യൂര്‍ WWW (HTTPS)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"സുരക്ഷാപ്രാധാന്യ‌മുളള Web പേജുകളുടെ സഹായത്തിന് വേണ്ടി മാറ്റങ്ങള്‍ വരുത്തിയിട്ടുളള HTTP ആണ് "
+"HTTPS. ഉദാഹരണത്തിന്, സന്ദര്‍ശകന്റെ പേരും വിവരങ്ങളും മറ്റും കൊടുത്തെങ്കില്‍ മാത്രം തുറക്കുന്ന  Web "
+"പേജുകള്‍ Web മെയിലുകള്‍ മുതലായവ. ഇതിന് വേണ്ടി httpd പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യുക."
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "തപാല്‍ (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"വരുന്ന തപാലുകള്‍‍ ലഭ്യ‌മാകുന്ന സംവിധാനം. പുറത്തു നിന്നുളള കമ്പ്യൂട്ടറുകളില്‍ നിന്നും നേരിട്ട് നിങ്ങള്‍ക്ക് "
+"തപാല്‍ ലഭിക്കുന്നതിനായി ഈ സംവിധാനം പ്രവര്‍ത്തനസജ്ജമാക്കുക. ഇന്റര്‍നെറ്റ് സേവനദാതാവില്‍ നിന്നും "
+"POP3 അല്ലെങ്കില്‍ IMAP സംവിധാനം ഉപയോഗിച്ച് സര്‍വറില്‍ നിന്നുമാണ് നിങ്ങള്‍ തപാല്‍‍ സ്വീകരിക്കുന്നത് "
+"എങ്കില്‍ SMTP സംവിധാനത്തിന്റെ ആവശ്യ‌മില്ല. fetchmail പോലെയുളള സംവിധാനങ്ങള്‍ "
+"ഉപയോഗിക്കുമ്പോഴും ഇതിന്റെ ആവശ്യ‌മില്ല. ശ്രദ്ധിക്കുക: ശരിയായ രീതിയില്‍ SMTP സര്‍വര്‍ "
+"ചിട്ടപ്പെടുത്തിയില്ലെങ്കില്‍ പുറത്ത് നിന്നുളള കമ്പ്യൂട്ടറിന് നിങ്ങളുടെ സര്‍വറില്‍ നിന്നും നിങ്ങളുടെ "
+"അനുമതിയോ അറിവോ ഇല്ലാതെ തപാല്‍‍ അയയ്ക്കുവാന്‍ കഴിയും."
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "സാമ്പാ ക്ലൈന്റ്"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"ലീനക്സില്‍‍ പ്രവര്‍ത്തിക്കുന്ന കമ്പ്യൂട്ടറുകള്‍ക്ക് Windows അധിഷ്ടിത പ്രിന്റര്‍, ഫയല്‍ ഷെയറിംഗ് "
+"നെറ്റ്‌വര്‍ക്കില്‍ പ്രവേശിക്കുവാനും അതുപയോഗിക്കാനും സഹായിക്കുന്ന സംവിധാനമാണിത്. ഇതിനായി samba-"
+"client പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യുക."
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "സാംബാ"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"ലീനക്സില്‍ പ്രവര്‍ത്തിക്കുന്ന കമ്പ്യൂട്ടറുകള്‍ക്ക് Windows അധിഷ്ഠിത പ്രിന്റര്‍, ഫയല്‍ ഷെയറിങ് "
+"നെറ്റ്‌വര്‍‍ക്കില്‍ പ്രവേശിക്കുവാനും അതുപയോഗിക്കാനും സഹായിക്കുന്ന സംവിധാനമാണ് സാംബാ.ഇതിനായി "
+"സാംബാ പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യുക."
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "ഡിഎന്‍എസ്"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"ആതിഥേയനും ഡൊമെയിനിനും ‌ഉള്ള പേര് ആവശ്യപ്പെടുകയും അത് നല്‍കുന്നതിനായി ഡൊമെയിന്‍ നെയിം സിസ്റ്റം "
+"(DNS) ഉപയോഗിക്കുന്നു. നിങ്ങള്‍ ഡൊമെയിന്‍ നെയിം സര്‍‍വീസ് നല്‍കുന്നു എങ്കില്‍, ഈ ഉപാധി സജ്ജമാക്കുക "
+"(ഉദാ. with bind)."
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "SSL-ല്‍ IMAP"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"ഒരു ലോക്കല്‍ ക്ലൈന്റിന് സുരക്ഷിതമായി ഒരു റിമോട്ട് സര്‍വറില്‍ ഈമെയില്‍ ലഭ്യ‌മാക്കുന്നതിന് SSL-ന് പുറമേ "
+"ഇന്റര്‍നെറ്റ് മെസ്സേജ് ആക്സസ്സ് പ്രോട്ടോക്കോള്‍ (IMAPs) അനുവദിക്കുന്നു നിങ്ങള്‍ക്ക് SSL-ന് പകരം IMAP "
+"ഉപയോഗിക്കണമെങ്കില്‍, ഈ ഐഛികം സജ്ജമാക്കുക (ഉദാ. dovecot)."
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "SSL-ല്‍ POP-3"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"ഒരു TCP/IP കണക്ഷന് പകരം മറ്റൊരു സര്‍‍വറില്‍ നിന്നും ഈമെയില്‍ ലഭ്യ‌മാക്കുന്നതിനുള്ള സമ്പ്രദായമാണ് "
+"പോസ്റ്റ് ഓഫീസ് പ്രോട്ടോക്കോള്‍ വെര്‍‍ഷന്‍ 3 (POP3). നിങ്ങള്‍ ഒരു POP3 സര്‍‍വീസ് ലഭ്യ‌മാക്കുന്നു എങ്കില്‍, ഈ "
+"ഐഛികം സജ്ജമാക്കുക (ഉദാ. dovecot)."
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"നെറ്റ്‌വര്‍ക്കുകളില്‍ ആവശ്യ‌മുള്ള ആധികാരികത ഉറപ്പാക്കുന്നതിന് ആവശ്യ‌മുള്ള സമ്പ്രദായം ആണ് റിമോട്ട് "
+"ഓഥന്റിക്കേഷന്‍ ഡയല്‍ ഇന്‍ യൂസര്‍ സര്‍‍വീസ് (RADIUS). മോഡം, DSL അല്ലെങ്കില്‍ വയര്‍ലെസ്സ് ഉപയോക്താവിനെ "
+"തിരിച്ചറിയുന്നതിനായി ഉപയോഗിക്കുന്നു. നിങ്ങള്‍ക്ക് RADIUS സര്‍‍വീസ് ലഭ്യ‌മാക്കണമെങ്കില്‍ (ഉദാ. "
+"freeradius), ഈ ഐഛികം സജ്ജമാക്കുക."
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"വിര്‍ച്ച്വല്‍ പ്രൈവറ്റ് നെറ്റ്‌വര്‍ക്ക് (VPN) ആണ് OpenVPN. കമ്പ്യൂട്ടറുകള്‍ക്കിടയില്‍ എന്‍ക്രിപ്റ്റ് ചെയ്ത "
+"പോയിന്റ്-ടു-പോയിന്റ് ടണലുകള്‍ ഉണ്ടാക്കുന്നതിനായി ഇത് ഉപയോഗിക്കുന്നു. VPN സര്‍വീസ് ലഭ്യ‌മാകണമെങ്കില്‍, "
+"ഈ ഐഛികം സജ്ജമാക്കുക."
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"റിമോട്ട് സിസ്റ്റമില്‍ നിന്നും അവയിലേക്കും ലളിതമായി ഫയല്‍ നീക്കം ചെയ്യുന്നതിനു് ട്രിവ്യല്‍ ഫയല്‍ "
+"ട്രാന്‍സ്ഫര്‍ പ്രോട്ടോക്കോള്‍ (TFTP) ഉപയോഗിക്കുന്നു. സാധാരണയായി, ബൂട്ടിങ് ഡിസ്ക്ലേസ് "
+"വര്‍ക്ക്സ്റ്റേഷനുകള്‍ക്കും പ്രീബൂട്ട് എക്സിക്യൂഷന്‍ എന്‍വയോണ്മെന്റില്‍ (PXE) ഡേറ്റാ നീക്കുന്നതിനും മാത്രം ഇവ "
+"ഉപയോഗിക്കുന്നു."
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "TFTP ക്ലൈന്റ്"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"ട്രിവ്യല്‍ ഫയല്‍ ട്രാന്‍സ്ഫര്‍ പ്രോട്ടോക്കോള്‍ (TFTP) സര്‍വറുകള്‍ ലഭ്യമാക്കുന്നതിനായി ഈ ഉപാധി "
+"അനുവദിക്കുന്നു. ഇതിനായി നിങ്ങള്‍ tftp പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടതുണ്ടു്."
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "Red Hat ക്ലസ്റ്റര്‍ സ്യൂട്ട്"
+
+#: ../src/fw_services.py:174
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"Red Hat ക്ലസ്റ്റര്‍ സ്യൂട്ട് ഉപയോഗിക്കുന്നതിനായി ഈ ഉപാധി നിങ്ങളെ അനുവദിക്കുന്നു. openais, "
+"ricci, dlm എന്നിവയ്ക്കായി പോര്‍ട്ടുകള്‍ ലഭ്യമാണു്. ഇവയ്ക്കായി നിങ്ങള്‍ Red Hat ക്ലസ്റ്റര്‍ സ്യൂട്ട് "
+"ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടതുണ്ടു്."
+
+#: ../src/fw_services.py:179
+msgid "Amanda Backup Client"
+msgstr "അമാണ്ട ബാക്കപ്പ് ക്ലയന്റ്"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"അമാണ്ട ബാക്കപ്പ് ക്ലയന്റ് ഉപാധി ഉപയോഗിച്ചു് നിങ്ങള്‍ക്കൊരു അമാണ്ട ബാക്കപ്പ്, ആര്‍ക്കൈവിങ് സര്‍വറിലേക്ക് "
+"കണക്ട് ചെയ്യുവാന്‍ സാധിക്കുന്നു. ഇതിനായി amanda-client പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യുക."
+
+#: ../src/fw_services.py:186
+msgid "Bacula Client"
+msgstr "ബാക്യുലാ ക്ലൈന്റ്"
+
+#: ../src/fw_services.py:187
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"ബാക്കപ്പുകള്‍ സജ്ജമാക്കുന്നതിനായി ലോക്കല്‍ സിസ്റ്റത്തിലേക്ക് കണക്ട് ചെയ്യുവാന്‍ ഒരു ബാക്യുലാ സര്‍വര്‍ "
+"നിങ്ങളെ അനുവദിയ്ക്കുന്നു. ഇതിനായി നിങ്ങള്‍ക്കു് bacula-client പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യേണ്ടതുണ്ടു്."
+
+#: ../src/fw_services.py:190
+msgid "Bacula"
+msgstr "ബാക്യുലാ"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+"ബാക്യുലാ ഒരു നെറ്റ്‌വര്‍ക്ക് ബാക്കപ്പ് സംവിധാനമാണു്. ബാക്യുലാ ബാക്കപ്പ്, ഫയല്‍ സ്റ്റോറേജ് സര്‍വീസുകള്‍ "
+"എന്നിവയ്ക്കായി ഈ ഉപാധി സജ്ജമാക്കുക."
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr "വിര്‍ച്ച്വല്‍ മഷീന്‍ മാനേജ്മെന്റ്"
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+"SASL ആധികാരികത ഉറപ്പാക്കലും എന്‍ക്രിപ്ഷനുമായി റിമോട്ട് വിര്‍ച്ച്വല്‍ മഷീന്‍ മാനേജ്മെന്റ് "
+"അനുവദിയ്ക്കുന്നതിനായി ഈ ഉപാധി സജ്ജമാക്കുക. (digest-md5 രഹസ്യവാക്കുകള്‍ അല്ലെങ്കില്‍ GSSAPI/"
+"Kerberos). ഇതിനായി libvirtd സര്‍വീസ് ആവശ്യമുണ്ടു്."
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr "വിര്‍ച്ച്വല്‍ മഷീന്‍ മാനേജ്മെന്റ് (ടിഎല്‍എസ്)"
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+"TSL എന്‍ക്രിപ്ഷന്‍, x509 സര്‍ട്ടീഫിക്കേറ്റുകള്‍, ആവശ്യമെങ്കില്‍ SASL ആധികാരികത ഉറപ്പാക്കല്‍ "
+"സംവിധാനം എന്നിവയുള്ള റിമോട്ട് വിര്‍ച്ച്വല്‍ മഷീന്‍ മാനേജ്മെന്റ് അനുവദിയ്ക്കുന്നതിനായി ഈ ഉപാധി "
+"സജ്ജമാക്കുക. ഇതിനായി libvirtd സര്‍വീസ് ആവശ്യമുണ്ടു്."
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"അനധികൃതമായ നെറ്റ്‌വര്‍ക്കുകളില്‍ നിന്നും സംരക്ഷിക്കുന്നതിനുളള സംവിധാനമാണ് ഫയര്‍വോള്‍. ഫയര്‍വോള്‍ "
+"സജ്ജമാക്കിയാല്‍ അകത്തേക്കുവരുന്ന എല്ലാ നെറ്റ്‌വര്‍ക്കുകളേയും അത് അനുവദിക്കുന്നു. ഒരു കണക്ഷന്‍ "
+"നിരോധിക്കുന്നതിനായി ഈ സംവിധാനം പ്രവര്‍ത്തന രഹിതമാക്കുക, പക്ഷേ ഇത് ഒരു ഉത്തമ മാര്‍ഗ്ഗമല്ല."
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "ഫയര്‍വോള്‍"
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "പ്രവര്‍ത്തന സജ്ജം"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "ശരി"
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "യഥേഷ്ടമാക്കുക"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "റദ്ദാക്കുക"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"ഏതെല്ലാം സര്‍‍വീസുകളാണ് വിശ്വസനീയം എന്ന് നിങ്ങള്‍ക്ക് ഇവിടെ വ്യ‌ക്തമാക്കാം. എല്ലാ ആതിഥേയ "
+"നെറ്റ്‌വര്‍ക്കുകളില്‍ നിന്നും ഈ സര്‍‍വീസുകള്‍ ല്ഭ്യമാക്കുവാന്‍ സാധ്യമാണു്.കുവാന്‍ സാധ്യ‌."
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "മറ്റ് പോര്‍ട്ടുകള്‍ "
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr ""
+"എല്ലാ ആതിഥേയര്‍ക്കും നെറ്റ്‌വര്‍‍ക്കുകള്‍ക്കും ലഭ്യ‌മാകേണ്ട കൂടുതല്‍ പോര്‍ട്ടുകളും പോര്‍‍ട്ട് പരിധികളും ചേര്‍‍ക്കുക."
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "ചേര്‍ക്കുക"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "മാറ്റം വരുത്തുക"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "നീക്കം ചെയ്യുക"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "വിശ്വസനീയമായ ഇന്റര്‍ഫെയിസുകള്‍"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റത്തിലേക്ക് കടക്കുവാന്‍ പൂര്‍ണ്ണ അനുവാദമുള്ള വിനിമയ തലങ്ങളെ വിശ്വസനീയം എന്ന് "
+"അടയാളപ്പെടുത്തുക."
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "മാസ്ക്യുറേഡിംഗ്"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "മാസ്ക്യുറേഡിംഗിനായി നിങ്ങളുടെ വിനിമയതലം അടയാളപ്പെടുത്തുക."
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "പോര്‍ട്ട് ഫോര്‍‍വേര്‍‍ഡിംഗ്"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"ഒരു പ്രാദേശിക വ്യവ്സ്ഥയിലുള്ള പോര്‍ട്ടില്‍ നിന്നും മറ്റൊന്നിലേക്ക് അല്ലെങ്കില്‍ ഒരു പ്രാദേശിക "
+"വ്യ‌വസ്ഥയില്‍നിന്നും മറ്റൊന്നിലേക്ക് പോര്‍ട്ടുകള്‍ അയയ്ക്കുന്നതിനായി എന്ട്രികള്‍ നല്‍കുക. വിനിമയതലം "
+"മാസ്ക്യുറേഡ് ചെയ്തെങ്കില്‍ മാത്രമേ മറ്റൊരു സിസ്റ്റമിലേക്ക് അയയ്ക്കുന്നതില്‍ പ്രയോജനമുള്ളൂ. പോര്‍ട്ട് "
+"ഫോര്‍വേര്‍ഡിംഗ് IPv4 മാത്രമാണ്."
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "ICMP ഫില്‍‌റ്റര്‍"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"പട്ടികയില്‍ നിന്നും വേണ്ട എന്ന് തീരുമാനിക്കേണ്ട ICMP തരത്തിലുള്ളവ അടയാളപ്പെടുത്തുക. മറ്റെല്ലാ "
+"ICMP തരത്തിലുള്ളവയും ഫയര്‍വോള്‍ കടക്കുന്നതിന് അനുവാദമുള്ളവയാണ്. പരിമിതികളില്ലാത്തതാണ് സഹജം."
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "നിയമങ്ങള്‍ ഉണ്ടാക്കുക"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"ഫയര്‍വോളിലേക്ക് കൂടുതല്‍ നിയമങ്ങള്‍ ചേര്‍‍ക്കുന്നതിനായി നിങ്ങള്‍ ഉണ്ടാക്കിയ നിയമങ്ങളുടെ ഫയല്‍ ചേര്‍ക്കുക. "
+"സ്വതവേയുള്ള നിയമങ്ങള്‍ക്ക് ശേഷം ഇവ ചേര്‍ക്കപ്പെടുന്നു. ഫയലുകള്‍ ‌iptables-save രീതിയിലായിരിക്കണം."
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "മുമ്പോട്ട്"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "പുറകോട്ട്"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "അടയ്ക്കുക"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "മുന്നറിയിപ്പ്"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"ശരിയായ മൂല്യങ്ങള്‍: <port>[-<port>], ഇവിടെ ഒരു അക്കം [0..65535] അല്ലെങ്കില്‍ ഒരു "
+"സേവനത്തിന്റെ പേരാണ് പോര്‍ട്ട്."
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "സമ്പ്രദായം '%s' ശരിയല്ല."
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "ശരിയായ മൂല്യ‌ങ്ങള്‍: tcp, udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "ശരിയായ ഒരു പോര്‍ട്ട് അല്ലെങ്കില്‍ പോര്‍ട്ടിനുള്ള പരിധിയും സമ്പ്രദായവും ദയവായി നല്‍കുക."
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "പോര്‍ട്ട് / പോര്‍ട്ട് പരിധി:"
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "സമ്പ്രദായം:"
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr "നിങ്ങളുടെ ആവശ്യ‌മനുസരിച്ച് ഉറവിട, ലക്ഷ്യ പോര്‍ട്ടുകള്‍ തെരഞ്ഞെടുക്കുക."
+
+#: ../src/fw_tui.py:407
+msgid "Source (all needed)"
+msgstr "സ്രോതസ്സ് (എല്ലാം ആവശ്യ‌മുണ്ട്)"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "വിനിമയതലം"
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "ലക്ഷ്യസ്ഥാനം (ഒന്നെങ്കിലും ആവശ്യ‌മുണ്ട്)"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "ഐപി വിലാസം:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "വിനിമയതലം'%s'സാധുവല്ല."
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "വിലാസം'%s'സാധുവല്ല."
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr "സമ്പ്രദായ തരം, ഫയര്‍വോള്‍ ടേബിള്‍, നിയമങ്ങളടങ്ങിയ ഫയല്‍ എന്നിവ ദയവായി തെരഞ്ഞെടുക്കുക."
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "ഫയര്‍വോള്‍ ടേബിള്‍"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "ഫയല്‍ "
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "സമ്പ്രദായ ഇനം '%s' സാധുവല്ല."
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "ശരിയായ മൂല്യങ്ങള്‍: %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "ഫയര്‍വോള്‍ ടേബിള്‍ '%s' ശരിയല്ല."
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "'%s' ഫയല്‍ നിലവിലില്ല."
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "IPv6-ന് നാറ്റ് പിന്തുണ ലഭ്യ‌മല്ല."
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "ഉവ്വ്"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "അല്ല"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "തുടരുന്നതിനായി enter അമര്‍ത്തുക."
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "വിട്ടുപോകുക"
+
+#: ../src/lokkit:53
+msgid "Predefined Services with Default Environment:"
+msgstr "സ്വതവേയുള്ള എന്‍വിറോണ്‍മെന്റിനൊപ്പം മുമ്പ് നിശ്ചയിച്ചിട്ടുള്ള സേവനങ്ങള്‍: "
+
+#: ../src/lokkit:62
+msgid "Supported icmp types:"
+msgstr "പിന്തുണയുള്ള icmp തരത്തിലുള്ളവ:"
+
+#: ../src/system-config-firewall:41
+msgid "ERROR: FirewallD is active, please use firewall-config."
+msgstr ""
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>അടിസ്ഥാന ഫയര്‍വോള്‍ ക്രമീകരണങ്ങള്‍</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>ക്രമീകരണം</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>ലക്ഷ്യസ്ഥാനം</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>അറിയിപ്പ്</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>ഉറവിടം</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>ഉപയോക്താവിന്റെ പ്രാഗത്ഭ്യ നിലവാരം</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr "<b>നിലവിലുള്ള നിങ്ങളുടെ ക്രമീകരണം ശൂന്യ‌മാണ്, എല്ലാ ഗതാഗതങ്ങളും അടയ്ക്കുന്നതാണ്.</b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>ഫയര്‍വോള്‍ ക്രമീകരണ സഹായി</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"<i>\"നെറ്റ്‌വര്‍ക്ക് സാന്നിദ്ധ്യമില്ലാത്ത വ്യവസ്ഥയ്ക്ക്\"</i> ഫയര്‍വോള്‍ ആവശ്യ‌മില്ല. ഇത് "
+"തെരഞ്ഞെടുക്കുന്നതു് ഫയര്‍വോളിനെ പ്രവര്‍ത്തന രഹിതമാക്കുന്നു. ഇത് വേണ്ടെങ്കില്‍<i> \"നെറ്റ്‌വര്‍ക്ക് "
+"സാന്നിദ്ധ്യമുള്ള വ്യവസ്ഥ\"</i> എന്നതു് തെരഞ്ഞെടുക്കുക."
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "എന്‍ട്രി ചേര്‍ക്കുക"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "ഇന്റര്‍ഫെയിസ് ചേര്‍ക്കുക"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr "ആവശ്യ‌മുള്ള പോര്‍ട്ടുകള്‍ക്ക് മാത്രം അനുവാദം നല്‍കുക."
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "ആവശ്യ‌മുള്ള സര്‍വീസുകള്‍ക്ക് മാത്രം അനുവാദം നല്‍കുക."
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "പ്രയോഗിക്കുക"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "വരുത്തിയ മാറ്റങ്ങള്‍ സൂക്ഷിക്കുക"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"തുടക്കക്കാരന്‍\n"
+"വിദഗ്ദ്ധന്‍‍"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "സര്‍വീസ് സജ്ജീകരണങ്ങള്‍ ക്രമീകരിക്കുക"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "കണക്ഷന്‍ നിരീക്ഷിക്കുന്നതിനായി ഫയര്‍വോള്‍ സഹായത്തിനുള്ള ഘടകങ്ങള്‍ ക്രമീകരിക്കുക"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "iptables, ip6tables സര്‍വീസ് സജ്ജീകരണങ്ങള്‍ ക്രമീകരിക്കുക."
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "ഇഷ്ടാനുസാരം തയ്യാറാക്കിയ നിയമങ്ങളുടെ ഫയല്‍"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "ഡസ്ക്ടോപ്പ്"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"ഡസ്ക്ടോപ്പ്\n"
+"സര്‍വര്‍"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "പ്രവര്‍ത്തനരഹിതമാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "ഫയര്‍‌വോള്‍ പ്രവര്‍ത്തന രഹിതമാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "എന്‍ട്രി ചിട്ടപ്പെടുത്തുക"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "പ്രവര്‍ത്തനസജ്ജമാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "ഫയര്‍വോള്‍ പ്രവര്‍ത്തന സജ്ജമാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "ഫയര്‍വോള്‍ പ്രവര്‍ത്തന സജ്ജമാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "വിദഗദ്ധന്‍"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "ഫയല്‍:"
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "ഫയര്‍വോള്‍ ക്രമീകരണ ആരംഭം‍ "
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "ഫയര്‍വോള്‍ ക്രമീകരണ സഹായി"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "ഫയര്‍വോള്‍ ടേബിള്‍:"
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "മറ്റൊരു പോര്‍ട്ടിലേക്ക് അയയ്ക്കുക"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"നിങ്ങള്‍ വരുത്തിയ മാറ്റങ്ങള്‍ കമ്പ്യൂട്ടറിനു് സ്വീകാര്യ‌മാക്കുന്നതിനായി <i>ശരി</i> അമര്‍ത്തുക. നിങ്ങള്‍ "
+"ഇതിനായി ഫയര്‍വോള്‍ വീണ്ടും ആരംഭിക്കേണ്ടതില്ല."
+
+#: ../src/system-config-firewall.glade.h:47
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr ""
+"<i>ക്രമീകരണം സൂക്ഷിക്കുക</i> എന്ന ബട്ടണ്‍ വെടിപ്പാക്കിയാല്‍, യഥാര്‍ത്ഥ ഫയര്‍വോള്‍ ക്രമീകരണം "
+"തിരുത്തി എഴുതപ്പെടുന്നു."
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr ""
+"നിങ്ങള്‍ ലോക്കല്‍ ഫോര്‍വേര്‍ഡിങ് സജ്ജമാക്കിയാല്‍, പോര്‍ട്ട് നല്‍കേണ്ടതാണ്. ഇത് ഉറവിട പോര്‍ട്ടില്‍ നിന്നും "
+"വ്യ‌‌ത്യ‌‌സ്തമാണ്."
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr ""
+"മാസ്ക്യുറേഡിംഗ് സജ്ജമാക്കുന്നു എങ്കില്‍, നിങ്ങളുടെ IPv4 ശൃംഖലാകര്‍മ്മങ്ങള്‍ക്കായി IP ഫോര്‍‍വേര്‍‍ഡിംഗും "
+"സജ്ജമാക്കപ്പെടുന്നു."
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"കൂടുതല്‍ ഫയര്‍വോള്‍ സജ്ജീകരണങ്ങള്‍ക്കായി, നിങ്ങള്‍ സ്വയം ക്രമീകരണങ്ങളില്‍ മാറ്റം വരുത്തുക, പക്ഷേ ഈ "
+"ഉപകരണം ഉപയോഗിച്ച് നിങ്ങളുടെ ക്രമീകരണം ലഭ്യ‌മാക്കുവാന്‍ സാധിക്കുകയില്ല. മാത്രമല്ല, അവ "
+"നഷ്ടപ്പെടുകയും ചെയ്യുന്നു. നിങ്ങളുടെ ക്രമീകരണങ്ങള്‍ നഷ്ടപ്പടേണ്ട എങ്കില്‍, ഈ പ്രോഗ്രാം കമ്പ്യൂട്ടറില്‍ "
+"സൂക്ഷിക്കാതെ ഉപേക്ഷിക്കുക."
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "ക്രമീകരണം സൂക്ഷിക്കുക"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "ലഭ്യ‌മാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "സ്വതവേയുള്ള ക്രമീകരണം ലഭ്യ‌മാക്കുകകുക (_D)"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "ലോക്കല്‍ ഫോര്‍വേഡിങ്"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "വിദൂര വ്യ‌വസ്ഥയില്‍ ആവശ്യ‌മുള്ള പോര്‍ട്ട് തുറന്നു എന്നുറപ്പാക്കുക."
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"നിങ്ങളുടെ പ്രാദേശിക ശൃംഖലാ പ്രവര്‍ത്തനത്തിനെ ഇന്റര്‍നെറ്റുമായി ബന്ധപ്പെടുത്തുന്നതിനായി ഒരു "
+"ആതിഥേയന്‍ അല്ലെങ്കില്‍ റൂട്ടര്‍ നിങ്ങള്‍ ക്രമീകരിക്കുന്നു എങ്കില്‍ മാസ്ക്യുറേഡിംഗ് നിങ്ങള്‍ക്ക് "
+"പ്രയോജനകരമാകുന്നു. നിങ്ങളുടെ പ്രാദേശിക ശൃംഖലാകര്മ്മം  അദൃശ്യ‌മായിരിക്കും, മാത്രമല്ല, "
+"ഇന്റര്‍നെറ്റില്‍ ആതിഥേയനെ ഒരു വിലാസമായി കണക്കാക്കുന്നു. മാസ്ക്യുറേഡിംഗ് IPv4 മാത്രമാണ്."
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "എന്‍ട്രി താഴേക്ക് നീക്കുക"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "എന്‍ട്രി മുകളിലേക്ക് നീക്കുക"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "ക്രമീകരണം ലഭ്യ‌മല്ല"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr ""
+"ഒരു നെറ്റ്‌വര്‍ക്കിന്റെ വിനിമയതലത്തിലുള്ള എല്ലാ അംഗങ്ങളേയും വിശ്വാസമെങ്കില്‍ മാത്രം വിനിമയതലം "
+"വിശ്വസനീയമെന്ന് അടയാളപ്പെടുത്തുക."
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"അടുത്ത ക്രമീകരണ നടപടികളില്‍, ദയവായി ചോദ്യങ്ങള്‍ക്കുള്ള ഉത്തരം നല്‍കുക. ശേഷം സഹായപ്രയോഗം "
+"നിങ്ങളെ പ്രധാന പ്രയോഗത്തിലേക്ക് കൊണ്ടുപോകുന്നു. നിങ്ങളുടെ ക്രമീകരണത്തിന് ആവശ്യ‌മില്ലാത്ത എല്ലാ "
+"ക്രമീകരണ ഐഛികങ്ങളും നിങ്ങളില്‍ നിന്നും അദൃശ്യ‌മാക്കുന്നു."
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr ""
+"നിങ്ങള്‍ നല്‍കിയ നിയമങ്ങള്‍ കമ്പ്യൂട്ടറില്‍ നടപ്പിലാക്കിയ ശേഷം ഫയര്‍വോള്‍ ക്രമീകരണങ്ങള്‍ ദയവായി "
+"പരിശോധിക്കുക."
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr ""
+"<i>ഐഛികങ്ങളുടെ</i> വിഭവങ്ങളില്‍നിന്ന് അല്ലെങ്കില്‍ സഹായപ്രയോഗം ഉപയോഗിച്ച് സ്വതവേയുള്ള ഒരു "
+"ക്രമീകരണം ദയവായി കയറ്റുക"
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr "ഉപയോഗിക്കുന്നതിന് മുമ്പ് ദയവായി നിങ്ങളുടെ ഫയര്‍വോള്‍ ക്രമീകരണം പരിശോധിക്കുക."
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr ""
+"ദയവായി പട്ടികയില്‍ നിന്നും ഒരു എന്‍ട്രി തെരഞ്ഞെടുക്കുക അല്ലെങ്കില്‍, കൂടുതല്‍ താഴേക്ക് നീങ്ങി ഒരു "
+"വിനിമയതലം ചേര്‍ക്കുക."
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr ""
+"ദയവായി പട്ടികയില്‍ നിന്നും ഒരു എന്‍ട്രി തെരഞ്ഞെടുക്കുക അല്ലെങ്കില്‍, താഴേക്ക് നീങ്ങി ഒരു പോര്‍ട്ട്, "
+"പ്രോട്ടോക്കോള്‍ എന്നിവ നല്‍കുക."
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr "ക്രമീകരണം സൂക്ഷിക്കുക അല്ലെങ്കില്‍ സ്വതവേയുള്ള ക്രമീകരണം ലഭ്യ‌മാക്കുക എന്നത് തെരഞ്ഞെടുക്കുക"
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "ഫയര്‍വോളില്‍ നിങ്ങളുടെ നിപുണത ദയവായി വ്യ‌ക്തമാക്കുക."
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "പോര്‍ട്ടും സമ്പ്രദായവും"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "പോര്‍ട്ട്:"
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "സമ്പ്രദായത്തിന്റെ തരം:"
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "വീണ്ടും ലഭ്യ‌മാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "നിലവിലുള്ള ക്രമീകരണം വീണ്ടും ലഭ്യ‌മാക്കുക"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "എന്‍ട്രി നീക്കം ചെയ്യുക"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"നിങ്ങള്‍ക്ക് ഫയര്‍വോള്‍ ക്രമീകരണങ്ങള്‍ അറിയുകയും ഉപയോക്താക്കള്‍ക്ക് നിയമങ്ങള്‍ ചേര്‍ക്കുകയും ചെയ്യണമെങ്കില്‍ "
+"<i>\"വിദഗ്ദ്ധന്‍\"</i> എന്നത് തെരഞ്ഞെടുക്കുക. അല്ലെങ്കില്‍ <i>\"തുടക്കക്കാരന്‍\"</i> എന്നത് "
+"തെരഞ്ഞെടുക്കുക."
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "ഒരു ഫയല്‍ തെരഞ്ഞെടുക്കുക"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "സര്‍‍വീസ് ക്രമീകരണങ്ങള്‍"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "സഹായപ്രയോഗം ആരംഭിക്കുക"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "ക്രമീകരണത്തിനുള്ള സഹായപ്രയോഗം ആരംഭിക്കുക"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"നെറ്റ്‌വര്‍‍ക്ക് സാന്നിദ്ധ്യ‌മില്ലാത്ത വ്യവസ്ഥ\n"
+"നെറ്റ്‌വര്‍‍ക്ക് സാന്നിദ്ധ്യ‌മുള്ള വ്യവസ്ഥ"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "ചെയ്യേണ്ടവ"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"ശൃംഖലയിലെ കമ്പ്യൂട്ടറുകള്‍ക്ക് തമ്മില്‍ പിശക് അറിയിക്കുന്ന സന്ദേശങ്ങള്‍ അയയ്ക്കുന്നതിനാണ് പ്രധാനമായും "
+"ഇന്റര്‍നെറ്റ് കണ്ട്രോള്‍ മെസേജ് പ്രോട്ടോക്കോള്‍ (ICMP) ഉപയോഗിക്കുന്നത്. കൂടാതെ, വിവരങ്ങള്‍ "
+"ലഭ്യ‌മാക്കുവാന്‍ സഹായിക്കുന്ന പിങ് അപേക്ഷകള്‍ക്കും മറുപടികള്‍ക്കും ഇവ ഉപയോഗിക്കുന്നു."
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr ""
+"നിങ്ങളുടെ വ്യവസ്ഥക്ക് ആവശ്യ‌മുള്ള അടിസ്ഥാന ഫയര്‍വോള്‍ ക്രമീകരണങ്ങള്‍ സജ്ജമാക്കുന്നതിനായി ഈ പരിപാടി "
+"നിങ്ങളെ സഹായിക്കുന്നു."
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr ""
+"നിങ്ങളുടെ സിസ്റ്റമിന് ആവശ്യ‌മുള്ള വെടിപ്പായ ഒരു ഫയര്‍വോള്‍ ക്രമീകരിക്കുന്നതിനായി ഈ സഹായ പ്രയോഗം "
+"ഉപകരിക്കും."
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "ഉപയോക്താവ് നിര്‍വചിച്ച"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "ഉപയോക്താവിന്റെ പ്രാഗല്‍ഭ്യ‌‌ നിലവാരം"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "നിങ്ങള്‍ക്ക് ഏത് തരം വ്യവസ്ഥയാണുള്ളത്?"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "സഹായപ്രയോഗം"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr "പിന്നീട് നിങ്ങള്‍ക്ക് <i>ഐഛികങ്ങള്‍‍</i> എന്ന മെനുവില്‍ ക്രമീകരണങ്ങള്‍ മാറ്റുവാന്‍ സാധിക്കുന്നു."
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "സംബന്ധിച്ച് (_A)"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "ഫയല്‍ (_F)"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "സഹായം (_H)"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "ഐഛികങ്ങള്‍ (_O)"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "വിട്ടുപോകുക (_Q)"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "ക്രമീകരണത്തിനുള്ള സഹായപ്രയോഗം -തുടങ്ങുക"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "ക്രമീകരണം"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "ലേബലില്‍ മാറ്റം വരുത്തിയിരിക്കുന്നു"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr " വ്യവസ്ഥ-ക്രമീകരണം-ഫയര്‍വോള്‍"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr "അനി പീറ്റര്‍ <apeter@redhat.com>"

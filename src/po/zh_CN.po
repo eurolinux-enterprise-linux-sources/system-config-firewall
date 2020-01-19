@@ -1,0 +1,1752 @@
+# translation of system-config-firewall.master.po to Wei Liu
+# translation of zh_CN.po to
+# translation of zh_CN.po to
+# translation of zh_CN.po to
+# translation of zh_CN.po to
+# translation of zh_CN.po to
+# Simplifed Chinese Version of system-config-firewall.
+# Copyright (C) 2002 Red Hat, Inc.
+#
+#
+# Sarah Wang <sarahs@redhat.com>, 2003,2004, 2005.
+# Leah Liu <weliu@redhat.com>, 2005, 2006.
+# Leah Liu <lliu@redhat.com>, 2007.
+# Leah Liu <lliu@redhat.com>, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-firewall.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-21 16:12+0100\n"
+"PO-Revision-Date: 2010-06-30 13:16+1000\n"
+"Last-Translator: Leah Liu <lliu@redhat.com>\n"
+"Language-Team: Wei Liu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr "读取和修改防火墙设置需经过验证"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "防火墙验证"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "防火墙"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "防火墙配置"
+
+#: ../src/convert-config:38 ../src/lokkit:34
+#: ../src/system-config-firewall-tui:34
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"错误 - 您必须是根用户才能运行 %s。"
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "写入 %s 失败。"
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "转换 %s"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"这一程序是自由软件，你可以遵照自由软件基金会出版的GNU通用公共许可证条款来修改"
+"和重新发布这一程序。或者用许可证的第二版，或者（根据你的选 择）用任何更新的版"
+"本。\n"
+"\n"
+"发布这一程序的目的是希望它有用，但没有任何担保。甚至没有适合特定目的的隐含的"
+"担保。更详细的情况请参阅GNU通用公共许可证。你应该已经和程序一起收到一份GNU通"
+"用公共许可证的副本。如果还没有， 请参考 <http://www.gnu.org/licenses/>。"
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "配置防火墙规则"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"防火墙允许其他计算机访问您的系统上的选定的服务和帮助阻止未经认证的访问在上面"
+"这些选定项中。选择防火墙允许访问的服务"
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "本地"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "服务"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "端口/协议"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr "Conntrack 帮助程序"
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "端口"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "协议"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "接口"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "描述"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "选择"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "目的地址"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "目的端口"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "ICMP 类型"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "协议类型"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "类型"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "表格"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "文件名"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "可信的服务"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "（已修改）"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "启用防火墙。"
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "禁用防火墙。"
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "密钥："
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "默认："
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr "无效的端口或者端口范围‘%s’。"
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "请输入有效的端口号、服务名称或者范围。"
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "有一些未应用的修改，您确实想退出吗？"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "所有 %s 设备"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "未配置"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "错误"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "配置文件解析错误"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "忽略"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "忽略全部"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+msgid "The firewall configuration is not consistent."
+msgstr "防火墙配置不够坚固"
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"以下文件丢失或不可用:\n"
+"\t%s\n"
+"\n"
+"现在应用你的防火墙配置来修正这个问题"
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "旧的防火墙配置"
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr "你的防火墙配置是从一个旧版本中转换而来的。请验证该配置后应用它。"
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "服务器"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "初学者"
+
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr "点击“确定”按钮会覆盖现有的防火墙配置。您确定要这样做吗？"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr "请记得检查是否启用了 iptables 和 ip6tables 服务。"
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "配置失败"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "应答请求（ping）"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"这个信息是用来测试主机是否可以到达，大多数情况是使用 <i>ping</i> 工具。"
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "应答回应（pong）"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "这个信息是对 <i>Echo 请求</i> 的回答。"
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "目的地不可达到"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr "这个出错信息是由某个主机或者网关在目的地不可到达时生成的。"
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "参数问题"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr "在 IP 标题损坏（可能是缺少选项，或者长度不对）时会生成这个出错信息。"
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "重新定向"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr "这个出错信息让主机想另一个路由中发送数据包。"
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "路由广告"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr "这个信息是路由器用来周期性发布多点传送接口的 IP 地址。"
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "路由器请求"
+
+#: ../src/fw_icmp.py:48
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr "这个信息是由附加到多播链接主机用来请求 <i>路由器广告</i> 的主机使用"
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr "Source Quench"
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr "生成此信息是告诉主机减小发送数据包的幅度。"
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "超时"
+
+#: ../src/fw_icmp.py:55
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr "在数据包或者重组片段数据包超过生存时间时会生成这个出错信息。"
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "在重启和停止时卸载模块"
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr "要确保 snae 状态，需要在重启和停止防火墙时卸载内核防火墙模块。"
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "终止时保存"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"保存自上次防火墙启动后到停止前的激活防火墙配置及其修改。如果您需要为下次启动"
+"保留激活状态，进行这一步操作就可以了。"
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "重启时保存"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"保存自上次防火墙启动后到重启前的激活防火墙配置及其修改。如果您需要为下次启动"
+"保留激活状态，进行这一步操作就可以了。"
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "保存和恢复计数器"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr "<i>停止时保存</i>和<i>重启时保存</i>将额外保存规则以及链计数。"
+
+#: ../src/fw_iptables.py:57
+msgid "Numeric status output"
+msgstr "数字状态输出"
+
+#: ../src/fw_iptables.py:58
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr "为状态输出打印数字格式的地址和端口。"
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "详细程度"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"在状态输出结果中显示有关数据包数量、字节以及 <i>input-</i> 和 "
+"<i>outputdevice</i> 的信息。"
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "状态行数目"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "在状态输出结果中为每个规则显示计数器/数量。"
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "写入 selinux 配置失败。"
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "终止 %s 失败。"
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "启动 %s 失败。"
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "移除 %s 失败。"
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "端口范围 %s 不是唯一的。"
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr "%s 不是有效范围（起始端口 >= 终止端口）。"
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s 不是有效协议。"
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "无效的端口定义 %s。"
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "ipv6 没有奈特（nat）支持。"
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "无效服务‘%s’。"
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "选项 %(option)s：无效的 icmp 类型 '%(value)s'。"
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "无效的参数 %s"
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr "选项 %(option)s：无效的转发端口 '%(value)s': %(error)s。"
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "选项 %(option)s：无效的转发端口 '%(value)s'。"
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "无效接口 '%s'。"
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "启用防火墙（默认）"
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "禁用防火墙"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<module>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "启用一个 iptables 模块"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "禁用 iptables 模块"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<服务>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "为某个服务（比如 ssh）打开防火墙"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protocol>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "打开防火墙中的特定端口（例如：ssh:tcp）"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<interface>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "允许指定设备上的所有流量"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr "特定设备的伪装数据流。只适用于 IPv4。"
+
+#: ../src/fw_parser.py:189
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "向下兼容性，是 --enabled 的别名"
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<type>:][<table>:]<filename>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"在默认规则后指定防火墙中包含的定制规则文件。默认协议类型：ipv4，默认 "
+"iptable：filter。（示例：ipv4:filter:/etc/sysconfig/ipv4_filter_addon）"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"为接口将带协议的端口转发到另一个本地目的地端口（没有给出目的地地址）或者其它"
+"带可选目的地端口的目的地地址。只适用与 IPv4。"
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<icmp 类型>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr "阻断 ICMP 类型。默认设置时接受所有 ICMP 类型。"
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "禁用互联网协议安全性（IPsec）"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "禁用互联网打印协议（IPP）"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "禁用多点广播 DNS（mDNS）"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr "SELinux 选项（过时的）"
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+"使用这些选项时不会生成附加防火墙选项或者警告防火墙配置，只会配置 SELinux。"
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<mode>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "配置 SELinux 模式：%s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<type>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr "配置 SELinux 类型：通常是目标策略或者限制策略"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "没有此选项：%s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "%s 选项需要一个参数"
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "%(option)s 选项需要 %(count)s 参数"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "%s 选项没有数值"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "显示此帮助信息"
+
+#: ../src/fw_parser.py:381
+msgid "Run noninteractively; process only command-line arguments"
+msgstr "非交互式执行；只处理命令行参数"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "显示详细信息"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "显示版本号"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "配置防火墙但不激活新的配置"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "忽略实际设置"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"如果启用了防火墙，则以非交互方式更新，这还会重启防火墙，此时 -n 和 -f 选项将"
+"被忽略。"
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr "设置防火墙缺省类型:%s。 它会覆盖所有现存的配置。"
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "列出预定义的服务。"
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "列出支持的 icmp 类型。"
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "网络打印客户端（IPP）"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"互联网打印协议（IPP）是用于分散的打印。IPP 可通过 udp 提供获得某个打印机信息"
+"（例如：打印机容量和状态）以及控制打印作业的能力。如果您想要通过 cups 使用远"
+"程网络打印机，那么请不要禁用此选项。"
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "网络打印服务器（IPP）"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"互联网打印协议（IPP）是用于分散的打印。IPP 可通过 tcp 提供通过网络共享打印机"
+"的能力。如果您计划使用 cups 通过网络共享打印机，那么请启用此选项。"
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "多点广播 DNS（mDNS）"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"mDNS 提供在没有常规 DNS 服务器的小型网络中使用 DNS 编程界面、数据包格式和操作"
+"语意的能力。如果您计划使用 Aahi，请不要禁用此选项。"
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"互联网协议安全性（IPsec）将网络传输安全性直接整合入互联网协议（IP）。IPsec 同"
+"时为主机或者要发送到的网络提供加密数据和验证的方法。如果您希望使用 vpnc 服务"
+"器或者 FreeS／WAN，请不要禁用此选项。"
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"安全 Shell（SSH）是一种用于登录远程机器并在其中执行命令的协议，它提供安全加密"
+"的通讯。如果您计划通过 SSH 远程访问您位于防火墙后的机器，请启用此选项。要使此"
+"选项可用，您需要安装 openssh-server 软件包。"
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"HTTP 是用来提供网页的协议。如果您希望让您的 Web 服务器向公众开放，请启用此选"
+"项。要浏览本地页面或者开发网页则不需要此选项。"
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"FTP 是用来进行远程文件传输的协议。如果您希望将您的 FTP 服务器向公众开放，请启"
+"用此选项。要使此选项可用，您需要安装 vsftpd 软件包。"
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"NFS4 协议可用来通过 TCP 联网共享文件。要使该选项可用，您需要安装 NFS 工具并正"
+"确配置您的 NFS 服务器。 "
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "安全 WWW (HTTPS)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"HTTPS 是修订的 HTTP，可在网络安全性非常重要的时候用来提供网页。例如那些需要登"
+"录的网站，如网上购物或者网络邮件。如果要让此选项可用，您需要安装 httpd 软件"
+"包。"
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "邮件 (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"这个选项允许入站的 SMTP 邮件传递。如果您需要允许远程主机直接连接到您的机器来"
+"传递邮件，请启用此选项。如果您是使用 POP3 或者 IMAP 从您 ISP 的服务器收取邮"
+"件，或者您使用类似 fetchmail 的工具，则无需启用此选项。注意：一个配置不当的 "
+"SMTP 服务器可能导致远程机器使用您的服务器发送垃圾邮件。"
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "Samba 客户端"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"这个选项允许您访问 Windows 文件和共享网络的打印机。要使此选项可用，您需要安"
+"装 Samba-client 软件包。"
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "Samba"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"这个选项允许您访问并加入共享 Windows 文件和打印机的网络。要使此选项可用，您需"
+"要安装 Samba 软件包。"
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "DNS"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"域名系统（DNS）可用来提供和查询主机及域名。如果您计划提供域名服务（例如：使"
+"用 bind 提供），请启用此选项。"
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "通过 SSL 使用 IMAP"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"使用 SSL（IMAPs）进行互联网信息访问的协议允许本地客户端以安全方式访问远程服务"
+"器的电子邮件。如果您计划通过 SSL 服务（例如使用 dovecot）提供 IMAP，请启用此"
+"选项。"
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "通过 SSL 使用 POP-3"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"邮局协议 v3（POP3）是用来搜索来自用 TCP/IP 进行连接的远程服务器电子邮件的协"
+"议。如果您计划提供 POP3 服务（例如使用 dovecot），请启用此选项。"
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"拨号用户远程认证服务（RADIUS）是用于网络中的用户认证的协议，通常用于调制解调"
+"器、DSL或者无线用户认证。如果您计划提供 RADIUS 服务（例如使用 freeradius），"
+"请启用此选项。"
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"OpenVPN 一个 虚拟专用网 (VPN) 解决方案。它被用来在电脑之间创建加密的点对点隧"
+"道。如果你打算提供一个VPN服务，则开启这个选项"
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"普通文件传输协议（TFTP）是使用简单方法向远程机器传送文件或者从远程机器接受文"
+"件的协议。一般只在引导无磁盘工作站时使用，且还可在预引导执行环境（PXE）中传送"
+"数据。"
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "TFTP 客户端"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"这个选项允许您访问普通文件传输协议（TFTP）服务器。要使此选项可用，您需要安装 "
+"tftp 软件包。"
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "红帽群集套件"
+
+#: ../src/fw_services.py:174
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"这个选项允许您使用红帽群集套件。为 openais、ricci、dlm 而打开端口。要使此选项"
+"可用，您需要有红帽群集套件。"
+
+#: ../src/fw_services.py:179
+msgid "Amanda Backup Client"
+msgstr "Amanda 备份客户端"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"Amanda 备份客户端选项允许您连接到 Amanda 备份和归档服务器。您需要安装 amanda-"
+"client 软件包方可使此选项可用。"
+
+#: ../src/fw_services.py:186
+msgid "Bacula Client"
+msgstr "Bacula 客户端"
+
+#: ../src/fw_services.py:187
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"这个选项允许 Bacula 服务器连接到本地机器安排备份。您需要安装 bacula-client 软"
+"件包以便使用此选项。"
+
+#: ../src/fw_services.py:190
+msgid "Bacula"
+msgstr "Bacula"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+"Bacula 是网络备份解决方案。如果您要提供 Bacula 备份、文件和存储服务，则请启用"
+"此选项。"
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr "虚拟机管理"
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+"如果您要允许使用 SASL 认证和加密（数字 md5 密码或者 GSSAPI/Kerberos）进行远程"
+"虚拟机管理，请启用这个选项。要使用这个选项则需要 libvirtd 服务。"
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr "虚拟机管理（TLS）"
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+"如果您要允许使用 TLS 加密、x509 证书及可选 SASL 认证进行远程虚拟机管理请启用"
+"这个选项。要使用这个选项需要 libvirtd 服务。"
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"防火墙保护网络免遭未经授权的网络入侵。启用防火墙会阻塞所有进入的连接。禁用防"
+"火墙会允许所有连接，我们不推荐您这么做。"
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "防火墙："
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "启用"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "确定"
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "定制"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "取消"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"在这里您可以定义哪些服务是可信的，可信的服务可以被任意主机或者网络访问。"
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "其它端口"
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr "添加可让所有主机或者网络访问的附加端口或者端口范围。"
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "添加"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "编辑"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "删除"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "可信接口"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr "将所有系统都可以访问的接口标记为可信。"
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "伪装（Masquerading）"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "将接口标记为伪装。"
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "端口转发"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"添加条目来转发端口，可以是从本地系统的一个端口到另一个端口，也可以是从本地系"
+"统到另一个系统。转发到另一个系统只在接口是伪装的时候有用。端口转发只适用于 "
+"IPv4。"
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "ICMP 过滤器"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"在列表中标记应该被拒绝的 ICMP 类型。所有其它 ICMP 类型则被允许通过防火墙。默"
+"认设置是没有限制。"
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "定制规则"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"使用定制规则文件来为防火墙添加额外的规则。这些规则会添加到默认规则之后，这些"
+"文件必须是 iptables格式。"
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "转发"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "返回"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "关闭"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "警告"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"有效值：<port>[-<port>]，其中 port 可以是数字 [0..65535] 或者一个服务名称。"
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "协议‘%s’无效。"
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "有效值：tcp，udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "请输入端口或者端口范围和协议。"
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "端口／端口范围："
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "协议："
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr "请根据您的需要选择源和目的选项。"
+
+#: ../src/fw_tui.py:407
+msgid "Source (all needed)"
+msgstr "源（全部需要）"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "接口："
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "目的地（至少需要一个）"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "IP 地址:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "接口‘%s’无效。"
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "地址‘%s’无效。"
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr "请选择协议类型、防火墙列表以及包含规则的文件。"
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "防火墙表格"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "文件"
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "协议类型‘%s’无效。"
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "有效值： %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "防火墙列表‘%s’无效。"
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "文件‘%s’不存在。"
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "IPv6 没有奈特（nat）支持。"
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "是"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "否"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "按回车键继续。"
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "退出"
+
+#: ../src/lokkit:53
+msgid "Predefined Services with Default Environment:"
+msgstr "缺省环境的预定义服务："
+
+#: ../src/lokkit:62
+msgid "Supported icmp types:"
+msgstr "支持的 icmp 类型："
+
+#: ../src/system-config-firewall:41
+msgid "ERROR: FirewallD is active, please use firewall-config."
+msgstr ""
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>基本防火墙设置</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>配置</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>目标</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>信息</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>源</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>用户技能水平</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr "<b>你的当前配置是空的，所有数据流都会被阻止。</b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>防火墙配置向导</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"<i>“未联网的系统”</i>根本不需要防火墙。选择此选项将禁用防火墙。否则请选择"
+"<i>“联网的系统”</i>。"
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "添加条目"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "添加接口"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr "仅允许访问到必要的端口或端口范围"
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "仅允许必要的服务访问。"
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "应用"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "应用改动"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"初学者\n"
+"专家"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "配置服务设定"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "添加防火墙帮助模块来追踪连接"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "配置iptables和ip6tables的服务设定。"
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "自定义规则文件"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "桌面"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"桌面\n"
+"服务器"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "禁用"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "禁用防火墙"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "编辑条目"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "启用"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "启用防火墙"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "启用防火墙"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "专家"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "文件："
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "启动防火墙配置"
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "防火墙配置向导"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "防火墙表格："
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "转发到另一端口"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"按<i>确定</i>应用你的改动. 你不必重启防火墙,这些改动会在应用后立即生效。"
+
+#: ../src/system-config-firewall.glade.h:47
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr "如果你清除了<i>保留配置</i>复选框，那么现在的防火墙配置将被覆盖。"
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr "如果你允许本地转发，你必须指定一个端口。 这个端口不能和源端口相同。"
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr "如果您启用伪装，还会为您的 IPv4 网络启用 IP 转发功能。"
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"如果您需要对防火墙做进一步的设定，请手动修改您的配置，但请记住，因为这个工具"
+"无法载入您自定义的配置。如果您要使用这个工具，所有您的手动修改将会丢失。如果"
+"您不想丢失您的手动配置，请离开这个程序并且不要点'应用'按钮。"
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "保留配置"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "载入"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "载入默认（_D）配置"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "本地转发"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "确保在远端系统中打开目标端口。"
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"如果您要设置一台将您的本地网络连接到互联网的主机或者路由器，伪装"
+"（Masquerading）是很有用的。您的本地网络将不可见，且该主机是以单一地址的形式"
+"出现在互联网中。伪装仅用于 IPv4。"
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "向下移动条目"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "向上移动条目"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "没有配置"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr "仅当你信任该接口所在网络上所有用户的时候，才能把它标记为可信的。"
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"请回答下面各个配置步骤中的问题。配置向导将一直引导您回到主程序，并隐藏所有设"
+"置中非必需的配置选项。"
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr "请在应用定制规则后检查您的防火墙设置。"
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr "请使用向导或者从<i>选项</i>菜单中载入一个缺省配置。"
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr "请记住在使用防火墙配置前要先进行检查。"
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr "请从列表中选择一个条目或者在下拉条中输入端口。"
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr "请从列表中选择一个条目或者在下拉条中输入端口和协议。"
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr "请选择保留配置或者载入一个缺省配置。"
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "请指定您的防火墙技能。"
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "端口和协议"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "端口："
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "协议类型："
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "重新载入"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "重新载入当前配置"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "删除条目"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"如果您熟悉防火墙配置，并需要添加自定义的规则，请选择 <i>\"专家\"</i>。否则请"
+"选择 <i>\"初学者\"</i>。"
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "选择一个文件"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "服务设置"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "启动向导"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "启动防火墙配置向导"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"未联网的系统\n"
+"联网的系统"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "TODO"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"互联网控制报文协议（ICMP）主要用于在联网的计算机间发送出错信息，但也发送类似 "
+"ping 请求以及回应等信息。"
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr "本程序将帮助您为系统设置一个基本的防火墙。"
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr "这个向导将帮助您为系统设置一个干净的(clean)防火墙配置。"
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "用户定义的"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "用户技能水平"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "您的系统是什么样子的？"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "向导"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr "以后你可以在<i>选项</i>菜单中修改这些设置。"
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "关于（_A）"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "文件（_F）"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "帮助（_H）"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "选项（_O）"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "退出（_Q）"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "(_S)启动防火墙配置向导"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "配置"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "修改的标签"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr "system-config-firewall"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr ""
+"<emphasis role=\"bold\">译者：</emphasis>刘卫（Leah Liu） ［lliu@redhat."
+"com］，2007\n"
+"Rocky DD [rockyac@gmail.com],2008"

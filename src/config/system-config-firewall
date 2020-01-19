@@ -1,0 +1,4 @@
+#Configuration file for system-config-firewall
+#Copyright (c) 2007 Red Hat, Inc.  all rights reserved
+
+--enabled

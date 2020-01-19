@@ -1,0 +1,1944 @@
+# Catalan translations for system-config-firewall package.
+# Copyright (C) 2004, 2005, 2006 Red Hat, Inc.
+# This file is distributed under the same license as the
+#  system-config-firewall package.
+#
+# Angels Sala <m_angels15@yahoo.es>, 2004.
+# Josep Puigdemont i Casamajó <josep.puigdemont@gmail.com>, 2004, 2005, 2006.
+# Pedro <pedro.babelia@gmail.com>, 2005
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2009
+# Josep Sànchez Mesegué <papapep@gmx.com>, 2010
+#
+# This file is translated according to the glossary and style guide of
+#   Softcatalà. If you plan to modify this file, please read first the page
+#   of the Catalan translation team for the Fedora project at:
+#   http://www.softcatala.org/projectes/fedora/
+#   and contact the previous translator
+#
+# Aquest fitxer s'ha de traduir d'acord amb el recull de termes i la guia
+#   d'estil de Softcatalà. Si voleu modificar aquest fitxer, llegiu si
+#   us plau la pàgina de catalanització del projecte Fedora a:
+#   http://www.softcatala.org/projectes/fedora/
+#   i contacteu l'anterior traductor/a.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-firewall\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-21 16:12+0100\n"
+"PO-Revision-Date: 2010-09-15 15:05+0100\n"
+"Last-Translator: Robert Antoni Buj Gelonch <robert.buj@gmail.com>\n"
+"Language-Team: Catalan <fedora@softcatala.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Catalan\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr "Cal autenticació per llegir i modificar la configuració del tallafoc"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "Autorització del tallafoc"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "Tallafoc"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "Configureu el tallafoc"
+
+#: ../src/convert-config:38 ../src/lokkit:34
+#: ../src/system-config-firewall-tui:34
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"S'ha produït un error: heu de ser el superusuari per a executar %s."
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "No s'ha pogut escriure %s."
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "S'està convertint %s"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Aquest és programari lliure; podeu redistribuir-lo i/o modificar-lo\n"
+"sota els termes de la Llicència Pública General GNU tal i com ha estat\n"
+"publicada per la Free Software Foundation; sota la versió 2 de la\n"
+"Llicència o (si ho preferiu) sota una de més recent.\n"
+"\n"
+"Aquest programa es distribueix amb l'expectativa de que serà útil,\n"
+"però SENSE CAP GARANTIA; fins i tot la garantia implícita de\n"
+"COMERCIABILITAT o ADEQUACIÓ PER UN PROPÒSIT PARTICULAR. Vegeu la\n"
+"Llicència Pública General GNU per obtenir-ne més detalls.\n"
+"\n"
+"Hauríeu d'haver rebut una còpia de la Llicència Pública General GNU\n"
+"juntament amb aquest programa; en cas contrari, consulteu <http://www.gnu."
+"org/licenses/>."
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "Configura les regles del tallafoc"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"Podeu utilitzar un tallafoc per permetre l'accés a serveis concrets del "
+"vostre ordinador des d'altres ordinadors, i prevenir l'accés no autoritzat "
+"des de l'exterior. Seleccioneu a quins serveis voleu permetre l'accés a "
+"través del tallafoc."
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "local"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "Servei"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "Port/protocol"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr "Ajudant del conntrack"
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "Port"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "Protocol"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "Interfície"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "Descripció"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "Selecciona"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "A l'adreça"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "Al port"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "Tipus ICMP"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "Tipus de protocol"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "Tipus"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "Taula"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "Nom de fitxer"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "Serveis fiables"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "(modificat)"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "El tallafoc està habilitat."
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "El tallafoc està inhabilitat."
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "Clau:"
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "Predeterminat:"
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr "El port o rang '%s' no és vàlid."
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "Entreu un valor vàlid per al nombre de port, nom de servei o rang."
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "Hi ha canvis sense aplicar. Realment voleu sortir?"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "Tots els dispositius %s"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "Sense configurar"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "Error"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "Error d'anàlisi en el fitxer de configuració"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "Ignora"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "Ignora'ls tots"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+msgid "The firewall configuration is not consistent."
+msgstr "La configuració del tallafoc no és consistent."
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"Manquen els següents fitxers o no es poden fer servir:\n"
+"\t%s\n"
+"\n"
+"Apliqueu la vostra configuració del tallafoc ara per corregir el problema."
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "Configuració antiga del tallafoc."
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr ""
+"La vostra configuració del tallafoc es va convertir des d'una versió antiga. "
+"Verifiqueu la configuració i apliqueu-la."
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "Servidor"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "Principiant"
+
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr ""
+"En fer clic al botó «Sí» s'especificarà el nivell de seguretat del sistema i "
+"se substituirà qualsevol configuració existent del tallafoc. Esteu segur que "
+"voleu fer-ho?"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr ""
+"Recordeu comprovar si els serveis iptables i ip6tables estan habilitats."
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "Ha fallat la configuració"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "Petició d'eco (ping)"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"Aquest missatge es fa servir per provar si una adreça és disponible amb la "
+"utilitat <i>ping</i>."
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "Resposta d'eco (pong)"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "Aquest missatge és la resposta a una <i>petició d'eco</i>"
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "Destí inaccessible"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr ""
+"Aquest missatge d'error és generat per una màquina o una passarel·la si el "
+"destí no és disponible."
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "Problema amb el paràmetre"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr ""
+"Aquest missatge es genera si la capçalera IP és dolenta, bé perquè manca una "
+"opció o per la longitud."
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "Redirecciona"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr ""
+"Aquest missatge d'error informa a una adreça que ha d'enviar paquets en una "
+"altra ruta."
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "Anunci d'encaminador"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr ""
+"Aquest missatge és emprat pels encaminadors per anunciar periòdicament "
+"l'adreça IP d'una interfície multicast."
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "Sol·licitud d'encaminador"
+
+#: ../src/fw_icmp.py:48
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr ""
+"Aquest missatge és emprat per una màquina adjuntada a un enllaç multicast "
+"per demanar un <i>anunci d'encaminador</i>"
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr "Reducció de la velocitat de la font"
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr ""
+"Aquest missatge d'error és generat per indicar a una màquina per reduir la "
+"velocitat d'enviament de paquets."
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "S'ha superat el temps"
+
+#: ../src/fw_icmp.py:55
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr ""
+"Aquest missatge d'error es genera si el temps de vida d'un paquet o del "
+"paquet recompost s'ha excedit."
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "Descarrega els mòduls en reiniciar i aturar"
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr ""
+"Per disposar d'un estat correcte, els mòduls de tallafoc del nucli s'han de "
+"descarregar en reiniciar i aturar el tallafoc."
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "Desa en aturar"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Desa la configuració actual del tallafoc amb tots els canvis des del darrer "
+"inici abans d'aturar el tallafoc. Feu-ho si necessiteu conservar l'estat "
+"actiu per al següent inici."
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "Desa en reiniciar"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Desa la configuració actual del tallafoc amb tots els canvis des del darrer "
+"inici abans de reiniciar el tallafoc. Feu-ho si necessiteu conservar l'estat "
+"actiu per al següent inici."
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "Desa i reinicia el comptador"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr ""
+"<i>Desa en aturar</i> i <i>Desa en reiniciar</i> addicionalment desa el "
+"comptador de cadena i de regles."
+
+#: ../src/fw_iptables.py:57
+msgid "Numeric status output"
+msgstr "Sortida numérica de l'estat"
+
+#: ../src/fw_iptables.py:58
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr ""
+"Escriu les adreces i els ports en format numèric per a la sortida d'estat"
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "Estat complet"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"Escriu la informació quant al nombre de paquets i bytes a més dels "
+"dispositius d'<i>entrada</i> i <i>sortida</i> en la sortida de l'estat."
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "Números de línia a l'estat"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "Escriu un número/cmptador per a cada regla en la sortida d'estat."
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "No s'ha pogut escriure la configuració de selinux."
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "No s'ha pogut aturar %s."
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "No s'ha pogut iniciar %s."
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "No s'ha pogut suprimir %s."
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "rang de port %s no és ùnic."
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr "%s no és un rang vàlid (port inicial més gran que el port final)."
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s no és un protocol vàlid"
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "la definició del port %s no és vàlida"
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "ipv6 no disposa de nat."
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "el servi '%s' no és vàlid."
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "opció %(option)s: tipus icmp '%(value)s' invàlid."
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "argument %s invàlid"
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr "opció %(option)s: forward_port '%(value)s' invàlid: %(error)s."
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "opció %(option)s: forward_port '%(value)s' invàlid."
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "l'interfície '%s' no és vàlida."
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "Habilita el tallafoc (predeterminat)"
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "Inhabilita el tallafoc"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<mòdul>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "Habilita un mòdul d'iptables"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "Inhabilita un mòdul d'iptables"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<servei>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "Obre el tallafoc per a un servei (p.e. ssh)"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protocol>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "Obre determinats ports del tallafoc (p.e. ssh:tcp)"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<interfície>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "Permet tot el tràfic pels dispositius especificats"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr "Emmascara tot el tràfic del dispositiu especificat. Només amb IPv4"
+
+#: ../src/fw_parser.py:189
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "Compatibilitat amb versions anteriors, s'indica amb --enabled"
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<tipus>:][<taula>:]<nom de fitxer>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"Especifica un fitxer de regles personalitzades a incloure en el tallafoc. "
+"S'inclourà després de les regles predeterminades. El tipus predeterminat és "
+"ipv4, i la taula predeterminada és filter. (Exemple: ipv4:filter:/etc/"
+"sysconfig/ipv4_filter_addon)"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<interfície>:port=<port>:proto=<protocol>[:toport=<port destí>][:"
+"toaddr=<adreça destí>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"Reenvia el port amb protocol per a la interfície a un altre port local (no "
+"cal especificar l'adreça) o a una altra adreça destií amb un port destí "
+"opcional. Només amb IPv4."
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<tipus d'icmp>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr "Bloca aquest tipus d'ICMP. Per defecte se n'accepten tots els tipus."
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "Inhabilita el protocol de segur d'internet (IPsec)"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "Inhabilita el protocol d'impressió per internet (IPP)"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "Inhabilita el DNS multicast (mDNS)"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr "Opcions del SELinux (obsolet)"
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+"Emprar aquestes opcions sense configurar les opcions del tallafoc no crearà "
+"ni modificarà la configuració del tallafoc, només els configurarà el SELinux."
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<mode>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "Configura el mode del SELinux: %s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<tipus>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr "Configureu el tipus del SELinux"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "no existeix l'opció: %s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "L'opció %s necessita un argument"
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "L'opció %(option)s requereix %(count)s arguments"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "L'opció %s no requreix un valor"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "Mostra aquest missatge d'ajuda"
+
+#: ../src/fw_parser.py:381
+msgid "Run noninteractively; process only command-line arguments"
+msgstr ""
+"No ho executis interactivament, només processa arguments de la línia d'ordres"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "Dóna'n més detalls"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "Mostra la versió"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "Configura el tallafoc però no activis la nova configuració"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "Ignora la configuració actual"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"Actualitza el tallafoc no interactivament si el tallafoc està habilitat. Es "
+"reiniciarà el tallafoc. S'ignoraran les opcions -n i -f."
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr ""
+"Estableix el tipus predeterminat del tallafoc: %s. Això sobreescriu "
+"qualsevol configuració existent."
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "Llista els serveis predefinits."
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "Llista els tipus icmp disponibles."
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "Client d'impressió per xarxa (IPP)"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"El protocol d'impressió d'internet (IPP) s'empra per a impressió "
+"distribuïda. IPP (sobre udp) proporciona la capacitat d'obtenir informació "
+"quant a una impressora (p.e. capacitats i estat) i de controlar les tasques "
+"d'impressió. Si penseu emprar una impressora de xarxa mitjançant cups, no "
+"deshabiliteu aquesta opció."
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "Servidor d'impressió per xarxa (IPP)"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"El protocol d'impressió d'internet (IPP) s'empra per a impressió "
+"distribuïda. IPP (sobr tcp) proporciona la capacitat de compartir "
+"impressores per xarxa. Si penseu emprar una impressora de xarxa mitjançant "
+"cups, habiliteu aquesta opció."
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "DNS multicast (mDNS)"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"L'mDNS proporciona la capacitat d'emprar interfícies de programació DNS, "
+"formats de paquets i semàntiques d'operació en una xarxa petita sense un "
+"servidor DNS convencional. Si voleu emprar Avahi, no deshabiliteu aquesta "
+"opció."
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"El protocol segur d'Internet (IPsec) incorpora seguretat per a transmissions "
+"de xarxa en el protocol d'internet (IP) directament. L'IPsec proporciona "
+"mètodes per a xifrar dades i autenticar la màquina o xarxa on ho envia. Si "
+"voleu fer servir un servidor vpnc o FreeS/WAN, no deshabiliteu aquesta opció."
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"L'intèrpret d'ordres segur (SSH) és un protocol per entrar i executar ordres "
+"en ordinadors remots. Proporciona comunicacions segures amb xifratge. "
+"Habiliteu aquesta opció si voleu accedir remotament a aquest màquina amb SSH "
+"per una interfície amb tallafoc. Necessitareu instal·lar el paquet openssh-"
+"server per poder fer servir aquesta opció."
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"L'HTTP és el protocol utilitzat per a servir pàgines web. Habiliteu aquesta "
+"opció si voleu que el vostre servidor web estigui disponible públicament. No "
+"cal aquesta opció per mostrar pàgines localment o per a fer-ne "
+"desenvolupament. "
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"L'FTP és un protocol que es fa servir per transmetre fitxers. Habiliteu "
+"aquesta opció si voleu que es pugui accedir públicament al servidor FTP. "
+"Necessitareu el paquet vsftpd per poder fer servir aquesta opció."
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"Això us permet fer servir la versió 4 del protocol NFS per TCP per a "
+"compartir fitxers. Haureu de tenir les eines NFS intal·lades i configurar el "
+"servidor NFS degudament per poder fer servir aquesta opció."
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "WWW xifrat (HTTPS)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"L'HTTPS és un protocol derivat de l'HTTP, i que es fa servir com a servidor "
+"de llocs web on la seguretat és important, com és el cas d'un lloc web on "
+"s'hagi de registrar un usuari. Els gestors de correu i de contrasenyes en "
+"són exemples. No cal habilitar aquesta opció per a mostrar pàgines localment "
+"o per desenvolupar-ne. Necessitareu el paquet httpd per poder fer servir "
+"aquesta opció."
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "Correu (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"Aquesta opció habilita el lliurament de correu a través de SMTP. Habiliteu "
+"aquesta opció si heu de permetre l'accés d'ordinadors remots a aquesta "
+"màquina per lliurar-hi correu. No cal que habiliteu aquesta opció si "
+"recolliu el correu del servidor POP3 o IMAP del vostre proveïdor de serveis "
+"d'Internet, o si feu servir eines com ara fetchmail. Tingueu en compte que "
+"si el servidor SMTP no està degudament configurat, pot permetre que màquines "
+"remotes enviïn correu no desitjat a través d'aquesta màquina."
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "Client de samba"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"Us permet accedir i formar part de xarxes compartides d'impressores i de "
+"fitxers Windows. Heu d'instal·lar el paquet samba-client per poder fer "
+"servir aquesta opció."
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "Samba"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"Us permet accedir i formar part de xarxes compartides d'impressores i de "
+"fitxers Windows. Heu d'instal·lar el paquet samba per poder fer servir "
+"aquesta opció."
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "DNS"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"El sistema de noms de domini (DNS) es fa servir per a proporcionar i demanar "
+"noms de domini i de màquina. Habiliteu aquesta opció si voleu proporcionar "
+"un servei de noms de domini (p.e. amb el bind)."
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "IMAP sobre SSL"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"El protocol d'accés a missatges d'internet sobre SSL (IMAPs) permet que un "
+"client local accedeixi el correu electrònic en un servidor remot de manera "
+"segura. Si voleu proporcionar un servei d'IMAP sobre SSL (p.e. amb dovecot), "
+"habiliteu aquesta opció."
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "POP-3 sobre SSL"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"El protocol d'oficina de correus versió 3 (POP3) és un protocol per a "
+"obtenir correu electrònic des d'un servidor remot mitjançant una connexió "
+"TCP/IP. Habiliteu aquesta opció si voleu proporcionar un servei de POP3 (p."
+"e. amb dovecot)."
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"El servei d'usuari per a autenticació remota mitjançant trucada (RADIUS) és "
+"un protocol per a autenticació d'usuari sobre la xarxa. Es fa servir per a "
+"autenticació amb mòdem, DSL o conexió sense fil. Si voleu proporcionar un "
+"servei RADIUS (p.e. amb freeradius), habiliteu aquesta opció."
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"L'OpenVPN és una solució de xarxa privada virtual (VPN). S'usa per crear "
+"túnels xifrats punt a punt entre ordinadors. Si planegeu proporcionar un "
+"servei VPN, habiliteu aquesta opció."
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"El protocol trivial de transferència de fitxer (TFTP) és un protocol emprat "
+"per transferir fitxers cap a (i des de) màquines remotes de manera senzilla. "
+"Normalment es fa servir per arrencar estacions de treball sense disc i també "
+"per transferir dades en l'entorn de preexecució d'arrencada (PXE)."
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "Client de TFTP"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"Aquesta opció us permet accedir el protocol trivial de transferència de "
+"fitxers (TFTP). Us cal instal·lar el paquet tftp."
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "Red Hat Cluster Suite"
+
+#: ../src/fw_services.py:174
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"Aquesta opció us permet emprar Red Hat Cluster Suite. S'obriran ports per a "
+"openais, ricci i dlm. Necessiteu tenir instal·lat el Red Hat Cluster Suite "
+"per a poder fer servir aquesta opció."
+
+#: ../src/fw_services.py:179
+msgid "Amanda Backup Client"
+msgstr "Client de còpies de seguretat Amanda"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"L'opció del client de còpies de seguretat Amanda us permet connectar-vos al "
+"servidor de còpies de seguretat i arxiu Amanda. Us cal tenir instal·lat el "
+"paquet amanda-client per a poder fer servir aquesta opció."
+
+#: ../src/fw_services.py:186
+msgid "Bacula Client"
+msgstr "Client del Bacula"
+
+#: ../src/fw_services.py:187
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"Aquesta opció permet a un servidor Bacula connectar-se a la màquina local "
+"per a programar còpies de seguretat. Necessiteu tenir instal·lat el paquet "
+"bacula-client per a poder fer servir aquesta opció."
+
+#: ../src/fw_services.py:190
+msgid "Bacula"
+msgstr "Bacula"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+"Bacula és una solució de còpia de seguretat per xarxa. Habiliteu aquesta "
+"opció si voleu proporcionar els serveis de còpia de seguretat, "
+"emmagatzematge i fitxers de Bacula."
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr "Gestió de la màquina virtual"
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+"Habiliteu aquesta opció si voleu permetre la gestió remota de la màquina "
+"virtual amb autenticació SASL i xifrat (contrassenya digest-md5 o GSSAPI/"
+"Kerberos). Cal el servei libvirtd per a poder fer servir aquesta opció."
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr "Gestió de la màquina virtual (TLS)"
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+"Habiliteu aquesta opció si voleu permetre la gestió remota de la màquina "
+"virtual amb xifrat TLS, certificats x509 i autenticació SASL opcionial. Us "
+"cal el servei libvirtd per a poder fer servir aquesta opció."
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"Un tallafoc protegeix contra accessos no autoritzats des de la xarxa. Si "
+"s'habilita un tallafoc es blocaran totes les connexions entrants. Si "
+"s'inhabilita el tallafoc es permetran totes les connexions, i no es "
+"recomana. "
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "Tallafoc:"
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "Habilitat"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "D'acord"
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "Personalitza"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"Aquí podeu definir els serveis confiables. Això significa que aquests "
+"serveis seran accessibles per totes les màquines o xarxes."
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "Altres ports"
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr ""
+"Afegiu ports o rangs de ports, que podran ser accedits per totes les "
+"màquines o xarxes."
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "Afegeix"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "Edita"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "Suprimeix"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "Interfícies fiables"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr ""
+"Marqueu com a fiables totes les interfícies que haurien de tenir accés total "
+"al sistema."
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "Emmascarat"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "Marqueu les interfícies a emmascarar."
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "Reenviament de ports"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"Afegeix entrades per reenviar ports des d'un port a un altre en el sistema "
+"local o cap a un altre sistema. El reenviament a un altre sistema és útil "
+"només si la interfície està enmascarada. Només es pot fer amb IPv4."
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "Filtre ICMP"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"Marca els tipus d'ICMP a la llista, que haurien de ser rebutjats. Tots els "
+"altres tipus ICMP tenen permès passar pel tallafoc. Per defecte no hi ha "
+"límit."
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "Regles personalitzades"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"Empreu fitxers de regles personalitzades per a afegir regles addicionals al "
+"tallafoc. Les regles s'afegeixen després de les regles predeterminades. Els "
+"fitxers han de tenir el format emprat per l'iptables."
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "Endavant"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "Endarrere"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "Tanca"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "Avís"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"Valors vàlids: <port>[-<port>], on port és un número [0..65535] o un nom de "
+"servei."
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "El protocol '%s' no és vàlid."
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "Valors vàlids: tcp, udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "Entreu un valor vàlid per port o el rang de ports i el protocol."
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "Port/rang de ports:"
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "Protocol:"
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr ""
+"Seleccioneu les opcions d'origen i destí segons les vostres necessitats."
+
+#: ../src/fw_tui.py:407
+msgid "Source (all needed)"
+msgstr "Origen (es necessiten tots)"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "Interfície:"
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "Destí (almenys un)"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "Adreça IP:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "La interfície '%s' no és vàlida."
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "L'adreça '%s' no és vàlida."
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr ""
+"Seleccioneu el tipus de protocol, la taula del tallafoc i el fitxer amb les "
+"regles."
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "Taula del tallafoc"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "Fitxer"
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "El tipus de protocol '%s' no és vàlid."
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "Valors vàlids: %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "La taula del tallafoc '%s' no és vàlida."
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "El fitxer «%s» no existeix."
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "IPv6 no disposa de nat."
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "Sí"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "No"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "Premeu la tecla d'entrar per continuar."
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "Surt"
+
+#: ../src/lokkit:53
+msgid "Predefined Services with Default Environment:"
+msgstr "Serveis predefinits amb entorn predeterminat:"
+
+#: ../src/lokkit:62
+msgid "Supported icmp types:"
+msgstr "Tipus d'icmp disponibles:"
+
+#: ../src/system-config-firewall:41
+msgid "ERROR: FirewallD is active, please use firewall-config."
+msgstr ""
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>Configuració bàsica del tallafoc</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>Configuració</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>Destí</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>Informació</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>Origen</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>Nivell de nocions de l'usuari</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr "<b>La vostra configuració és buida, tot el trànsit serà blocat.</b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>Auxiliar de configuració del tallafoc</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"En un <i>«Sistema sense accés a xarxa»</i> s'inhabilitarà el tallafoc. En cas "
+"contrari, escolliu <i>«Sistema sense accés a xarxa»</i>."
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "Afegeix entrada"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "Afegeix una interfície"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr "Permet l'accés als ports o rangs de ports necessaris només."
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "Habilita l'accés als serveis necessaris només."
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "Aplica"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "Aplica els canvis"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"Principiant\n"
+"Expert"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "Configura el servei"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "Configureu els mòduls d'ajuda del tallafoc per a seguir la connexió"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "Configura els serveis iptables i ip6tables"
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "Fitxer de regles personalitzades"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "Escriptori"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"Escriptori\n"
+"Servei"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "Inhabilita"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "Inhabilita el tallafoc"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "Edita l'entrada"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "Habilita"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "Habilita el tallafoc"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "Habilita el tallafoc"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "Expert"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "Fitxer:"
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "Inici de la configuració del tallafoc"
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "Auxiliar de configuració del tallafoc"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "Taula del tallafoc:"
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "Reenvia a un altre port"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"Premeu <i>D'acord</i> per aplicar els canvis. No necessiteu reiniciar el "
+"tallafoc, els canvis seran efectius quan s'apliquin."
+
+#: ../src/system-config-firewall.glade.h:47
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr ""
+"Si no marqueu el botó <i>conserva la configuració</i>, se sobreescriurà la "
+"configuració actual."
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr ""
+"Si habiliteu el reenviament local, heu d'especificar un port. Aquest port ha "
+"de ser diferent del port origen."
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr ""
+"Si habiliteu l'emmascarat, també se us habilitarà el reenviament IP per a "
+"les vostres xarxes IPv4."
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"Si necessiteu configurar altres aspectes del tallafoc, modifiqueu la "
+"configuració a mà. Tingueu en compte que aquesta eina no us permet carregar "
+"la vostra configuració personalitzada. Si esteu fent servir aquesta eina, "
+"tots els canvis manuals es perdran. Si no voleu perdre la vostra "
+"configuració manual, sortiu d'aquest programa sense aplicar cap canvi."
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "Conserva la configuració"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "Carrega"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "Carrega la configuració _predeterminada"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "Reenviament local"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "Assegureu-vos que obriu el port destí en el sistema remot."
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"L'emmascarat us permet configurar un servidor o encaminador que connecta la "
+"vostra xarxa local a internet. La vostra xarxa local no serà visible i "
+"apareixerà com a un servidor a internet. Només ho podeu fer servir amb IPv4."
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "Baixa l'entrada"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "Puja l'entrada"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "Sense configuració"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr ""
+"Marqueu només una interfície si confieue en tots els que participin a "
+"aquella interfície de xarxa."
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"Responeu les preguntes en els següents passos de configuració. L'auxiliar us "
+"guiarà un altre cop a l'aplicació principal, i amagarà les opcions de "
+"configuració que innecessàries."
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr ""
+"Comproveu la vostra configuració del tallafoc després d'aplicar les regles "
+"personalitzades."
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr ""
+"Carregueu una configuració predeterminada del menú <i>Opcions</i> o useu "
+"l'auxiliar."
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr ""
+"Recordeu que heu de comprovar la vostra configuració del tallafoc abans de "
+"fer-la servir."
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr "Seleccioneu una entrada de la llista o entreu una interfície a sota."
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr ""
+"Seleccioneu una entrada de la llista o entreu un port i un protocol a sota."
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr ""
+"Heu de seleccionar entre conservar la configuració o carregar-ne una "
+"predeterminada."
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "Especifiqueu les vostres nocions quant als tallafocs:"
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "Port i protocol"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "Port:"
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "Tipus de protocol:"
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "Torna a carregar"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "Carrega la configuració actual"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "Suprimeix l'entrada"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"Seleccioneu <i>«Expert»</i> si esteu familiaritzats amb la configuració de "
+"tallafocs, o si necessiteu emprar regles personalitzades. Sino, escolliu "
+"<i>«Principiant»</i>."
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "Seleccioneu un fitxer"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "Paràmetres del servei"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "Inicia l'auxiliar"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "Inicia l'auxiliar de configuració"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"Sistema sense accés a xarxa\n"
+"Sistema amb accés a xarxa"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "Per fer"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"El protocol de missatges de control d'internet (ICMP) s'usa principlament "
+"per enviar missatges d'error entre ordinadors de xarxa, però també per a "
+"missatges d'informació com ara peticions de ping i respostes."
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr ""
+"Aquest programa us ajudarà a configurar un tallafoc bàsic per al vostre "
+"sistema."
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr ""
+"Aquest assistent us ajudarà a configurar una nova configuració del tallafoc "
+"per al vostre sistema."
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "Definit per l'usuari"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "Nivell de nocions de l'usuari"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "Quin tipus de sistema feu servir?"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "Auxiliar"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr "Podeu canviar la configuració en el menú <i>Opcions</i> més endavants."
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "_Quant a"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "_Fitxer"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "_Opcions"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "_Surt"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "Inicia l'au_xiliar de configuració"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "configuració"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "etiqueta modificada"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr "system-config-firewall"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr ""
+"Angels Sala <m_angels15@yahoo.es>\n"
+"Josep Puigdemont i Casamajó <josep.puigdemont@gmail.com>\n"
+"Pedro <pedro.babelia@gmail.com>\n"
+"Xavier Conde Rueda <xavi.conde@gmail.com>Josep Sànchez Mesegué <papapep@gmx."
+"com>"
+
+#~ msgid "Helper modules:"
+#~ msgstr "Mòduls d'ajuda:"
+
+#~ msgid "Disabled"
+#~ msgstr "Inhabilitat"
+
+#~ msgid "Firewall Configuration - Customize"
+#~ msgstr "Configuració del tallafoc - Personalitza"
+
+#~ msgid ""
+#~ "You can customize your firewall in two ways. First, you can select to "
+#~ "allow all traffic from certain network interfaces. Second, you can allow "
+#~ "certain protocols explicitly through the firewall. Specify additional "
+#~ "ports in the form 'service:protocol', such as 'imap:tcp'. "
+#~ msgstr ""
+#~ "El protocol segur d'Internet (IPsec) incorpora seguretat per a "
+#~ "transmissions de xarxa en el protocol d'internet (IP) directament. "
+#~ "L'IPsec proporciona mètodes per a xifrar dades i autenticar la màquina o "
+#~ "xarxa on ho envia. Si voleu fer servir un servidor vpnc o FreeS/WAN, "
+#~ "habiliteu aquesta opció."
+
+#~ msgid "Trusted Services:"
+#~ msgstr "Serveis fiables:"
+
+#~ msgid "Trusted Interfaces:"
+#~ msgstr "Dispositius fiables:"
+
+#~ msgid "Masquerading:"
+#~ msgstr "Emmascarat:"
+
+#~ msgid "Other Ports:"
+#~ msgstr "Altres ports:"
+
+#~ msgid "Custom Rules:"
+#~ msgstr "Regles personalitzades:"
+
+#~ msgid "Address Type:"
+#~ msgstr "Tipus d'adreça:"
+
+#~ msgid "(C) 2007 Red Hat, Inc."
+#~ msgstr "(C) 2007 Red Hat, Inc."
+
+#~ msgid "Add entries to forward ports from the local system to another one."
+#~ msgstr ""
+#~ "Afegeix entrades per a reenviar ports des del sistema local a un altre."
+
+#~ msgid "Add Port"
+#~ msgstr "Afegeix port"
+
+#~ msgid "Helper Modules"
+#~ msgstr "Mòduls d'ajuda"
+
+#~ msgid "To how many networks do you connect at a time?"
+#~ msgstr "A quantes xarxes us connecteu en aquests moments?"
+
+#~ msgid "<b>Network Settings</b>"
+#~ msgstr "<b>Configuració de la xarxa</b>"
+
+#~ msgid "_Wizard"
+#~ msgstr "Au_xiliar"
+
+#~ msgid "Default: disabled"
+#~ msgstr "Predeterminat: inhabilitat"

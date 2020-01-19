@@ -1,0 +1,1830 @@
+# translation of system-config-firewall.master.ta.po to Tamil
+# translation of ta.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Jayaradha N <jaya@pune.redhat.com>, 2004.
+# Jayaradha N <njaya@redhat.com>, 2004, 2005.
+# Felix <ifelix@redhat.com>, 2006, 2007.
+# I felix <ifelix@redhat.com>, 2007.
+# I. Felix <ifelix@redhat.com>, 2008, 2009.
+# Priyadharsini <priyafelix@gmail.com>, 2008, 2010.
+# I Felix <ifelix@redhat.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-firewall.master.ta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-21 16:12+0100\n"
+"PO-Revision-Date: 2010-08-16 15:39+0530\n"
+"Last-Translator: I Felix <ifelix@redhat.com>\n"
+"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
+"\n"
+"\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr "தேவையான ஃபயர்வால் அமைவுகளை வாசிக்க மற்றும் மாற்ற அனுமதி தேவை"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "ஃபயர்வால் அனுமதி"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "ஃபயர்வால்"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "ஃபயர்வால் கட்டமைப்பு"
+
+#: ../src/convert-config:38 ../src/lokkit:34
+#: ../src/system-config-firewall-tui:34
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"பிழை - %s ஐ இயக்க நீங்கள் ரூட்டாக இருக்க வேண்டும்."
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "%s ஐ எழுத முடியவில்லை."
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "%sஐ மாற்றுகிறது"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "ஃபயர்வால் விதிகளை கட்டமைக்கவும்"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"நீங்கள் ஃபயர்வாலை பயன்படுத்தி குறிப்பிட்ட சேவைகளை அணுகவும் உங்கள் கணினியிலிருந்து மற்ற "
+"கணினிகளுக்கு அங்கீகரிக்கப்படாத அணுகலை தவிர்க்கலாம்.  எந்த சேவை, ஏதேனும் இருந்தால், "
+"அனுமதி அளிக்கவும்."
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "உள்ளமை"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "சேவை"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "துறை/நெறிமுறை"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr "Conntrack உவியாளர்"
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "துறை"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "நெறிமுறை"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "முகப்பு"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "விவரம்"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "தேர்ந்தெடுத்தல்"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "முகவரிக்கு"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "துறைக்கு"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "ICMP வகை"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "நெறிமுறை வகை"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "வகை"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "அட்டவணை"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "கோப்பு பெயர்"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "நம்பப்பட்ட சேவைகள்"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "(மாற்றப்பட்டது)"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "ஃபயர்வால் செயல்படுத்தப்பட்டது."
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "ஃபயர்வால் செயல்நீக்கப்பட்டது."
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "குறியீடு:"
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "முன்னிருப்பு"
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr "துறை அல்லது துறை வரையறை '%s' சரியாக இல்லை."
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "சரியான ஒரு துறை எண், சேவை பெயர் அல்லது வரையறையைக் கொடுக்கவும்."
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "மாற்றங்கள் சேமிக்காமல் உள்ளது, நீங்கள் வெளியேற வேண்டுமா?"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "அனைத்து %s சாதனங்கள்"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "கட்டமைப்படவில்லை"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "பிழை"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "கட்டமைப்பு கோப்பில் இலக்கண சிக்கல்"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "தவிர்த்தல்"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "அனைத்தையும் தவிர்த்தல்"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+msgid "The firewall configuration is not consistent."
+msgstr "ஃபயர்வால் கட்டமைப்பு ஒழுங்காக இல்லை."
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"பின்வரும் கோப்புகள் விடுபட்டுள்ளது அல்லது பயன்படுத்த முடியாது:\n"
+"\t%s\n"
+"\n"
+"உங்கள் ஃபயர்வால் கட்டமைப்பை செயல்படுத்தி இப்போது இந்த சிக்கலை சரி செய்யவும்."
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "பழைய ஃபயர்வால் கட்டமைப்பு."
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr ""
+"உங்கள் ஃபயர்வால் கட்டமைப்பு ஒரு பழைய பதிப்பிலிருந்து மாற்றப்பட்டுள்ளது. எனவே கட்டமைப்பை "
+"சரிபார்த்து செயல்படுத்தவும்."
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "சேவையகம்"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "அனுபவமற்றவர்"
+
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr "'ஆம்' பொத்தான் இருக்கும் ஃபயர்வால் கட்டமைப்பை மேலாணை செய்யும். இதை செய்ய வேண்டுமா?"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr "சேவைகள் iptables மற்றும் ip6tables செயல்படுத்தப்பட்டால் அவற்றை சோதிக்கவும்."
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "கட்டமைப்பு செயலிழக்கப்பட்டது"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "எதிரொலி கோரிக்கை (பிங்)"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"இந்த செய்தி ஒரு புரவலன் பெரும்பாலும் <i>பிங்</i> வசதி சோதிக்கப்பட்டால் பயன்படுத்தப்படும்."
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "எதிரொலி பதில் (பாங்)"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "இந்த செய்தி <i>Echo Request</i>க்கு விடையாகும்."
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "இலக்கு தொடர்பில் இல்லை"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr ""
+"இந்தப் பிழை செய்தி இலக்கு இணைக்கப்படவில்லை எனில் ஒரு புரவலன் அல்லது கேட்வேயால் "
+"உருவாக்கப்படும்."
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "மதிப்புரு சிக்கல்"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr ""
+"இந்தப் பிழை செய்தி ஐபி தலைப்பு தவறாக இருந்தால் அல்லது விடுபட்ட விருப்பம் அல்லது தவறான "
+"எண்ணிக்கையில் இருந்தால் வருகிறது."
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "திருப்பப்படுகிறது"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr ""
+"இந்தப் பிழை செய்தி ஒரு புரவலன் வேறு பாதையில் பாக்கெட்டுகளை அனுப்புவதை தெரிவிக்கிறது."
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "ரௌட்டர் விளம்பரம்"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr "இந்த செய்தி ரௌட்டரால் ஐபி முகவரி பன்முக முகப்புகளில் தெரிவிக்க பயன்படுகிறது."
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "ரௌட்டர் வேண்டுதல்"
+
+#: ../src/fw_icmp.py:48
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr ""
+"இந்த செய்தி ஒரு புரவலனால் ஒரு பல் இணைப்பு ஒரு <i>ரௌட்டர் விளம்பரத்திற்கு</i> கோர "
+"பயன்படுகிறது"
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr "மூல குயின்ஞ்ச்"
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr ""
+"இந்தப் பிழை செய்தி இலக்கு இணைக்கப்படவில்லை எனில் ஒரு புரவலன் அல்லது கேட்வேயால் "
+"உருவாக்கப்படும்."
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "நேரம் முடிந்தது"
+
+#: ../src/fw_icmp.py:55
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr ""
+"இந்தப் பிழை செய்தி பாக்கெட் கூடும் போது அல்லது ஒருங்கிணைக்கப்பட்ட பாக்கெட்டுகளை மறு "
+"ஒழுங்குபடுத்தும் போது ஒரு வருகிறது."
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "மறுதுவக்கம் மற்றும் நிறுத்தத்தில் தொகுதிகளை இறக்கவும்"
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr ""
+"ஒரு சேன் நிலைக்கு, கர்னல் ஃபயர்வால் தொகுதிகள் மறுதுவக்கும் போது அல்லது நிறுத்தப்படும் "
+"போது இறக்கப்பட வேண்டும்."
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "நிறுத்தலில் சேமித்தல்"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"செயலிலுள்ள ஃபயர்வால் கட்டமைப்பை அனைத்து மாற்றங்களுடன் ஃபயர்வாலை நிறுத்துவதற்கு முன் "
+"சேமிக்கவும். நீங்கள் செயலுள்ள நிலையை அடுத்த துவக்கத்திற்கு சேமிக்க வேண்டுமென்றால் மட்டுமே "
+"செய்யவும்."
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "மறுதுவக்கத்தில் சேமித்தல்"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"செயலிலுள்ள ஃபயர்வால் கட்டமைப்பை அனைத்து மாற்றங்களுடன் ஃபயர்வாலை மறுதுவக்குவதற்கு முன் "
+"சேமிக்கவும். நீங்கள் செயலுள்ள நிலையை அடுத்த துவக்கத்திற்கு சேமிக்க வேண்டுமென்றால் மட்டுமே "
+"செய்யவும்."
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "எண்ணிக்கையை சேமித்து மறுசேமிக்கவும்"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr ""
+"<i>நிறுத்தத்தில் சேமித்தல்</i> மற்றும் <i>மறுதுவக்கத்தில் சேமித்தல்</i> கூடுதல் சேமிப்பு "
+"விதி மற்றும் செயின் கவுண்டர்."
+
+#: ../src/fw_iptables.py:57
+msgid "Numeric status output"
+msgstr "எண் நிலை வெளிப்பாடு"
+
+#: ../src/fw_iptables.py:58
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr "முகவரிகள் மற்றும் துறைகளை எண் வடிவில் நிலை வெளிப்பாட்டுக்கு அச்சிடவும்."
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "Verbose நிலை"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"பாக்கெட்டுகள் மற்றும் பைட்களின் எண்ணிக்கையின் அச்சு விவரம் மற்றும் நிலை வெளிப்பாட்டில் "
+"<i>input-</i> மற்றும் <i>outputdevice</i>."
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "நிலை வரி எண்கள்"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "நிலை வெளிப்பாட்டில் ஒவ்வொரு விதிக்கும் கவுண்டர்/எண்ணை அச்சிடவும்."
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "selinux கட்டமைப்பை எழுத முடியவில்லை."
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "%s ஐ நிறுத்த முடியவில்லை."
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "%s ஐ துவக்க முடியவில்லை."
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "%s ஐ நீக்க முடியவில்லை."
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "துறை வரையறை %s தனித்தன்மையாக இல்லை."
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr "%s ஒரு சரியான வரையறை இல்லை (start port >= end port)."
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s ஒரு சரியான நெறிமுறை அல்ல."
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "தவறான துறை விளக்கம் %s."
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "ipv6 nat துணையில்லை."
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "தவறான சேவை '%s'."
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "விருப்பம் %(option)s: தவறான icmp வகை '%(value)s'."
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "தவறான அளவுரு %s"
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr "விருப்பம் %(option)s: தவறான forward_port '%(value)s': %(error)s."
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "விருப்பம் %(option)s: தவறான forward_port '%(value)s'."
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "தவறான முகப்பு '%s'."
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "ஃபயர்வாலை செயல்படுத்தவும் (முன்னிருப்பாக)"
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "ஃபயர்வாலை செயல் நீக்கவும்"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<module>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "ஒரு iptables தொகுதியை செயல்படுத்தவும்"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "iptables தொகுதியை செயல்நீக்கம் செய்யவும்"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<service>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "ஃபயர்வாலை ஒரு சேவைக்கு  திறக்கவும் (எ.கா, ssh)"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protocol>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "ஃபயர்வாலில் குறிப்பிட்ட துறைகளை திறக்கவும் (எ.கா, ssh:tcp)"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<interface>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "குறிப்பிடப்பட்ட சாதனத்தில் அனைத்து போக்குவரத்தையும் அனுமதிக்கவும்"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr "குறிப்பிடப்பட்ட சாதனத்திலிருந்து Masquerades போக்குவரத்து. இது IPv4 மட்டுமே."
+
+#: ../src/fw_parser.py:189
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "முந்தைய பதிப்பில் வேலை செய்யும், வசதி --செயல்படுத்தப்பட்டது."
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<type>:][<table>:]<filename>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"முன்னிருப்பு விதிகளுக்கு பின், ஒரு தனிபயன் விதிகள் கோப்பினை ஃபயர்வாலில் குறிப்பிடவும். "
+"முன்னிருப்பு நெறிமுறை வகை: ipv4, default table: filter. (எடுத்துக்காட்டு: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"நெறிமுறையுடன் துறையை முன்னனுப்பவது மற்ற உள்ளமை இலக்கு துறைக்கு (இலக்கு முகவரி "
+"கொடுக்கப்படவில்லை) அல்லது வேறு இலக்கு முகவரிக்கு விருப்பமான இலக்கு துறையாக "
+"முன்னனுப்பும். இது IPv4 மட்டும்."
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<icmp type>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr "இந்த ICMP வகையை தடுக்கவும். முன்னிருப்பு அனைத்து ICMP வகைகளையும் ஏற்கும்."
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "Internet Protocol Security (IPsec)ஐ செயல்நீக்கவும்"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "Internet Printing Protocol (IPP)ஐ செயல்நீக்கவும்"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "Disable Multicast DNS (mDNS)"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr "SELinux விருப்பங்கள் (நீக்கப்பட்டது)"
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+"கூடுதல் ஃபயர்வால் விருப்பங்கள் இல்லாமல் இந்த விருப்பங்களை பயன்படுத்துவது ஃபயர்வால் கட்டமைப்பை "
+"உருவாக்காது அல்லது மாற்றாது, SELinux மட்டுமே கட்டமைக்கப்படும்."
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<mode>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "SELinux முறையை கட்டமைத்தல்: %s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<type>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr "SELinux வகை கட்டமைத்தல்: இயல்பான இலக்கிடப்பட்டது அல்லது கடுமையான கொள்கை"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "இதுபோல விருப்பம் இல்லை: %s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "%s விருப்பத்திற்கு ஒரு அளவுரு தேவைப்படுகிறது"
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "%(option)s விருப்பத்திற்கு %(count)s அளவுருக்கள் தேவை"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "%s விருப்பம் ஒரு மதிப்பை எடுக்கவில்லை"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "இந்த உதவி செய்தியை காட்டவும்"
+
+#: ../src/fw_parser.py:381
+msgid "Run noninteractively; process only command-line arguments"
+msgstr "இடைசெயல் இல்லாமல் இயக்கவும்; கட்டளை வரி அளவுருக்களை மட்டும் செயல்படுத்தவும்"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "அதிகமான சொற்களோடு இருத்தல்"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "பதிப்பை காட்டுதல்"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "ஃபயர்வாலை கட்டமைக்கவும் ஆனால் புதிய கட்டமைப்பை செயல்படுத்த வேண்டாம்"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "இயல்பான அமைவுகளை தவிர்த்தல்"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"ஃபயர்வால் செயல்படுத்தப்பட்டால் அதனை மேம்படுத்தவும். இதுவும் ஃபயர்வாலை மீண்டும் துவக்கும். -n "
+"மற்றும் -f விருப்பங்கள் தவிர்க்கப்படும்."
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr ""
+"முன்னிருப்பு ஃபயர்வால் வகையை அமைத்தல்: %s. இது ஏற்கனவே இருக்கும் கட்டமைப்பை "
+"மேலெழுதுகிறது."
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "முன் வரையறுக்கப்பட்ட சேவைகளின் பட்டியல்."
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "துணைபுரியும் icmp வகைகளின் பட்டியல்."
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "பிணைய அச்சடிக்கும் கிளையன் (IPP)"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"Internet Printing Protocol (IPP) அச்சடி விநியோகிக்கப்படுகிறது. IPP (udpஇல் மேல்) "
+"ஒரு அச்சடிப்பி பற்றிய தகவலை கொடுக்கிறது (எ.கா. கொள்திறன் மற்றும் நிலை) மற்றும் "
+"அச்சடிப்பி பணிகளை கட்டுப்படுத்துகிறது. நீங்கள் cups வழியாக தொலை பிணைய அச்சடிப்பியை "
+"பயன்படுத்த, இந்த விருப்பத்தை செயல்நீக்கம் செய்யவேண்டாம்."
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "பிணைய அச்சடிக்கும் கிளையன்  (IPP)"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"Internet Printing Protocol (IPP) அச்சடி விநியோகிக்கப்படுகிறது. IPP (udpஇல் மேல்) "
+"ஒரு அச்சடிப்பி பற்றிய தகவலை கொடுக்கிறது (எ.கா. கொள்திறன் மற்றும் நிலை) மற்றும் "
+"அச்சடிப்பி பணிகளை கட்டுப்படுத்துகிறது. நீங்கள் cups வழியாக தொலை பிணைய அச்சடிப்பியை "
+"பயன்படுத்த, இந்த விருப்பத்தை செயல்படுத்தவும்."
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "Multicast DNS (mDNS)"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"mDNS DNS நிரலாக்க முகப்புகளை பாக்கெட் வடிவங்கள் மற்றும் இயங்கும் சிமெண்டிக் போன்றவற்றை DNS "
+"சேவையகம் இல்லாமல் பயன்படுத்த திறனை அளிக்கிறது, நீங்கள் Avahiஐ பயன்படுத்த திட்டமிட்டால், "
+"இந்த விருப்பத்தை செயல்நீக்க வேண்டாம்."
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"Internet Protocol Security (IPsec) பிணைய பரிமாற்றங்களுக்கு நேரடியாக Internet "
+"Protocol (IP) செயல்படுத்தப்பட்டுள்ளது. IPsec மறைகுறியாக்க தரவு மற்றும் அங்கீகாரத்தை "
+"புரவலன் அல்லது பிணையத்திற்கு அனுப்புகிறது. நீங்கள் ஒரு vpnc சேவையகம் அல்லது FreeS/WANஐ "
+"பயன்படுத்தினால், இந்த விருப்பத்தை செயல்நீக்க வேண்டாம்."
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"Secure Shell (SSH) தொலை கணினியில் கட்டளைகளை இயக்க பயன்படும் நெறிமுறை இது தகவலை "
+"குறிமுறையாக்கி பாதுகாப்பான பரிமாற்றத்துக்கு வழிவகுக்கும். நீங்கள் உங்கள் கணினியை "
+"தொலைவிலிருந்து SSH வழியாக இயக்க விரும்பினால் இந்த தேர்வை செயல்படுத்தவும். இதற்கு "
+"openssh-server தொகுப்பு நிறுவப்பட்டிருக்க வேண்டும்."
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"HTTP நெறிமுறை இணைய பக்கங்களுக்கான சேவைக்குப் பயன்படுகிறது. அனைவரும் பயன்படுத்தும் இணைய "
+"சேவைகளை செயல்படுத்த விரும்பினால் இந்த தேர்வை பயன்படுத்தவும். இணைய பக்கங்களை உங்கள் "
+"கணினியில் மட்டும் பார்க்க விரும்பினால் இந்த தேர்வு அவசியமில்லை."
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"FTP நெறிமுறை தொலை கோப்பு நகர்வுக்குப் பயன்படும். உங்கள் FTP சேவகனை அனைவரும் பயன்படுத்த "
+"விரும்பினால் இந்த தேர்வை செயல்படுத்து. இதற்கு vsftpd தொகுப்பு உங்கள் கணினியில் "
+"நிறுத்தப்பட்டிருந்தால் மிகவும் பயனுள்ளதாக இருக்கும்."
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"இது உங்களை NFS4 நெறிமுறை வழியாக TCP கோப்புகளை பகிர அனுமதிக்கிறது.  நீங்கள் இந்த "
+"விருப்பத்தை பயனுள்ளதாக்க NFS கருவிகளை நிறுவி சரியாக உங்கள் NFS சேவையகத்தை கட்டமைக்க "
+"வேண்டும்."
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "பாதுகாப்பான WWW (HTTP)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"HTTPS மாற்றப்பட்ட HTTP பாதுகாப்பு முக்கியம் என்றால் இணைய பக்கங்களுக்கு உதவும். "
+"எடுத்துக்காட்டுப் பதிவு போன்ற சேமிப்பு அல்லது இணைய அஞ்சல் தேவைப்படும் இணைய தளங்கள்.  இந்த "
+"விருப்பங்கள் பக்கங்களை இருப்பிடத்திலே பார்க்கவும்அல்லது இணைய பக்கங்களை உருவாக்கவும் "
+"தேவைப்படுவதில்லை.  நீங்கள் இந்த விருப்பம் பயனுள்ளதாக இருக்க httpd தொகுப்பினை "
+"நிறுவியிருக்க வேண்டும்."
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "அஞ்சல் (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"இவை உள்வரும் SMTP அஞ்சலை அனுமதிக்கும். நீங்கள் உங்கள் தொலைகணினியிலிருந்து நேரடியாக "
+"மின்னஞ்சல்களை பெற இந்த தேர்வை பயன்படுத்தலாம். உங்கள் மின்னஞ்சல்களை ISP இன் சேவையகத்தின் POP3 "
+"அல்லது IMAP மூலம் பெறும் போது அல்லது fetchmail கருவிகள் பயன்படுத்தும் போது இந்த வசதி "
+"அவசியமில்லை. தவறாக அமைக்கப்பட்ட SMTP உங்கள் கணினியை மற்ற தொலைக்கணினிகள் அணுகி தேவையற்ற "
+"அஞ்சல்களை உங்கள் கணினி பயன்படுத்த அனுப்பும்."
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "சாம்பா கிளையன்"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"இந்த விருப்பம் உங்களை விண்டோஸ் கோப்பு மற்றும் அச்சடிப்பி பகிர்வு பிணையங்களை அணுகவும் பங்கு "
+"பெறவும் அனுமதிக்கிறது. இந்த விருப்பத்தைப் பயனுள்ளதாக்க நீங்கள் சம்பா-கிளையன் தொகுப்பு "
+"நிறுவ வேண்டும்."
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "சம்பா"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"இந்த விருப்பம் உங்களை விண்டோஸ் கோப்பு மற்றும் அச்சடிப்பி பகிர்வு பிணையங்களை அணுகவும் பங்கு "
+"பெறவும் அனுமதிக்கிறது. இந்த விருப்பத்தைப் பயனுள்ளதாக்க நீங்கள் Samba தொகுப்பு நிறுவ "
+"வேண்டும்."
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "DNS"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"Domain Name System (DNS) புரவலன் மற்றும் செயற்கள பெயர்களை கொடுக்க மற்றும் கோர "
+"பயன்படுகிறது. இந்த விருப்பத்தை செயல்படுத்தி, ஒரு செயற்கள பெயர் சேவையை கொடுக்கலாம் (எ."
+"கா. bind உடன்)."
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "IMAPஇல் SSL"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"Internet Message Access Protocol over SSL (IMAPs) ஒரு உள்ளமை கிளையனை மின்னஞ்சலை "
+"தொலை சேவையகத்தில் பாதுகாப்பாக அணுக அனுமதிக்கிறது. நாங்கள் ஒரு IMAP ஐ SSL சேவையில் "
+"கொடுக்க விரும்பினால் (எ.கா. dovecotஉடன்), இந்த விருப்பத்தை செயல்படுத்தவும்."
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "SSL இல் POP-3"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"Post Office Protocol பதிப்பு 3 (POP3) என்பது ஒரு மின்னஞ்சல் பெறும் ஒரு தொலை "
+"சேவையகம் ஒரு TCP/IP இணைப்பில் உள்ளது. ஒரு POP3 சேவையை வழங்க நினைத்தால் இந்த "
+"விருப்பத்தை செயல்படுத்தவும் (எ.கா dovecot உடன்)."
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"Remote Authentication Dial In User Service (RADIUS) என்பது பயனர் அங்கீகாரத்தின் "
+"மேலே உள்ள நெறிமுறையாகும். இது பெரும்பாலும் மோடம், DSL அல்லது வயர்லெஸ் பயனர் "
+"அங்கீகாரத்தில் பயன்படுகிறது. நீங்கள் ஒரு RADIUS சேவையை வழங்க இருந்தால் (எ.கா "
+"freeradiusஉடன்), இந்த விருப்பத்தை செயல்படுத்தவும்."
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"OpenVPN என்பது ஒரு மெய்நிகர் தனிப்பட்ட பிணைய (VPN) தீர்வு. இது ஒரு மறைகுறியாக்கப்பட்ட "
+"பாயிண்ட்டு பாயிண்ட் டனல்களை கணினிகளுக்கிடையே உருவாக்குகிறது. நீங்கள் ஒரு VPN சேவையை "
+"வழங்க நினைத்தால் இந்த விருப்பத்தை செயல்படுத்தவும்."
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"Trivial File Transfer Protocol (TFTP) நெறிமுறை எளிதான வழியில் ஒரு தொலை "
+"கணினியிலிருந்து கோப்புகளை இடமாற்ற பயன்படுகிறது. Preboot eXecution Environment "
+"(PXE)தரவுகளை இடமாற்ற மற்றும் பூட்டிங் வட்டில்லாத பணிநிலையத்தை சாதாரணமாக "
+"பயன்படுத்துகிறது."
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "TFTP க்ளையன்ட்"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"இந்த விருப்ப சேவையகங்கள் உங்களை Trivial File Transfer Protocol (TFTP) அணுக "
+"அனுமதிக்கிறது. tftp தொகுப்பை நிறுவுவதற்கு இந்த விருப்பம் தேவைப்படுகிறது."
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "Red Hat க்ளஸ்டர் தொகுப்பு"
+
+#: ../src/fw_services.py:174
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"இந்த விருப்பம் உங்களை Red Hat Cluster Suiteஐ பயன்படுத்த அனுமதிக்கிறது.openais, "
+"ricci, dlm மற்றும் cssd போன்றவற்றிற்காக துறைகள் திறக்கின்றன. இந்த விருப்பத்தை "
+"பயன்படுத்துவதற்கு Red Hat Cluster Suite உங்களுக்கு தேவைப்படுகிறது."
+
+#: ../src/fw_services.py:179
+msgid "Amanda Backup Client"
+msgstr "Amanda பின்சேமிப்பு கிளையன்"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"Amanda பின்சேமிப்பு கிளையன் Amanda பின்சேமிப்பு மற்றும் காப்பு சேவையகத்தில் இணைக்க "
+"அனுமதிக்கிறது. இந்த விருப்பத்தைப் பயனுள்ளதாக்க நீங்கள் amanda-clientன் தொகுப்பு நிறுவ "
+"வேண்டும்."
+
+#: ../src/fw_services.py:186
+msgid "Bacula Client"
+msgstr "பேக்குலா கிளையன்"
+
+#: ../src/fw_services.py:187
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"இந்த விருப்பம் ஒரு பேக்குலா சேவையகத்தை உள்ளமை கணினியுடன் திட்ட பின்சேமிப்புகள் செய்ய "
+"அனுமதிக்கிறது. இந்த விருப்பத்தைப் பயனுள்ளதாக்க நீங்கள் பேக்குலா-கிளையன் தொகுப்பு நிறுவ "
+"வேண்டும்."
+
+#: ../src/fw_services.py:190
+msgid "Bacula"
+msgstr "பேக்குலா"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+"பாகுலா ஒரு பிணைய பின்சேமிப்பு தீர்வு. பாகுலா பின்சேமிப்புர கோப்பு சேமிப்பக சேவைகளை "
+"வழங்க திட்டமிட்டால், இந்த விருப்பத்தை செயல்படுத்தவும்."
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr "மெய்நிகர் கணினி மேலாண்மை"
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+"நீங்கள் தொலை மெய்நிகர் கணினி மேலாண்மையை SASL அங்கீகாரம் மற்றும் மெய்நிகராக்கத்துடன் "
+"அனுமதிக்க இந்த விருப்பத்தை செயல்படுத்தவும் (digest-md5 கடவுச்சொற்கள் அல்லது GSSAPI/"
+"Kerberos). libvirtd இந்த விருப்பத்திற்கு தேவைப்படுகிறது."
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr "மெய்நிகர் கணினி மேலாண்மை (TLS)"
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+"நீங்கள் தொலை மெய்நிகர் கணினி மேலாண்மையை  TLS மறைகுறியாக்கம், x509 சான்றிதழ்கள், விருப்ப "
+"SASL அங்கீகாரம் ஆகியவற்றுடன் அனுமதிக்க இந்த விருப்பத்தை செயல்படுத்தவும். libvirtd இந்த "
+"விருப்பத்திற்கு தேவைப்படுகிறது."
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"தீச்சுவர் அனுமதியில்லாத கணிணிகள் உங்கள் கணிணியை தொடர்புகொள்வதை தடுக்கும். தீச்சுவர் தீச்சுவர் "
+"அமைப்பை செயல்நீக்குவதால் உங்கள் கணிணியை மற்ற கணிணிகள் தொடர்புகொள்ள முடியும்."
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "ஃபயர்வால்:"
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "செயல்படுத்தப்பட்டது"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "சரி"
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "தனிப்பயனாக்குதல்"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "ரத்து"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"இங்கு நீங்கள் எந்த சேவைகளை நம்பலாம் என குறிப்பிடலாம். நம்பப்பட்ட சேவைகள் அனைத்து புரவலன்கள் "
+"மற்றும் பிணையத்திலிருந்து அணுகக்கூடியது."
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "மற்ற துறைகள்"
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr ""
+"கூடுதல் துறைகள் அல்லது துறை வரையறைகளை சேர்க்கவும், இது அனைத்து புரவலன்கள் அல்லது "
+"பிணையங்களை அணுகுகிறது."
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "சேர்"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "திருத்து"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "நீக்கு"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "நம்பப்பட்ட முகப்புகள்"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr ""
+"கணினியுடன் முழு அணுகல் செய்யும் அனைத்து முகப்புகளையும் நம்பகமானது என குறிக்கவும்."
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "Masquerading"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "முகப்புகளை masquerad செய்யப்பட்டதா என குறிக்கவும்."
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "துறை முன்னனுப்புதல்"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"உள்ளீடுகளை சேர்க்க ஒரு துறையிலிருந்து மற்றொன்றிற்கு உள்ளமை கணினி அல்லது வேறு "
+"கணினியிலிருந்த சேர்க்கவும். வேறு கணினியை முன்னனுப்புவது முகப்பு சரியாக இருந்தால் "
+"மட்டுமே பயனாக இருக்கும். துறை முன்னனுப்புதல் IPv4 இல் மட்டும்."
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "ICMP வடிப்பி"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"பட்டியலில் ICMP வகைகளை குறிக்கவும், அது நிராகரிக்கப்பட வேண்டும். மற்ற அனைத்து ICMP "
+"வகைகளும் ஃபயர்வாலின் வழியாக செல்லும். முன்னிருப்புக்கு வரம்பு இல்லை."
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "தனிப்பயன் விதிகள்"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"தனிபயன் விதிகள் கோப்புகளை பயன்படுத்தி கூடுதல் விதிகளை ஃபயர்வாலில் சேர்க்கலாம். தனிபயன் "
+"விதிகள் முன்னிருப்பு விதிகளுக்குப் பின் சேர்க்கப்படுகிறது. கோப்பு iptables-save "
+"வடிவத்தை கொண்டிருக்க வேண்டும்."
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "முன்னனுப்புதல்"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "பின்"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "மூடு"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "எச்சரிக்கை"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"சரியான மதிப்புகள்: <port>[-<port>], துறை என்பது ஒரு எண்ணிக்கை [0..65535] அல்லது "
+"ஒரு சேவைப் பெயர்."
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "நெறிமுறை '%s' சரியாக இல்லை."
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "சரியான மதிப்புகள்: tcp, udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "சரியான ஒரு துறை அல்லது சேவை வரையறை அல்லது நெறிமுறையைக் கொடுக்கவும்."
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "துறை / துறை வரம்பு:"
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "நெறிமுறை:"
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr "உங்கள் தேவைக்கேற்ப மூல மற்றும் இலக்கு விருப்பங்களை தேர்ந்தெடுக்கவும்."
+
+#: ../src/fw_tui.py:407
+msgid "Source (all needed)"
+msgstr "மூலம் (அனைத்தும் தேவையானது)"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "முகப்பு:"
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "இலக்கு (குறைந்தது ஒன்று தேவை)"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "IP முகவரி:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "முகப்பு '%s' சரியாக இல்லை."
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "முகவரி '%s' சரியாக இல்லை."
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr "நெறிமுறை வகை, ஃபயர்வால் அட்டவணை மற்றும் விதிகள் உள்ள கோப்பினை தேர்ந்தெடுக்கவும்."
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "ஃபயர்வால் அட்டவணை"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "கோப்பு"
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "நெறிமுறை வகை '%s' சரியாக இல்லை."
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "தவறான மதிப்புகள்: %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "ஃபயர்வால் அட்டவணை '%s' தவறானது."
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "கோப்பு '%s' இல்லை."
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "IPv6 nat துணையில்லை."
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "ஆம்"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "இல்லை"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "எண்டரை அழுத்தி தொடரவும்."
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "வெளியேறுதல்"
+
+#: ../src/lokkit:53
+msgid "Predefined Services with Default Environment:"
+msgstr "முன்னிருப்பு சூழலுடன் முன்குறிக்கப்பட்ட சேவைகள்"
+
+#: ../src/lokkit:62
+msgid "Supported icmp types:"
+msgstr "துணைபுரியும் icmp வகைகள்:"
+
+#: ../src/system-config-firewall:41
+msgid "ERROR: FirewallD is active, please use firewall-config."
+msgstr ""
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>அடிப்படை ஃபயர்வால் அமைவுகள்</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>கட்டமைப்பு</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>இலக்கு</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>தகவல்</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>மூலம்</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>பயனர் திறமை நிலை</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr ""
+"<b>உங்கள் தற்போதைய கட்டமைப்பு வெறுமையாக உள்ளது, அனைத்து போக்குவரத்தும் தடைப்படும்.</b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>ஃபயர்வால் கட்டமைப்பு வழிகாட்டி</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"ஒரு <i>\"பிணையமில்லாமல் கணினி\"</i>யில் ஃபயர்வால் தேவையேயில்லை. இந்த தேர்வு ஃபயர்வாலை "
+"செயல்நீக்குகிறது. இல்லையேல், <i>\"பிணையத்துடன் கணினி\"</i> என தேர்ந்தெடுக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "உள்ளீட்டைச் சேர்"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "இடைமுகத்தை சேர்"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr "தேவையான துறைகள் அல்லது துறை வரையறைகளை மட்டும் அனுமதிக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "தேவையான சேவைகளுக்கு மட்டும் அனுமதிக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "செயல்படுத்தல்"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "மாற்றங்களை செயல்படுத்தல்"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"துவக்க நிலை\n"
+"அனுபவமுள்ளவர்"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "சேவை அமைவுகளை கட்டமைத்தல்"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "இணைப்பை தேட ஃபயர்வால் உதவி தொகுதிகளை கட்டமைக்கவும்"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "iptables மற்றும் ip6tables சேவை அமைவுகளை கட்டமைக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "தனிப்பயன் விதிகள் கோப்பு"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "பணிமேடை"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"பணிமேடை\n"
+"சேவையகம்"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "செயல் நீக்குதல்"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "ஃபயர்வாலை செயல் நீக்குதல்"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "உள்ளீட்டைத் திருத்து"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "செயல்படுத்தல்"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "ஃபயர்வாலை செயல்படுத்தல்"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "ஃபயர்வாலை செயல்படுத்தல்"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "அனுபவமுள்ளவர்"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "கோப்பு:"
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "ஃபயர்வால் கட்டமைப்பு துவக்கம்"
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "ஃபயர்வால் கட்டமைப்பு வழிகாட்டி"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "ஃபயர்வால் அட்டவணை:"
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "வேறு துறைக்கு திருப்பப்படுகிறது"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"<i>சரி</i> என சொடுக்கி மாற்றங்களை செயல்படுத்தவும். நீங்கள் ஃபயர்வாலை மறுதுவக்கம் செய்ய "
+"வேண்டாம், மாற்றங்கள் உடனே செயல்படுத்தப்படும்."
+
+#: ../src/system-config-firewall.glade.h:47
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr ""
+"நீங்கள் <i>கட்டமைப்பை வைத்திருக்கவும்</i> பொத்தானை துடைத்தால், உண்மையான ஃபயர்வால் கட்டமைப்பு "
+"மேலெழுதப்படும்."
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr ""
+"நீங்கள் உள்ளமை முன்னனுப்புதலை செயல்படுத்தினால், நீங்கள் ஒரு துறையை குறிப்பிட வேண்டும். இந்த "
+"துறை மூல துறைக்கு வேறாக இருக்கும்."
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr ""
+"நீங்கள் masqueradingஐ செயல்படுத்தினால், IP முன்னனுப்புதலும் உங்கள் IPv4 பிணையங்களுக்கு "
+"செயல்படுத்தப்படும்."
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"உங்களுக்கு மேலும் ஃபயர்வால் அமைவுகள் தேவைப்பட்டால், உங்கள் கட்டமைப்பை கையால் மாற்றி, இந்த "
+"கருவி உங்கள் தனிபயன் கட்டமைப்பை ஏற்ற முடியவில்லை. இந்த கருவியை நீங்கள் பயன்படுத்தினால், "
+"உங்க்ள கைமுறை மாற்றங்கள் இழக்கப்படும். உங்கள் கைமுறை கட்டமைப்பை மாற்றங்களை இழக்க "
+"வேண்டாமென்றால், இந்த நிரலை அப்படியே விட்டுவிடவும்."
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "கட்டமைப்பை வைத்திருத்தல்"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "ஏற்றுதல்"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "முன்னிருப்பு ஃபயர்வால் கட்டமைப்பை ஏற்றுதல் (_D)"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "உள்ளமை முன்னனுப்புதல்"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "தொலை கணினியில் இலக்கு துறையை திறக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"Masquerading உங்களை ஒரு புரவலன் அல்லது ரௌட்டரை அமைக்கிறது, இது இணையத்தில் உங்கள் "
+"உள்ளமை பிணையத்தில் இணைக்கிறது. உங்கள் உள்ளமை பிணையம் தெரியாது மற்றும் புரவலன்கள் ஒரு "
+"ஒற்றை முகவரியில் இணையத்தில் தோன்றும் Masquerading IPv4 மட்டுமே."
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "உள்ளீட்டின் கீழுக்கு நகர்"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "உள்ளீட்டின் மேலுக்கு நகர்"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "கட்டமைப்பு இல்லை"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr ""
+"அந்த பிணைய முகப்பில் உள்ள அனைத்து பங்கேற்பாளர்களையும் நம்பினால் மட்டுமே முகப்புகளை "
+"குறிக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"பின்வரும் கட்டமைப்பு படிநிலைகளில் வினாக்களுக்கு விடையளிக்கவும். இந்த வழிகாட்டி உங்களை "
+"முதன்மை பயன்பாட்டிற்கு அழைத்து சென்று தேவையில்லாத அனைத்து கட்டுமைப்பு விருப்பங்களையும் "
+"மறைக்கிறது."
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr "உங்கள் ஃபயர்வால் அமைவுகளை தனிபயன் விதிகளை செயல்படுத்திய பின் சரிபார்க்கவும்."
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr ""
+"<i>விருப்பங்கள்</i> பட்டியிலிருந்து ஒரு முன்னிருப்பு கட்டமைப்பை ஏற்றவும் அல்லது "
+"வழிகாட்டியை பயன்படுத்தவும்."
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr "பயன்படுத்தும் முன் உங்கள் ஃபயர்வால் கட்டமைப்பை சரிபார்க்கவும்."
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr "பட்டியலிருந்து ஒரு உள்ளீட்டை தேர்ந்தெடுக்கவும் அல்லது ஒரு முகப்பை உள்ளிடவும்."
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr ""
+"பட்டியலிலிருந்து ஒரு உள்ளீட்டை தேர்ந்தெடுக்கவும் அல்லது ஒரு துறை மற்றும் நெறிமுறையை "
+"உள்ளிடவும்."
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr ""
+"கட்டமைப்பை வைத்திருக்கவும் என்பதை தேர்ந்தெடுக்கவும் அல்லது ஒரு முன்னிருப்பு கட்டமைப்பை ஏற்ற "
+"தேர்ந்தெடுக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "உங்கள் ஃபயர்வால் திறன்களை குறிப்பிடவும்."
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "துறை மற்றும் நெறிமுறை"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "துறை:"
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "நெறிமுறை வகை:"
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "மீண்டும் ஏற்றுதல்"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "நடப்பு கட்டமைப்பை மீண்டும் ஏற்றுதல்"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "உள்ளீட்டை நீக்கு"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"நீங்கள் ஃபயர்வால் கட்டமைப்பில் <i>\"வல்லுநர்\"</i> என தேர்ந்தெடுத்தவும் அல்லது நீங்கள் பயனர் "
+"தனிபயனாக்க விதிகளை சேர்க்க வேண்டும். இல்லையேல், <i>\"பயலுநர்\"</i> என தேர்ந்தெடுக்கவும்."
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "ஒரு கோப்பினை தேர்ந்தெடுக்கவும்"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "சேவை அமைவுகள்"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "துவக்க வழிகாட்டி"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "கட்டமைப்பு வழிகாட்டியை துவக்குதல்"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"பிணையம் இல்லாமல் கணினி\n"
+"பிணையத்துடன் கணினி"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "TODO"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"Internet Control Message Protocol (ICMP) என்பது முக்கியமாக பயன்படுத்தப்படும் "
+"பிணையப்பட்ட கணினிகளுக்கிடையே அனுப்பப்படும் பிழை செய்திகள் ஆனால் கூடுதலாக தகவல் "
+"செய்திகளே வருகிறது."
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr "இந்த நிரல் ஒரு அடிப்படை ஃபயர்வாலை உங்கள் கணினியில் அமைக்க உதவும்."
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr "இந்த வழிகாட்டி உங்கள் கணினியில் ஒரு சுத்த ஃபயர்வால் கட்டமைப்பை அமைக்க உதவும்."
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "பயனர் குறிப்பிட்டது"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "பயனர் திறமை நிலை"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "எந்த வகை கணினியை நீங்கள் கொண்டுள்ளீர்கள்?"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "வழிகாட்டி"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr "பின்னர் <i>விருப்பங்கள்</i> பட்டியில் அமைவுகளை மாற்றலாம்."
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "பற்றி (_A)"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "கோப்பு (_F)"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "உதவி (_H)"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "விருப்பங்கள் (_O)"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "வெளியேறுதல் (_Q)"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "கட்டமைப்பு வழிகாட்டியை துவக்குதல் (_S)"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "கட்டமைப்பு"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "மாற்றப்பட்ட பெயர்"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr "system-config-firewall"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr "I. Felix, ifelix@redhat.com"

@@ -1,0 +1,2249 @@
+# Translation of system-config-firewall master to Hungarian.
+# Copyright © 2009 Fedora Project#
+#
+# Tamas Szanto <tszanto@mol.hu>, 2003.
+# Arpad Biro <biro_arpad@yahoo.com>, 2004, 2006.
+# Szentiványi Gábor <szentivanyi.gabor@ulx.hu>, 2006.
+# Gábor Szentiványi <szenti@ulx.hu>, 2006.
+# Arpad Biro <biro_arpad@yahoo.com>, 2008.
+# Kovács Tamás <info@cinege.hu>, 2009.
+# Makó Gábor <makgab@m-info.hu>, 2009.
+# Nagy István Zoltán <nagyesta@gmail.com>, 2009.
+# Nikolas Slivka <snicore@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-firewall\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-21 16:12+0100\n"
+"PO-Revision-Date: 2010-03-15 01:11+0100\n"
+"Last-Translator: Peter Bojtos <ptr@ulx.hu>\n"
+"Language-Team: Hungarian Fedora Translation Team <fedora-trans-hu@redhat."
+"com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 0.3\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr ""
+"Hitelesítésre van szükség, hogy olvasni és módosítani tudja a tűzfal "
+"beállításait"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "Tűzfal engedély"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "Tűzfal"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "Tűzfalbeállítások"
+
+#: ../src/convert-config:38 ../src/lokkit:34
+#: ../src/system-config-firewall-tui:34
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"HIBA – %s futtatásához rendszergazdai jog szükséges."
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "%s mentése sikertelen."
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "%s átalakítása"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Ez a program szabad szoftver; terjeszthető illetve módosítható a Free "
+"Software Foundation által kiadott GNU General Public Licensedokumentumában "
+"leírtak; akár a licenc 2-es, akár (tetszőleges) későbbi változata szerint.\n"
+"\n"
+"Ez a program abban a reményben kerül közreadásra, hogy hasznos lesz, de "
+"minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ "
+"ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve.  További "
+"részleteket a GNU General Public License tartalmaz.\n"
+"\n"
+"A felhasználónak a programmal együtt meg kell kapnia a GNU General  Public "
+"License egy példányát; ha mégsem kapta meg, keresse fel a <http://www.gnu."
+"org/licenses/> webhelyet."
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "Tűzfal szabályok beállítása"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"A tűzfallal más számítógépek számára meghatározott szolgáltatásokat "
+"elérhetővé tehet, és megakadályozhatja, hogy azokhoz illetéktelenek "
+"hozzáférjenek. Válassza ki, milyen szolgáltatásokat engedélyez a tűzfalon."
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "helyi"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "Szolgáltatás"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "Port/Protokoll"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr ""
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "Port"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "Protokoll"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "Interfész"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "Leírás"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "Válasszon"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "Cél cím"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "Cél port"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "ICMP típus"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "Protokoll típus"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "Típus"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "Tábla"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "Fájlnév"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "Megbízható szolgáltatások"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "(módosult)"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "A tűzfal engedélyezve."
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "A tűzfal kikapcsolva."
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "Kulcs:"
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "Alapértelmezett:"
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr "'%s' port vagy port tartomány érvénytelen."
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "Adjon meg egy érvényes portot, szolgáltatás nevet vagy tartományt."
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "Nem mentett minden módosítást. Biztosan kilép?"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "Valamennyi %s eszköz"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "Nincs beállítva"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "Hiba"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "Hiba a konfigurációs állomány feldolgozása során"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "Átugrik"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "Mind átgurik"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+#, fuzzy
+msgid "The firewall configuration is not consistent."
+msgstr "A tűzfalbeállítások nem konzisztensek."
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"Az alábbi állományok hiányoznak vagy használhatatlanok:\n"
+"\t%s\n"
+"\n"
+"Alkalmazza a tűzfal beállításait a hiba javításához."
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "Korábbi tűzfalbeállítások."
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr ""
+"A tűzfalbeállításai egy előző állapotból származnak. Ellenőrizze, majd "
+"alkalmazza a beállításokat."
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "Kiszolgáló"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "Kezdő"
+
+# Nem szó szerinti a fordítás, de szerintem így értelmesebb a programban a kérdés.
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr "A tűzfalbeállítások felülírására készül. Biztosan ezt szeretné?"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr ""
+"Ne felejtse el ellenőrizni, hogy az iptables és ip6tables szolgáltatások "
+"engedélyezve vannak-e."
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "A beállítás nem sikerült"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "Echo kérés (ping)"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"Az alábbi üzenet alkalmas arra, hogy teszteljük, elérhető-e egy gép. Ehhez "
+"többnyire a <i>ping</i> segédeszközt használjuk."
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "Echo válasz (pong)"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "Ez az üzenet válasz egy <i>Echo kérés</i>re."
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "A célállomás nem elérhető"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr ""
+"Az alábbi hibaüzenettel válaszol egy gép vagy átjáró, ha a célállomás nem "
+"elérhető."
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "Paraméter hiba"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr ""
+"Az alábbi hibaüzenet akkor jelenik meg, ha hiányzó opció vagy rossz hossz "
+"miatt az IP fejléc hibás."
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "Átirányítás"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr ""
+"Az alábbi hibaüzenet értesít egy gépet, hogy a csomagokat egy másik "
+"útvonalon küldje."
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "Router hirdetés (RA)"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr ""
+"A routerek az alábbi üzenettel rendszeresen közlik egy multicast interfész "
+"IP-címét."
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "Router felszólítás (RS)"
+
+#: ../src/fw_icmp.py:48
+#, fuzzy
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr ""
+"Az ilyen típusú üzeneteket multicast linkre csatlakoztatott gépek küldik egy "
+"<i>Router Hirdetés</i> kérésre."
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr ""
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr ""
+"Ez a hibaüzenet arra szolgál, hogy a géppel tudassuk, hogy csökkentse a "
+"csomagok küldésének ütemét."
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "Időtúllépés"
+
+#: ../src/fw_icmp.py:55
+#, fuzzy
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr ""
+"Ilyen hibaüzenet keletkezik, ha a TTL meghaladja a csomag, vagy a töredék "
+"számára meghatározott értéket."
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "Modulok eltávolítása újraindításkor és kikapcsoláskor"
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr ""
+"Ahhoz, hogy biztosak lehessünk a megfelelő állapotban, a kernel "
+"tűzfalmoduljait  el kell távolítani a tűzfal újraindításakor és "
+"kikapcsolásakor."
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "Mentés leállításkor"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Elmenti a jelenlegi tűzfalbeállításokat az utolsó indítás óta alkalmazott "
+"változtatásokkal együtt, mielőtte kikapcsolná a tűzfalat. Erre csak akkor "
+"van szüksége, ha meg szeretné őrizni a jelenlegi állapotot a következő "
+"indításra."
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "Mentés újraindításkor"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Elmenti a jelenlegi tűzfalbeállításokat az utolsó indítás óta alkalmazott "
+"változtatásokkal együtt, mielőtte újraindítaná a tűzfalat. Erre csak akkor "
+"van szüksége, ha meg szeretné őrizni a jelenlegi állapotot a következő "
+"indításra."
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "A számláló mentése és visszaállítása"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr ""
+"A <i>Mentés leállításkor</i> és a <i>Mentés újraindításkor</i> ezenkívül "
+"elmenti a szabályokat és a számlálót."
+
+#: ../src/fw_iptables.py:57
+#, fuzzy
+msgid "Numeric status output"
+msgstr "Állapotleíró szám"
+
+#: ../src/fw_iptables.py:58
+#, fuzzy
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr "Címek és portok kiírása szám formájában az állapot kimenetnek."
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "Részletes állapotjelzés"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"Információ kiírása a csomagok számáról, méretéről és a <i>ki-</i> és "
+"<i>bejövő eszközökről</i> az állapotjelzésben."
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "Sorszámozás az állapotjelzőben"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "Számláló/szám kiírása minden szabályhoz az állapotjelzőben."
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "A SElinux beállítások mentése sikertelen."
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "%s leállítása sikertelen."
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "%s indítása sikertelen."
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "%s eltávolítása sikertelen."
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "%s porttartomány már szerepel."
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr "%s nem érvényes tartomány (kezdő port >= végső port)."
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s nem egy érvényes protokoll."
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "%s hibás port definició."
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "Az IPv6-ban nincs NAT támogatás."
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "'%s' érvénytelen szolgáltatás."
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "%(option)s: érvénytelen ICMP típus: '%(value)s'."
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "%s paraméter helytelen."
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr "%(option)s: érvénytelen továbbítási port ('%(value)s'): %(error)s."
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "%(option)s: érvénytelen továbbítási port ('%(value)s')."
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "'%s' érvénytelen interfész."
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "A tűzfal bekapcsolása (alapértelmezett)"
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "A tűzfal kikapcsolása"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<modul>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "Egy iptables modul engedélyezése"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "Egy iptables modul letiltása"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<szolgáltatás>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "Adott szolgáltatások engedélyezése a tűzfalon (pl. ssh)"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protokoll>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "Adott portok engedélyezése a tűzfalon (pl. ssh:tcp)"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<interfész>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "A teljes forgalom engedélyezése a megadott eszközön"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr ""
+"A megadott eszközről jövő teljes forgalom álcázása. Csak IPv4 esetén érhető "
+"el."
+
+#: ../src/fw_parser.py:189
+#, fuzzy
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "Visszamenőleges kompatibilitás, mint az --enabled"
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<típus>:][<tábla>:]<fájlnév>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"Megad egy egyéni szabályfájlt, mely az alapértelmezett szabályok után kerül "
+"beillesztésre. Alapértelmezett protokoll típzs: ipv4, alapértelemeztt tábla: "
+"szűrő. (pl. ipv4:filter:/etc/sysconfig/ipv4_filter_addon)"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<interfész>:port=<port>:proto=<protokoll>[:toport=<cél port>][:"
+"toaddr=<cél cím>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"Továbbítja a megadott portot és protokollt az eszközön egy másik helyi "
+"célportra (megadott cím nélkül) vagy egy másik cél címre (port is "
+"megadható). Csak IPv4-nél alkalmazható."
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<icmp típus>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr ""
+"Ezen ICMP típus blokkolása. Alapértelmezetten valamennyi ICMP típus "
+"engedélyezett."
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "Az Internet Protocol Security (IPsec) letiltása"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "Az Internet Printing Protocol (IPP) letiltása"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "A Multicast DNS (mDNS) letiltása"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr ""
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<mód>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "Az SELinux beállítása: %s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<típus>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr "SELinux típus beállítása: Többnyire 'targeted' vagy 'strict'"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "nincs ilyen opció: %s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "%s opció argumentumot vár."
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "A(z) %(option)s %(count)s paramétert igényel"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "A(z) %s opció nem vár argumentumot"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "Súgó megjelenítése"
+
+#: ../src/fw_parser.py:381
+#, fuzzy
+msgid "Run noninteractively; process only command-line arguments"
+msgstr "Futtatás kötegelt módban, csak a parancssori argumentumok feldolgozása"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "Még részletesebben"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "Verziószám"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "A tűzfal beállítása az új beállítások aktiválása nélkül"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "Jelenlegi beállítások figyelmen kívül hagyása"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"A tűzfal frissítése kötegelt módban, ha a tűzfal aktív. Ez a tűzfal "
+"újraindítását eredményezi. Az -n és -f kapcsolókat nem veszi figyelembe."
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr ""
+"Tűzfal alapértelmezett típusának beállítása erre: %s. Ez minden létező "
+"beállítást felülír."
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "Ismert szolgáltatások listája."
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "Támogatott ICMP típusok listája."
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "Hálózati nyomtató ügyfél (IPP)"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"Az Internet Printing Protocol (IPP) megosztott nyomtatásra szolgál. Az IPP "
+"(UDP porton) lehetővé teszi a nyomtató adatainak elérését (pl. elérhető "
+"szolgáltatások és állapot) és a feladatok kezelését. Ha hálózati nyomtató "
+"használatát tervezi CUPS-al ne tiltsa le ezt a lehetőséget."
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "Hálózati nyomtató kiszolgáló (IPP)"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"Az Internet Printing Protocol (IPP) megosztott nyomtatásra szolgál. Az IPP "
+"(TCP porton) lehetővé teszi nyomtató(k) megosztását a hálózaton. Ha hálózati "
+"nyomtató megosztását tervezi CUPS-al, akkor engedélyezze ezt a lehetőséget."
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "Multicast DNS (mDNS)"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"Az mDNS gondoskodik a DNS programozói felületéről, csomag formátumokról és "
+"működtető szemantikákról egy hagyományos, DNS szerver nélküli kis "
+"hálózatban. Ha Avahi használatát tervezi, ne kapcsolja ki ezt az opciót."
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"Az Internet Protokoll Security (IPsec) testesíti meg a biztonságos hálózati "
+"adatátvitelt közvetlenül az Internet Protokollon (IP). Az IPsec gondoskodik "
+"mind az adatkódolás-, mind az azonosítási eljárásról. Ha vpnc szerver vagy "
+"FreeS/WAN használatát tervezi, ne kapcsolja ki ezt az opciót."
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"Az SSH (Secure Shell) protokoll segítségével távoli gépekre lehet "
+"bejelentkezni és ott parancsokat végrehajtani. Az adatforgalom teljes "
+"egészében titkosított. Ha a gépet távolról, tűzfalon keresztül fogja elérni, "
+"jelölje be ezt az opciót. Az opció használatához érdemes feltelepíteni az "
+"openssh-server csomagot."
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"A HTTP protokollal lehet weboldalakat kiszolgálni. Ha a webkiszolgálót "
+"elérhetővé szeretné tenni kívülről, jelölje be ezt az opciót. Az opció "
+"bejelölése nem szükséges, ha csak helyben szeretne böngészni vagy "
+"weboldalakat készít."
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"Az FTP fájlok átvitelére alkalmas protokoll. Ha az FTP-kiszolgálót "
+"elérhetővé szeretné tenni kívülről, jelölje be ezt az opciót. Az opció "
+"használatához erősen ajánlott a vsftpd csomag feltelepítése."
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"Az NFS4 protokollal TCP-n keresztül oszthatjók meg fájlok. Ehhez az  "
+"opcióhoz szükséges az NFS eszközök telepítése, és az NFS kiszolgáló "
+"megfelelő beállítása."
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "Biztonságos WWW (HTTPS)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"A HTTPS a HTTP azon változata, amivel weboldalakat lehet kiszolgálni olyan "
+"környezetekben, ahol a biztonság fontos. Ilyenek például a webáruházak vagy "
+"webes levelezők, amelyek használatához be kell jelentkeznie. Ez az opció nem "
+"szükséges helyi oldalak nézegetéséhez vagy webfejlesztéshez. Az opció "
+"használatához telepítenie kell a httpd csomagot."
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "E-mail (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"Az SMTP protokoll bejövő e-mailek kézbesítésére alkalmas. Ha távoli gépekről "
+"levelet szeretne eljuttatni ehhez a géphez, akkor jelölje be ezt az opciót. "
+"Nem szükséges bejelölni az opciót, ha más gépről szeretné letölteni a "
+"leveleit POP3- vagy IMAP-kiszolgálóról, esetleg a fetchmail használatával. "
+"Ha nem megfelelő módon állítja be az SMTP szolgáltatást, akkor illetéktelen "
+"személyek kéretlen levelek küldésére használhatják a gépét."
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "Samba ügyfél"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"Ha bekapcsolja ezt az opciót, hozzáférhet a Windows fájl- és "
+"nyomtatómegosztási hálózataihoz. Ennek az opciónak a használatához még "
+"szüksége van a samba-client csomag telepítésére."
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "Samba"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"Ha bekapcsolja ezt az opciót, hozzáférhet és dolgozhat a Windows fájl- és "
+"nyomtatómegosztási hálózatain. Ennek az opciónak a használatához még "
+"szüksége van a samba csomag telepítésére."
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "DNS"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"A Domain Name System (DNS) gondoskodik a kiszolgáló és domain nevekről. "
+"Kapcsolja be ezt az opciót, ha domain név szolgáltatást tervez (pl. bind)"
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "IMAP SSL felett"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"Az Internet Message Access Protocol SSL kiegészítéssel (IMAPs) biztonságos "
+"módon teszi lehetővé a helyi kliensek e-mail elérését egy távoli szerveren. "
+"Ha SSL kiegészített IMAP használatát tervezi (pl. dovecot), kapcsolja be ezt "
+"az opciót."
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "POP-3 SSL felett"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"A Post Office Protocol 3 (POP3) egy protokoll, mely távoli szerverről "
+"történő e-mail fogadásra alkalmas TCP/IP kapcsolat felett. Kapcsolja be ezt "
+"az opciót, ha POP3 szolgáltatást tervez (pl. dovecot)."
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"A Remote Authentication Dial In User Service (RADIUS) egy protokoll a "
+"hálózaton keresztül történő felhasználó-azonosításra. Többnyire modemes, DSL "
+"vagy vezeték nélküli felhasználó azonosításra használják. Ha RADIUS "
+"szolgáltatást tervez (pl. freeraduis), kapcsolja be ezt az opciót."
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"Az OpenVPN egy virtuális magánhálózat (VPN) megoldás. Számítógépek közti "
+"kódolt pont-pont átvitelre használják. Ha VPN szolgáltatást tervez, "
+"kapcsolja be ezt az opciót."
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"A TFTP (Trivial File Transfer Protocol) egy olyan fájlátviteli protokoll, "
+"mely lehetővé teszi fájlok egyszerű átvitelét két gép között. Általában csak "
+"lemez nélküli munkaállomások indítására és PXE (Preboot eXecution "
+"Environment) alkalmazásakor adattovábbításra használják ."
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "TFTP ügyfél"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"Ha bekapcsolja ezt az opciót, hozzáférhet  Triviális Fájl Transzfer "
+"Protokoll (TFTP) kiszolgálókhoz. Ennek az opciónak a használatához még "
+"szüksége van a tftp csomag telepítésére."
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "Red Hat Cluster Suite"
+
+#: ../src/fw_services.py:174
+#, fuzzy
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"Ezzel az opcióval használhatja a Red Hat Cluster Suite-ot. A portok az "
+"openais, rgnamanager, ricci, dlm és cssd számára lesznek megnyitva. Az opció "
+"használatához még szüksége lesz a Red Hat Cluster Suite telepítésére."
+
+#: ../src/fw_services.py:179
+#, fuzzy
+msgid "Amanda Backup Client"
+msgstr "Amanda Biztonsági mentés Kliens"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"Az Amanda kliens opció bekapcsolásával csatlakozhat egy Amanda biztonsági "
+"mentést végző és archiváló kiszolgálóhoz. Az amanda-client csomag telepítése "
+"szükséges a szolgáltatás működéséhez."
+
+#: ../src/fw_services.py:186
+#, fuzzy
+msgid "Bacula Client"
+msgstr "Samba ügyfél"
+
+#: ../src/fw_services.py:187
+#, fuzzy
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"Ha bekapcsolja ezt az opciót, hozzáférhet a Windows fájl- és "
+"nyomtatómegosztási hálózataihoz. Ennek az opciónak a használatához még "
+"szüksége van a samba-client csomag telepítésére."
+
+#: ../src/fw_services.py:190
+#, fuzzy
+msgid "Bacula"
+msgstr "Vissza"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr ""
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr ""
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"A tűzfalak a hálózati forgalom szabályozására, a nem kívánt elérések "
+"tiltására alkalmasak. Ha bekapcsolja a tűzfalat, akkor akár a teljes bejövő "
+"hálózati forgalom letiltható. Ha kikapcsolja a tűzfalat, akkor a hálózati "
+"kapcsolatok nem lesznek szabályozva, ezért ez nem ajánlott. "
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "Tűzfal:"
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "Bekapcsolt"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "OK"
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "Testreszabás"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"Itt megadhatja a megbízható szolgáltatásokat, amelyek elérhetők lesznek "
+"valamennyi gépről és hálózatról."
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "Egyéb portok"
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr ""
+"Adjon meg további portokat vagy port tartományokat, melyeknek minden "
+"kiszolgáló vagy hálózat számára elérhetőnek kell lenniük."
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "Törlés"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "Megbízható eszközök"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr ""
+"Azokat az eszközöket jelölje meg megbízhatónak, amelyeknek teljes körű "
+"hozzáférést kíván adni a rendszerhez."
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "Álcázás (masquerade)"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "Jelölje be az álcázandó eszközöket."
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "Port továbbítás"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"Bejegyzés hozzáadása a helyi rendszeren, hogy akár a helyi rendszer másik "
+"portjára, vagy egy másik rendszer egy adott portjára történjen továbbítás "
+"(port forward). Másik rendszerre történő port továbbítás csak maszkolt "
+"eszköz esetén lehetséges. Port továbbítás csak IPv4 esetén elérhető."
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "ICMP szűrő"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"Jelölje be azokat az ICMP típusokat a listában, melyeket el kíván utasítani. "
+"Minden egyéb ICMP kérést a tűzfal át fog engedni. Alapértelmezetten nincs "
+"korlátozás."
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "Egyéni szabályok"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"Használjon egyéni szabályfájlokat további tűzfalszabályok hozzáadásához. Az "
+"egyéni szabályok az alapértelmezettek mögé kerülnek. Ezen fájloknak iptables-"
+"save formátumúnak kell lenniük."
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "Előre"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "Vissza"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "Bezárás"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "Figyelmeztetés"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"Lehetséges értékek: <port>[-<port>], ahol a port egy szám [0..65335] vagy "
+"szolgáltatásnév."
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "A(z) '%s' protokoll érvénytelen."
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "Lehetséges értékek: tcp, udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "Adjon meg egy portot vagy port tartományt, és protokollt."
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "Port/port tartomány:"
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "Protokoll:"
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+#, fuzzy
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr "Adja meg a forrás és cél beállításokat az igényeinek megfelelően."
+
+#: ../src/fw_tui.py:407
+#, fuzzy
+msgid "Source (all needed)"
+msgstr "Forrás (mind szükséges)"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "Eszköz:"
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "Cél (legalább egyet meg kell adnia)"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "IP cím:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "'%s' érvénytelen eszköz."
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "'%s' nem érvényes cím."
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr ""
+"Adja meg a protokoll típusát, a tűzfaltáblát és a szabályokat tartalmazó "
+"fájlt."
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "Tűzfaltábla"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "Fájl"
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "'%s' érvénytelen protokoll típus."
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "Lehetséges értékek: %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "'%s' nem érvényes tűzfaltábla."
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "'%s' fájl nem létezik."
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "Az IPv6-ban nincs NAT támogatás."
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "Igen"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "Nem"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "Nyomjon entert a folytatáshoz."
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "Kilépés"
+
+#: ../src/lokkit:53
+#, fuzzy
+msgid "Predefined Services with Default Environment:"
+msgstr "Az Alapértelmezett Környezethez előre meghatározott szolgáltatások:"
+
+#: ../src/lokkit:62
+msgid "Supported icmp types:"
+msgstr "Támogatott ICMP típusok:"
+
+#: ../src/system-config-firewall:41
+msgid "ERROR: FirewallD is active, please use firewall-config."
+msgstr ""
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>Alapvető tűzfalbeállítások</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>Tűzfalbeállítások</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>Cél</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>Információ</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>Forrás</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>Tudásszint</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr ""
+"<b>A jelenlegi konfigurációja üres, valamennyi hálózati forgalom blokkolt.</"
+"b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>Tűzfalbeállítások varázsló</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"<i>Hálózatba nem kapcsolt rendszer</i> esetén nincs szükség tűzfalra. Ha ezt "
+"az opciót választja, a tűzfal inaktív lesz. Egyébként válassza a "
+"<i>Hálózatba kapcsolt rendszer</i>t."
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "Bejegyzés hozzáadása"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "Interfész hozzáadása"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr ""
+"Kizárólag a szükséges portokhoz és porttartományokhoz biztosít hozzáférést."
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "Kizárólag a szükséges szolgáltatásokhoz biztosít hozzáférést."
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "Alkalmaz"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "Módosítások alkalmazása"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"Kezdő\n"
+"Szakértő"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "Szolgáltatások beállítása"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "Állítsa be a tűzfal segédmoduljait a kapcsolatfigyeléshez"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "Az iptables és ip6tables szolgáltatások beállítása."
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "Egyéni szabályokat tartalmazó fájl"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "Munkaállomás"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"Munkaállomás\n"
+"Kiszolgáló"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "Kikapcsolás"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "A tűzfal kikapcsolása"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "Bejegyzés szerkesztése"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "Bekapcsolás"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "A tűzfal bekapcsolása"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "A tűzfal bekapcsolása"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "Szakértő"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "Fájl:"
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "Tűzfalbeállítások indítása"
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "Tűzfalbeállítások varázsló"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "Tűzfaltábla:"
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "Másik portra irányítás"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"Kattintson az <i>OK</i>-ra a változtatások mentéséhez. Nincs szükség a "
+"tűzfal újraindítására, a változtatások rögtön érvényre jutnak."
+
+#: ../src/system-config-firewall.glade.h:47
+#, fuzzy
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr ""
+"Ha törli a <i>Beállítások megtartásá</i>t, a jelenlegi tűzfalbeállítások "
+"felülíródnak."
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr ""
+"A helyi továbbításhoz meg kell adnia egy - a forrás porttól különböző - "
+"portot."
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr ""
+"Ha bekapcsolja az álcázást, az IP továbbítás is elérhető lesz az IPv4 "
+"hálózatokban."
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"Ha további tűzfalbeállításokra van szüksége, módosítsa a konfigurációt "
+"kézzel. Tartsa szem előtt, hogy ez az eszköz nem képes az ön által "
+"testreszabott beállításokat beolvasni. Ha ezt az eszközt használja, "
+"valamennyi kézi változtatását elveszti. Ha ezt nem akarja, lépjen ki ebből a "
+"programból mentés nélkül."
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "Beállítások megtartása"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "Betöltés"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "_Alapértelmezett beállítások betöltése"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "Helyi továbbítás"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "Ne felejtse el kinyitni a cél portot a távoli rendszeren."
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"A Masquerading lehetővé teszi kiszolgáló vagy router beállítását, amely "
+"összekapcsolja a helyi gépet az Internettel. A helyi hálózat láthatatlan "
+"lesz és a kiszolgáló egyetlen címként jelenik meg az Interneten. Csak IPv4-"
+"hez."
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "Bejegyzés lefelé mozgatása"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "Bejegyzés felfelé mozgatása"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "Nincsenek beállítások"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr ""
+"Csak azokat a hálózati eszközöket jelölje meg, amelyek valamennyi "
+"felhasználójában megbízik."
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"Válaszoljon a következő kérdésekre a beállítás során. A varázsló végeztével "
+"visszatér az alkalmazás fő ablakához és elrejt minden felesleges beállítási "
+"lehetőséget."
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr ""
+"Ellenőrízze a tűzfala beállításait az egyéni szabályok betöltését követően."
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr ""
+"Töltsön be egy alapértelmezett konfigurációt a <i>Beállítások</i> menüből, "
+"vagy használja a varázslót."
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr "Tesztelje le a tűzfalbeállításait, mielőtt élesben használja azokat."
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr "Válasszon ki egy elemet a listából, vagy adjon meg egy eszköznevet."
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr ""
+"Válasszon ki egy elemet a listából, vagy adjon meg egy portot és protokollt."
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr ""
+"Válassza a beállítások megtartását vagy válasszon egyet az alapértelmezett "
+"beállítások közül."
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "Adja meg ismereteinek szintjét a tűzfalak terén."
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "Port és protokoll"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "Port:"
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "Protokoll típus:"
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "Újratölt"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "Jelenlegi beállítások újratöltése"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "Bejegyzés eltávolítása"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"Válassza a <i>\"Szakértő\"</i>-t, ha tisztában van a tűzfal beállításokkal, "
+"vagy egyéni szabályokat kíván felvenni. Egyéb esetekben válassza a <i>\"Kezdő"
+"\"</i>-t."
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "Válasszon ki egy fájlt"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "Szolgáltatás-beállítások"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "Varázsló indítása"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "Beállítások Varázsló indítása"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"Hálózatba nem kapcsolt rendszer\n"
+"Hálózatba kapcsolt rendszer"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "TEENDŐK"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"Az Internet Control Message Protocolt (ICMP) általában hálózatba kötött "
+"számítógépek közti hibaüzenetek küldésére használják, de tájékoztató "
+"üzenetekhez is használható (pl. ping kérések és válaszok)."
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr ""
+"A program segítségével beállíthat egy alapvető tűzfalat a rendszeréhez."
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr ""
+"Ez a varázsló segít, hogy egy megfelelő tűzfalbeállítást készítsen "
+"rendszeréhez."
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "Egyéni"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "Tudásszint"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "Milyen típusú rendszere van?"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "Varázsló"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr "A későbbiekben a <i>Beállítások</i> menüben tudja majd megváltoztatni."
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "_Névjegy"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "_Fájl"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "_Súgó"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "_Beállítások"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "_Kilépés"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "Beállítás _varázsló indítása"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "beállítások"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "módosított címke"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr "system-config-firewall"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr ""
+"Tamas Szanto <tszanto at mol.hu> 2003.\n"
+"Arpad Biro <biro_arpad at yahoo.com> 2004., 2006.\n"
+"Szentiványi Gábor <szentivanyi.gabor at ulx.hu> 2006.\n"
+"Gábor Szentiványi <szenti at ulx.hu> 2006.\n"
+"Arpad Biro <biro_arpad at yahoo.com> 2008.\n"
+"Kovács Tamás <info at cinege.hu> 2009.\n"
+"Makó Gábor <makgab at m-info.hu> 2009.\n"
+"Nagy István Zoltán <nagyesta at gmail.com> 2009.\n"
+"Bojtos Péter <ptr at ulx.hu> 2010."
+
+#~ msgid "Helper modules:"
+#~ msgstr "Segéd modulok:"
+
+#~ msgid "Disabled"
+#~ msgstr "Kikapcsolva"
+
+#~ msgid "Firewall Configuration - Customize"
+#~ msgstr "A tűzfal beállítása - testreszabás"
+
+#~ msgid ""
+#~ "You can customize your firewall in two ways. First, you can select to "
+#~ "allow all traffic from certain network interfaces. Second, you can allow "
+#~ "certain protocols explicitly through the firewall. Specify additional "
+#~ "ports in the form 'service:protocol', such as 'imap:tcp'. "
+#~ msgstr ""
+#~ "A tűzfal beállítása kétféle módon történhet. Egyrészt engedélyezni lehet "
+#~ "a teljes forgalmat a megadott eszközöknél. Másrészt bizonyos protokollok "
+#~ "használatát engedélyezni lehet a tűzfalon keresztül. További portokat "
+#~ "'szolgáltatás:protokoll' formában lehet engedélyezni, például: 'imap:tcp'."
+
+#, fuzzy
+#~ msgid "Trusted Services:"
+#~ msgstr "Megbízható szolgáltatások:"
+
+#, fuzzy
+#~ msgid "Trusted Interfaces:"
+#~ msgstr "Megbízható eszközök:"
+
+#, fuzzy
+#~ msgid "Masquerading:"
+#~ msgstr "Álcázás (masquerade)"
+
+#, fuzzy
+#~ msgid "Other Ports:"
+#~ msgstr "Egyéb portok"
+
+#, fuzzy
+#~ msgid "Custom Rules:"
+#~ msgstr "Testreszabás"
+
+#, fuzzy
+#~ msgid "Trusted Devices"
+#~ msgstr "Megbízható eszközök:"
+
+#~ msgid "Add Port"
+#~ msgstr "Port hozzáadása"
+
+#, fuzzy
+#~ msgid "enabled"
+#~ msgstr "Bekapcsolva"
+
+#, fuzzy
+#~ msgid "disabled"
+#~ msgstr "Kikapcsolva"
+
+#, fuzzy
+#~ msgid "Configure SELinux mode: enforcing, permissive or disabled"
+#~ msgstr "'enforcing', 'permissive' vagy 'disabled' lehet"
+
+#, fuzzy
+#~ msgid "Disable IPSec"
+#~ msgstr "Kikapcsolva"
+
+#, fuzzy
+#~ msgid "Ignore settings stored in /etc/sysconfig/system-config-firewall"
+#~ msgstr ""
+#~ "az /etc/sysconfig/system-config-firewall fájlban tárolt beállítások "
+#~ "figyelmen kívül hagyása"
+
+#, fuzzy
+#~ msgid "Deactivated"
+#~ msgstr "Tűz_falbeállítások"
+
+#, fuzzy
+#~ msgid "Start the service"
+#~ msgstr "Megbízható szolgáltatások:"
+
+#~ msgid "SELinux"
+#~ msgstr "SELinux"
+
+#~ msgid ""
+#~ "Security Enhanced Linux (SELinux) provides finer-grained security "
+#~ "controls than those available in a traditional Linux system.  It can be "
+#~ "set up in a disabled state, a state which only warns about things which "
+#~ "would be denied, or a fully active state.  Most people should keep the "
+#~ "default setting."
+#~ msgstr ""
+#~ "A biztonságilag megerősített Linux (Securitiy Enhanced Linux, SELinux) a "
+#~ "biztonsági beállítások finomabb szintű hangolását teszi lehetővé, mint "
+#~ "ami a hagyományos Linux rendszerekben található. Az SELinux beállítható "
+#~ "letiltott állapotra, amikor csak figyelmeztetést ad arról, hogy adott "
+#~ "helyzetben milyen műveletek lennének visszautasítva, vagy a teljesen "
+#~ "aktív állapotra, amikor vissza is utasít. A legtöbbször elegendő az "
+#~ "alapértelmezett beállítás."
+
+#~ msgid ""
+#~ "Changing this SELinux setting requires rebooting the system so the entire "
+#~ "file system may be relabeled.  Relabeling takes a long time depending on "
+#~ "the file system.  Would you like to continue with this setting and reboot "
+#~ "the system after firstboot is complete?"
+#~ msgstr ""
+#~ "Az SELinux jelen beállításának módosítása esetén a rendszert újra kell "
+#~ "indítani, hogy az egész fájlrendszert újra lehessen címkézni. Az "
+#~ "újracímkézés hosszú időt is igénybe vehet a fájlrendszertől függően. "
+#~ "Szeretné folytatni ezzel a beállítással és újraindítani a rendszert, "
+#~ "miután az első rendszertöltési folyamat (firstboot) lezárult?"
+
+#~ msgid "Enforcing"
+#~ msgstr "Kikényszerítés"
+
+#~ msgid "Permissive"
+#~ msgstr "Megengedő"
+
+#~ msgid ""
+#~ "Changing to SELinux enabled will cause a relabel of the entire file "
+#~ "system on the next boot. Relabeling takes a long time depending on the "
+#~ "size of the file system.  Do you wish to continue?"
+#~ msgstr ""
+#~ "SELinuxra történő váltás esetén a következő újraindításkor az egész "
+#~ "fájlrendszert újra kell címkézni. Az újracímkézés hosszú időt is igénybe "
+#~ "vehet, a fájlrendszertől függően. Szeretné folytatni?"
+
+#, fuzzy
+#~ msgid "Trust"
+#~ msgstr "Megbízható"
+
+#, fuzzy
+#~ msgid "Firewall deactivated"
+#~ msgstr "Tűz_falbeállítások"
+
+#~ msgid ""
+#~ "\n"
+#~ "Firewall Configuration\n"
+#~ "\n"
+#~ "   A firewall sits between your computer and the network, \n"
+#~ "   and determines which resources on your computer remote\n"
+#~ "   users on the network are able to access. A\n"
+#~ "   properly configured firewall can greatly increase\n"
+#~ "   the out-of-the-box security of your system.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "A tűzfal beállítása\n"
+#~ "\n"
+#~ "   A tűzfal a számítógép és a hálózat közötti adatforgalmat "
+#~ "szabályozza. \n"
+#~ "   Arra felügyel, hogy a távoli felhasználók milyen\n"
+#~ "   erőforrásokat érhetnek el a számítógépen. Egy\n"
+#~ "   jól beállított tűzfal nagy mértékben feljavítja\n"
+#~ "   a rendszer alapbiztonságát.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Choose the appropriate security level for your\n"
+#~ "   system.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Válassza ki, milyen biztonsági szintet szeretne érvényesíteni\n"
+#~ "   a rendszerben.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Enabled -- By choosing enabled, your system will\n"
+#~ "   not accept connections from the outside that are\n"
+#~ "   not explicitly defined by you.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Bekapcsolva -- Ha ezt választja, akkor a rendszer csak\n"
+#~ "   a beállításokban engedélyezett hálózati kapcsolatokat fogja\n"
+#~ "   engedélyezni.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   If you are connecting your system to the Internet,\n"
+#~ "   but do not plan to run a server, this is the\n"
+#~ "   safest choice. If additional services are needed,\n"
+#~ "   you can choose Customize to allow specific\n"
+#~ "   services through the firewall, or to implicitly\n"
+#~ "   trust traffic coming over certain interfaces.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Ha a rendszert elérhetővé kell tenni az internet felől,\n"
+#~ "   de nem kiszolgálóként fog működni, akkor ez a legbiztonságosabb\n"
+#~ "   választás. Ha további szolgáltatások elérésére is szükség van,\n"
+#~ "   válassza a Testreszabás opciót a kívánt szolgáltatások\n"
+#~ "   tűzfalon keresztüli használatához, vagy adja meg,\n"
+#~ "   mely eszközökről érkező forgalmat kell átengedni.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Disabled -- Disabling the  firewall allows complete\n"
+#~ "   access and does no security checking. It is recommended\n"
+#~ "   that this only be selected if you are running on a\n"
+#~ "   trusted network (not the Internet), or if you plan\n"
+#~ "   to do more detailed firewall configuration later.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Kikapcsolva -- Ha kikapcsolja a tűzfalat, akkor a rendszer nem\n"
+#~ "   fogja korlátozni a hálózati kapcsolatokat. Ez csak akkor\n"
+#~ "   ajánlott, ha egy belső, védett hálózaton működik a gép\n"
+#~ "   (nem az interneten), vagy ha későbbre szeretné\n"
+#~ "   halasztani a tűzfal beállítását.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Firewall Customization\n"
+#~ "\n"
+#~ "   Choose which trusted devices and incoming services\n"
+#~ "   should be allowed for your network security\n"
+#~ "   settings.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "A tűzfal beállításainak testreszabása\n"
+#~ "\n"
+#~ "   Válassza ki, mely eszközökről jövő forgalmat szeretné\n"
+#~ "   beengedni, és mely protokollokat lehessen használni a\n"
+#~ "   rendszer és a többi gép között.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Trusted Devices -- Checking these for any of your\n"
+#~ "   devices allows all traffic coming from that device\n"
+#~ "   to be allowed. For example, if you are running a\n"
+#~ "   local network, but are connecting to the Internet\n"
+#~ "   via a PPP dialup, you could check that eth0 is\n"
+#~ "   trusted to allow any traffic coming from your\n"
+#~ "   local network.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Megbízható eszközök -- Ha egy eszköz megbízhatónak van megjelölve,\n"
+#~ "   akkor a rendszer az onnan érkező forgalmat korlátozás nélkül\n"
+#~ "   be fogja engedni. Ha például a gép egy helyi hálózaton működik,\n"
+#~ "   és csak PPP-kapcsolaton keresztül tud csatlakozni az\n"
+#~ "   internetre, akkor jelölje be, hogy az 'eth0' eszköz\n"
+#~ "   megbízható, így a forgalom nem lesz korlátozva\n"
+#~ "   a helyi hálózatról.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   It is not recommended to enable this for devices\n"
+#~ "   that are connected to public networks, such as the\n"
+#~ "   Internet.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Ajánlott ezt beállítani olyan eszközöknél, melyek\n"
+#~ "   szabadon hozzáférhető hálózattal, például az internettel\n"
+#~ "   vannak összekötve.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Allow Incoming -- Enabling these options allows the\n"
+#~ "   specified services to pass through the firewall.\n"
+#~ "   Note, during a workstation-class installation, the\n"
+#~ "   majority of these services are not present on the\n"
+#~ "   system.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   A bejövő forgalom engedélyezése -- itt lehet\n"
+#~ "   megadni, hogy mely szolgáltatások juthatnak át\n"
+#~ "   a tűzfalon. Munkaállomás-típusú telepítésnél a\n"
+#~ "   legtöbb ilyen szolgáltatás nincs aktiválva a\n"
+#~ "   rendszerben.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "     * Telnet -- Telnet is a protocol for logging\n"
+#~ "       into remote machines. It is unencrypted, and\n"
+#~ "       provides little security from network snooping\n"
+#~ "       attacks. Enabling telnet is not recommended.\n"
+#~ "       You need the telnet-server package installed\n"
+#~ "       for this option to be useful.\n"
+#~ msgstr ""
+#~ "     * Telnet -- A Telnet segítségével távoli gépekre lehet "
+#~ "bejelentkezni\n"
+#~ "       és ott parancsokat lehet végrehajtani. Az adatforgalom egyáltalán\n"
+#~ "       nincs titkosítva, ezért a továbbított adatok nincsenek védve\n"
+#~ "       illetéktelen hozzáférés ellen. Ezért a Telnet protokoll "
+#~ "engedélyezése\n"
+#~ "       általában nem ajánlott. Az opció használatához érdemes telepíteni "
+#~ "a\n"
+#~ "       telnet-server csomagot, mely a Telnet kiszolgálói funkcióit "
+#~ "biztosítja.\n"
+
+#~ msgid ""
+#~ "     * Other ports -- You can specify that other\n"
+#~ "       ports not listed here be allowed through the\n"
+#~ "       firewall. The format to use is\n"
+#~ "       'port:protocol'. For example, if you wanted to\n"
+#~ "       allow IMAP access through your firewall, you\n"
+#~ "       can specify 'imap:tcp'. You can also specify\n"
+#~ "       numeric ports explicitly; to allow UDP packets\n"
+#~ "       on port 1234 through, specify '1234:udp'. To\n"
+#~ "       specify multiple ports, separate them by\n"
+#~ "       commas.\n"
+#~ msgstr ""
+#~ "     * Egyéb portok -- itt lehet felsorolni, hogy mely\n"
+#~ "       portokon keresztül legyen engedélyezve hálózati forgalom\n"
+#~ "       a tűzfalon keresztül. A várt formátum:\n"
+#~ "       'port:protokoll'. Ha például azt szeretné, hogy az IMAP\n"
+#~ "       protokoll működjön a tűzfalon keresztül, ezt adja meg:\n"
+#~ "       'imap:tcp'. A portok számai közvetlenül beírhatók,\n"
+#~ "       ha például UDP csomagokat szeretne átengedni az\n"
+#~ "       1234-es porton, akkor ezt kell megadni: '1234:udp'. Több\n"
+#~ "       port is felsorolható, vesszővel\n"
+#~ "       elválasztva.\n"
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "Security Level:"
+#~ msgstr "Biztonsági szint:"
+
+#, fuzzy
+#~ msgid "SELinux:"
+#~ msgstr "SELinux"
+
+#~ msgid "MASQUERADE Devices:"
+#~ msgstr "Álcázott (MASQUERADE) eszközök:"
+
+#~ msgid "Allow incoming:"
+#~ msgstr "Engedélyezett bejövő forgalom:"
+
+#~ msgid "Other ports"
+#~ msgstr "Egyéb portok"
+
+#~ msgid ""
+#~ " <Tab>/<Alt-Tab> between elements   |   <Space> selects  |   <F12> next "
+#~ "screen"
+#~ msgstr ""
+#~ " <Tab>/<Alt+Tab>: váltás az elemek között | <Space>: kiválasztás | <F12>: "
+#~ "következő képernyő"
+
+#~ msgid "module to add"
+#~ msgstr "hozzáadandó modul"
+
+#~ msgid "module to remove"
+#~ msgstr "eltávolítandó modul"
+
+#~ msgid "port:protocol (e.g, ssh:tcp)"
+#~ msgstr "port:protokoll (pl.: ssh:tcp)"
+
+#~ msgid "device to trust"
+#~ msgstr "megbízható eszköz"
+
+#~ msgid "Configure SELinux Policy"
+#~ msgstr "Az SELinux-házirend beállítása"
+
+#~ msgid "Usually 'targeted' or 'strict'"
+#~ msgstr "Általában 'targeted' vagy 'strict'"
+
+#~ msgid "Backwards compatiblity, ignored"
+#~ msgstr "Visszamenőleges kompatibilitás figyelmen kívül hagyva"
+
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgid "_SELinux"
+#~ msgstr "_SELinux"
+
+#~ msgid "Configure system security level and firewall rules"
+#~ msgstr ""
+#~ "A rendszer biztonsági szintjének és a tűzfal szabályoknak a beállítása"
+
+#~ msgid "Security Level and Firewall"
+#~ msgstr "Biztonsági szint és tűzfal"

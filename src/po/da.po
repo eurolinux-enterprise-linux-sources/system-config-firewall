@@ -1,0 +1,2196 @@
+# Danish translation of system-config-firewall.
+# Christian Rose <menthos@menthos.com>, 2002.
+# Keld Simonsen <keld@dkuug.dk>, 2002, 2003, 2004, 2005.
+# Keld Simonsen <keld@rap.dk>, 2005, 2006.
+# Kris Thomsen <lakristho@gmail.com>, 2009, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: system-config-firewall\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-21 16:12+0100\n"
+"PO-Revision-Date: 2010-06-07 19:58+0200\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+msgid "Authentication is required to read and modify firewall settings"
+msgstr "Godkendelse er påkrævet for at læse og ændre firewallindstillinger"
+
+#: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+#: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+msgid "Firewall authorization"
+msgstr "Firewall autorisering"
+
+#: ../config/system-config-firewall.desktop.in.h:1 ../src/fw_gui.py:68
+msgid "Firewall"
+msgstr "Firewall"
+
+#: ../config/system-config-firewall.desktop.in.h:2 ../src/fw_tui.py:44
+#: ../src/system-config-firewall.glade.h:38
+msgid "Firewall Configuration"
+msgstr "Konfiguration af firewall"
+
+#: ../src/convert-config:38 ../src/lokkit:34
+#: ../src/system-config-firewall-tui:34
+#, c-format
+msgid ""
+"\n"
+"ERROR - You must be root to run %s."
+msgstr ""
+"\n"
+"FEJL - Du skal være administrator (root) for at køre %s."
+
+#: ../src/convert-config:57 ../src/fw_lokkit.py:119
+#, c-format, python-format
+msgid "Failed to write %s."
+msgstr "Kunne ikke skrive %s."
+
+#: ../src/fw_compat.py:27
+#, python-format
+msgid "Converting %s"
+msgstr "Konverterer %s"
+
+#: ../src/fw_config.py.in:46
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Dette program er fri software. Du kan redistribuere og/eller modificere det "
+"under de betingelserne som er angivet i GNU General Public License, som er "
+"udgivet af Free Software Foundation. Enten version 2 af licensen eller "
+"(efter eget valg) enhver senere version.\n"
+"Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN "
+"NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring "
+"SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan "
+"læses i GNU General Public License.\n"
+"Du skulle have modtaget en kopi af GNU General Public License sammen med "
+"dette program. Hvis ikke, kig på <http://www.gnu.org/licenses/>."
+
+#: ../src/fw_gui.py:69
+msgid "Configure firewall rules"
+msgstr "Konfigurér regler for firewall"
+
+#: ../src/fw_gui.py:70
+msgid ""
+"A firewall allows other computers to access selected services on your "
+"computer and helps to prevent unauthorized access beyond these selections. "
+"Select the services to which the firewall should allow access."
+msgstr ""
+"En firewall tillader andre computere adgang til valgte tjenester på din "
+"computer og hjælper med at beskytte mod uautoriseret adgang udover disse "
+"valg. Vælg de tjenester som firewallen skal tillade adgang til."
+
+#: ../src/fw_gui.py:87 ../src/fw_gui.py:1553
+msgid "local"
+msgstr "lokal"
+
+#: ../src/fw_gui.py:284 ../src/fw_gui.py:323 ../src/fw_gui.py:386
+msgid "Service"
+msgstr "Tjeneste"
+
+#: ../src/fw_gui.py:291
+msgid "Port/Protocol"
+msgstr "Port/protokol"
+
+#: ../src/fw_gui.py:300
+msgid "Conntrack Helper"
+msgstr "Conntrack-hjælper"
+
+#: ../src/fw_gui.py:314 ../src/fw_gui.py:377 ../src/fw_gui.py:594
+msgid "Port"
+msgstr "Port"
+
+#: ../src/fw_gui.py:319 ../src/fw_gui.py:382 ../src/fw_gui.py:591
+msgid "Protocol"
+msgstr "Protokol"
+
+#. interface
+#. protcol
+#. port
+#. to_address
+#. to_port
+#: ../src/fw_gui.py:442 ../src/fw_gui.py:473 ../src/fw_gui.py:500
+#: ../src/fw_gui.py:586 ../src/system-config-firewall.glade.h:51
+msgid "Interface"
+msgstr "Grænseflade"
+
+#: ../src/fw_gui.py:449 ../src/fw_gui.py:479 ../src/fw_gui.py:504
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ../src/fw_gui.py:528 ../src/fw_gui.py:537 ../src/fw_gui.py:562
+msgid "Select"
+msgstr "Vælg"
+
+#: ../src/fw_gui.py:597
+msgid "To Address"
+msgstr "Til adresse"
+
+#: ../src/fw_gui.py:601
+msgid "To Port"
+msgstr "Til port"
+
+#: ../src/fw_gui.py:625
+msgid "ICMP Type"
+msgstr "ICMP-type"
+
+#: ../src/fw_gui.py:629 ../src/fw_tui.py:523
+msgid "Protocol Type"
+msgstr "Protokoltype"
+
+#: ../src/fw_gui.py:652
+msgid "Type"
+msgstr "Type"
+
+#: ../src/fw_gui.py:656
+msgid "Table"
+msgstr "Tabel"
+
+#: ../src/fw_gui.py:660
+msgid "Filename"
+msgstr "Filnavn"
+
+#. trusted services
+#: ../src/fw_gui.py:830 ../src/fw_tui.py:67
+#: ../src/system-config-firewall.glade.h:100
+msgid "Trusted Services"
+msgstr "Pålidelige tjenester"
+
+#: ../src/fw_gui.py:876
+msgid "(modified)"
+msgstr "(ændret)"
+
+#: ../src/fw_gui.py:895
+msgid "The firewall is enabled."
+msgstr "Firewallen er aktiveret."
+
+#: ../src/fw_gui.py:906 ../src/fw_tui.py:751
+msgid "The firewall is disabled."
+msgstr "Firewallen er deaktiveret."
+
+#: ../src/fw_gui.py:956
+msgid "Key:"
+msgstr "Nøgle:"
+
+#: ../src/fw_gui.py:958
+msgid "Default:"
+msgstr "Standard:"
+
+#: ../src/fw_gui.py:1161 ../src/fw_tui.py:348
+#, python-format
+msgid "Port or port range '%s' is not valid."
+msgstr "Port eller portinterval \"%s\" er ikke gyldigt."
+
+#: ../src/fw_gui.py:1163
+msgid "Please enter a valid port number, service name or range."
+msgstr "Indtast venligst et gyldigt portnummer, tjenestenavn eller interval."
+
+#: ../src/fw_gui.py:1584
+msgid "There are unapplied changes, do you really want to quit?"
+msgstr "Der er ændringer som ikke er tilføjet, ønsker du virkelig at afslutte?"
+
+#: ../src/fw_gui.py:1647
+#, python-format
+msgid "All %s devices"
+msgstr "Alle %s enheder"
+
+#: ../src/fw_gui.py:1649
+msgid "Not configured"
+msgstr "Ikke konfigureret"
+
+#: ../src/fw_gui.py:1813 ../src/fw_tui.py:342
+msgid "Error"
+msgstr "Fejl"
+
+#: ../src/fw_gui.py:1825 ../src/fw_tui.py:725
+msgid "Parse error in config file"
+msgstr "Fortolkningsfejl i konfigurationsfil"
+
+#: ../src/fw_gui.py:1827 ../src/fw_tui.py:726
+msgid "Ignore"
+msgstr "Ignorér"
+
+#: ../src/fw_gui.py:1828 ../src/fw_tui.py:727
+msgid "Ignore All"
+msgstr "Ignorér alle"
+
+#: ../src/fw_gui.py:1895 ../src/fw_tui.py:708
+msgid "The firewall configuration is not consistent."
+msgstr "Firewallkonfigurationen er ikke konsistent."
+
+#: ../src/fw_gui.py:1896 ../src/fw_tui.py:709
+#, python-format
+msgid ""
+"The following files are missing or unusable:\n"
+"\t%s\n"
+"\n"
+"Apply your firewall configuration now to correct this problem."
+msgstr ""
+"Følgende filer mangler eller er ikke brugbare:\n"
+"\t%s\n"
+"Tilføj din firewallkonfiguration nu for at rette op på dette problem."
+
+#: ../src/fw_gui.py:1904 ../src/fw_tui.py:715
+msgid "Old firewall configuration."
+msgstr "Gammel firewallkonfiguration."
+
+#: ../src/fw_gui.py:1905 ../src/fw_tui.py:716
+msgid ""
+"Your firewall configuration was converted from an old version. Please verify "
+"the configuration and apply."
+msgstr ""
+"Din firewallkonfiguration er konverteret fra en gammel version. Kontrollér "
+"venligst konfigurationen og tilføj."
+
+#: ../src/fw_gui.py:1950 ../src/system-config-firewall.glade.h:89
+msgid "Server"
+msgstr "Server"
+
+#. skill level (important: after load defaults)
+#: ../src/fw_gui.py:1957 ../src/system-config-firewall.glade.h:18
+msgid "Beginner"
+msgstr "Begynder"
+
+#: ../src/fw_gui.py:2164 ../src/fw_tui.py:633
+msgid ""
+"Clicking the 'Yes' button will override any existing firewall configuration. "
+"Are you sure that you want to do this?"
+msgstr ""
+"Trykker du på \"Ja\"-knappen vil du overskrive enhver eksisterende "
+"firewallkonfiguration. Er du sikker på at du vil at gøre dette?"
+
+#: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+msgid ""
+"Please remember to check if the services iptables and ip6tables are enabled."
+msgstr ""
+"Husk at kontrollere om iptables- og ip6tables-tjenesterne er aktiveret."
+
+#: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+msgid "Configuration failed"
+msgstr "Konfiguration mislykkedes"
+
+#: ../src/fw_icmp.py:30
+msgid "Echo Request (ping)"
+msgstr "Ekkoforespørgsel (ping)"
+
+#: ../src/fw_icmp.py:31
+msgid ""
+"This message is used to test if a host is reachable mostly with the <i>ping</"
+"i> utility."
+msgstr ""
+"Denne besked bruges til at teste om der er forbindelse til en vært med "
+"<i>ping</i>-værktøjet."
+
+#: ../src/fw_icmp.py:33
+msgid "Echo Reply (pong)"
+msgstr "Ekkosvar (pong)"
+
+#: ../src/fw_icmp.py:34
+msgid "This message is the answer to an <i>Echo Request</i>."
+msgstr "Denne besked er svaret til en <i>Ekko forespørgsel</i>."
+
+#: ../src/fw_icmp.py:35
+msgid "Destination Unreachable"
+msgstr "Destinationen kunne ikke nås"
+
+#: ../src/fw_icmp.py:36
+msgid ""
+"This error message is generated by a host or gateway if the destination is "
+"not reachable."
+msgstr ""
+"Denne fejlmeddelse er genereret af en vært eller gateway, hvis mål ikke kan "
+"nås."
+
+#: ../src/fw_icmp.py:38
+msgid "Parameter Problem"
+msgstr "Parameterproblem"
+
+#: ../src/fw_icmp.py:39
+msgid ""
+"This error message is generated if the IP header is bad, either by a missing "
+"option or bad length."
+msgstr ""
+"Denne fejlmeddelse er genereret hvis IP-hovedet er forkert, enten fordi den "
+"mangler en indstilling eller en forkert længde."
+
+#: ../src/fw_icmp.py:41
+msgid "Redirect"
+msgstr "Omdirigér"
+
+#: ../src/fw_icmp.py:42
+msgid "This error message informs a host to send packets on another route."
+msgstr ""
+"Denne fejlbesked informerer en vært om at sende pakker på en anden rute."
+
+#: ../src/fw_icmp.py:44
+msgid "Router Advertisement"
+msgstr "Ruterannoncering"
+
+#: ../src/fw_icmp.py:45
+msgid ""
+"This message is used by routers to periodically announce the IP address of a "
+"multicast interface."
+msgstr ""
+"Denne besked bruges af ruterne til periodisk at annoncere IP-adressen for en "
+"rundsendingsgrænseflade."
+
+#: ../src/fw_icmp.py:47
+msgid "Router Solicitation"
+msgstr "Ruteranmodning"
+
+#: ../src/fw_icmp.py:48
+msgid ""
+"This message is used by a host attached to a multicast link to request a "
+"<i>Router Advertisement</i>"
+msgstr ""
+"Denne besked bruges af en vært hæftet til en multicastlænke til at "
+"forespørge en <i>Ruterannoncering</i>"
+
+#: ../src/fw_icmp.py:50
+msgid "Source Quench"
+msgstr "Kildeslukker"
+
+#: ../src/fw_icmp.py:51
+msgid ""
+"This error message is generated to tell a host to reduce the pace at which "
+"it is sending packets."
+msgstr ""
+"Denne fejlbesked er genereret til at bede en vært om at reducere hastigheden "
+"som den sender pakker med."
+
+#: ../src/fw_icmp.py:54
+msgid "Time Exceeded"
+msgstr "Tiden er overskredet"
+
+#: ../src/fw_icmp.py:55
+msgid ""
+"This error message is generated if the time-to-live was exceeded either of a "
+"packet or of the reassembling of a fragmented packet."
+msgstr ""
+"Denne fejlbesked er genereret hvis levetiden var overskredet, enten af en "
+"pakke eller af gensamlingen af fragmenterede pakker."
+
+#: ../src/fw_iptables.py:42
+msgid "Unload modules on restart and stop"
+msgstr "Aflad moduler ved genstart og stop"
+
+#: ../src/fw_iptables.py:43
+msgid ""
+"To ensure a sane state, the kernel firewall modules must be unloaded when "
+"the firewall is restarted or stopped."
+msgstr ""
+"For at sikre en sund status, skal kernens firewallmoduler aflades når "
+"firewallen er genstartet eller stoppet."
+
+#: ../src/fw_iptables.py:46
+msgid "Save on stop"
+msgstr "Gem ved stop"
+
+#: ../src/fw_iptables.py:47
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before stopping the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Gem den aktive firewallkonfiguration med alle ændringer siden sidste start "
+"før firewallen bliver stoppet. Gør kun dette hvis du vil gemme den aktive "
+"status til næste opstart."
+
+#: ../src/fw_iptables.py:50
+msgid "Save on restart"
+msgstr "Gem ved genstart"
+
+#: ../src/fw_iptables.py:51
+msgid ""
+"Save the active firewall configuration with all changes since the last start "
+"before restarting the firewall. Only do this if you need to preserve the "
+"active state for the next start."
+msgstr ""
+"Gem den aktive firewallkonfiguration med alle ændringer siden sidste start "
+"før firewallen bliver genstartet. Gør kun dette hvis du vil gemme den aktive "
+"status til næste opstart."
+
+#: ../src/fw_iptables.py:54
+msgid "Save and restore counter"
+msgstr "Gem og gendan tæller"
+
+#: ../src/fw_iptables.py:55
+msgid ""
+"<i>Save on stop</i> and <i>Save on restart</i> additionally save rule and "
+"chain counter."
+msgstr ""
+"<i>Gem ved stop</i> og <i>Gem ved genstart </i> gemmer også regel og "
+"kædetæller."
+
+#: ../src/fw_iptables.py:57
+msgid "Numeric status output"
+msgstr "Numerisk statusuddata"
+
+#: ../src/fw_iptables.py:58
+msgid "Print addresses and ports in numeric format for the status output."
+msgstr "Udskriv adresserne og portene i numerisk format til statusuddataen."
+
+#: ../src/fw_iptables.py:61
+msgid "Verbose status"
+msgstr "Uddybende status"
+
+#: ../src/fw_iptables.py:62
+msgid ""
+"Print information about the number of packets and bytes plus the <i>input-</"
+"i> and <i>outputdevice</i> in the status output."
+msgstr ""
+"Udskriv information om antallet af pakker og byte plus <i>inddata-</i> og "
+"<i>uddataenhed</i> i statusuddataen."
+
+#: ../src/fw_iptables.py:65
+msgid "Status line numbers"
+msgstr "Status linjenumre"
+
+#: ../src/fw_iptables.py:66
+msgid "Print a counter/number for every rule in the status output."
+msgstr "Udskriv en tæller/nummer for hver regel i statusuddataen."
+
+#: ../src/fw_lokkit.py:103
+msgid "Failed to write selinux configuration."
+msgstr "Skrivning af selinux-konfiguration mislykkedes."
+
+#: ../src/fw_lokkit.py:181 ../src/fw_lokkit.py:185
+#, python-format
+msgid "Failed to stop %s."
+msgstr "Kunne ikke stoppe %s."
+
+#: ../src/fw_lokkit.py:209 ../src/fw_lokkit.py:216
+#, python-format
+msgid "Failed to start %s."
+msgstr "Kunne ikke starte %s."
+
+#: ../src/fw_lokkit.py:224 ../src/fw_lokkit.py:232
+#, python-format
+msgid "Failed to remove %s."
+msgstr "Kunne ikke fjerne %s."
+
+#: ../src/fw_parser.py:42
+#, python-format
+msgid "port range %s is not unique."
+msgstr "portinterval %s er ikke unikt."
+
+#: ../src/fw_parser.py:44
+#, python-format
+msgid "%s is not a valid range (start port >= end port)."
+msgstr "%s er ikke et gyldigt interval (start port >= slut port)."
+
+#: ../src/fw_parser.py:49
+#, python-format
+msgid "%s is not a valid protocol."
+msgstr "%s er ikke en gyldig protokol."
+
+#: ../src/fw_parser.py:51
+#, python-format
+msgid "invalid port definition %s."
+msgstr "ugyldig portdefinition %s."
+
+#: ../src/fw_parser.py:67
+msgid "ipv6 has no nat support."
+msgstr "ipv6 har ikke understøttelse for nat."
+
+#: ../src/fw_parser.py:73
+#, python-format
+msgid "invalid service '%s'."
+msgstr "ugyldig tjeneste \"%s\"."
+
+#: ../src/fw_parser.py:79
+#, python-format
+msgid "option %(option)s: invalid icmp type '%(value)s'."
+msgstr "indstilling %(option)s: ugyldig icmp-type \"%(value)s\"."
+
+#: ../src/fw_parser.py:90 ../src/fw_parser.py:100
+#, python-format
+msgid "Invalid argument %s"
+msgstr "Ugyldigt argument %s"
+
+#: ../src/fw_parser.py:114
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s': %(error)s."
+msgstr ""
+"indstilling %(option)s: ugyldig videresendings_port \"%(value)s\": %(error)s."
+
+#: ../src/fw_parser.py:125
+#, python-format
+msgid "option %(option)s: invalid forward_port '%(value)s'."
+msgstr "indstilling %(option)s: ugyldig videresendings_port \"%(value)s\"."
+
+#: ../src/fw_parser.py:132
+#, python-format
+msgid "invalid interface '%s'."
+msgstr "ugyldig grænseflade \"%s\"."
+
+#: ../src/fw_parser.py:155
+msgid "Enable firewall (default)"
+msgstr "Aktivér firewall (standard)"
+
+#: ../src/fw_parser.py:158 ../src/system-config-firewall.glade.h:31
+msgid "Disable firewall"
+msgstr "Deaktivér firewall"
+
+#: ../src/fw_parser.py:161 ../src/fw_parser.py:165
+msgid "<module>"
+msgstr "<modul>"
+
+#: ../src/fw_parser.py:162
+msgid "Enable an iptables module"
+msgstr "Aktivér et \"iptables\"-modul"
+
+#: ../src/fw_parser.py:166
+msgid "Disable an iptables module"
+msgstr "Deaktivér et \"iptables\"-modul"
+
+#: ../src/fw_parser.py:170
+msgid "<service>"
+msgstr "<tjeneste>"
+
+#: ../src/fw_parser.py:171
+msgid "Open the firewall for a service (e.g, ssh)"
+msgstr "Åbn firewallen for en tjeneste (f.eks. ssh)"
+
+#: ../src/fw_parser.py:174
+msgid "<port>[-<port>]:<protocol>"
+msgstr "<port>[-<port>]:<protokol>"
+
+#: ../src/fw_parser.py:176
+msgid "Open specific ports in the firewall (e.g, ssh:tcp)"
+msgstr "Åbn specifikke porte i firewallen (f.eks. \"ssh:tcp\")"
+
+#: ../src/fw_parser.py:180 ../src/fw_parser.py:184
+msgid "<interface>"
+msgstr "<grænseflade>"
+
+#: ../src/fw_parser.py:181
+msgid "Allow all traffic on the specified device"
+msgstr "Tillad al trafik på den angivne enhed"
+
+#: ../src/fw_parser.py:185
+msgid "Masquerades traffic from the specified device. This is IPv4 only."
+msgstr "Maskér trafik fra den angivne enhed. Dette er kun for \"IPv4\"."
+
+#: ../src/fw_parser.py:189
+msgid "Backwards compatibility, aliased to --enabled"
+msgstr "Bagudkompatibilitet, det samme som --enabled"
+
+#: ../src/fw_parser.py:192
+msgid "[<type>:][<table>:]<filename>"
+msgstr "[<type>:][<tabel>:]<filname>"
+
+#: ../src/fw_parser.py:194
+msgid ""
+"Specify a custom rules file for inclusion in the firewall, after the default "
+"rules. Default protocol type: ipv4, default table: filter. (Example: ipv4:"
+"filter:/etc/sysconfig/ipv4_filter_addon)"
+msgstr ""
+"Angiv en tilpasset regelfil til inkludering i firewallen, efter "
+"standardreglerne. Standard protokoltype: \"ipv4\", standard tabel: \"filter"
+"\". (Eksempel: \"ipv4:filter:/etc/sysconfig/ipv4_filter_addon\")"
+
+#: ../src/fw_parser.py:203
+msgid ""
+"if=<interface>:port=<port>:proto=<protocol>[:toport=<destination port>][:"
+"toaddr=<destination address>]"
+msgstr ""
+"if=<grænseflade>:port=<port>:proto=<protokol>[:toport=<målport>][:"
+"toaddr=<måladresse>]"
+
+#: ../src/fw_parser.py:207
+msgid ""
+"Forward the port with protocol for the interface to either another local "
+"destination port (no destination address given) or to an other destination "
+"address with an optional destination port. This is IPv4 only."
+msgstr ""
+"Videresend porten med grænsefladens protokol til enten en anden lokal "
+"målport (ingen måladresse opgivet) eller til en anden målport med en valgfri "
+"målport. Dette er kun for IPv4."
+
+#: ../src/fw_parser.py:216
+msgid "<icmp type>"
+msgstr "<icmp type>"
+
+#: ../src/fw_parser.py:217
+msgid "Block this ICMP type. The default is to accept all ICMP types."
+msgstr "Blokér denne ICMP-type. Standard er at acceptere alle ICMP-typer."
+
+#: ../src/fw_parser.py:223
+msgid "Disable Internet Protocol Security (IPsec)"
+msgstr "Deaktivér Internet Protocol Security (IPsec)"
+
+#: ../src/fw_parser.py:226
+msgid "Disable Internet Printing Protocol (IPP)"
+msgstr "Deaktivér Internet Printing Protocol (IPP)"
+
+#: ../src/fw_parser.py:229
+msgid "Disable Multicast DNS (mDNS)"
+msgstr "Deaktivér Multicast DNS (mDNS)"
+
+#: ../src/fw_parser.py:232
+msgid "SELinux Options (deprecated)"
+msgstr "Indstillinger for SELinux (forældet)"
+
+#: ../src/fw_parser.py:233
+msgid ""
+"Using these options with no additional firewall options will not create or "
+"alter firewall configuration, only SELinux will be configured."
+msgstr ""
+"At bruge disse indstillinger uden nogen yderligere firewallindstillinger vil "
+"ikke oprette eller ændre firewallkonfigurationen, kun SELinux vil blive "
+"konfigureret."
+
+#: ../src/fw_parser.py:239
+msgid "<mode>"
+msgstr "<tilstand>"
+
+#: ../src/fw_parser.py:240
+#, python-format
+msgid "Configure SELinux mode: %s"
+msgstr "Konfigurér SELinux-tilstand: %s"
+
+#: ../src/fw_parser.py:244 ../src/fw_parser.py:404 ../src/fw_parser.py:457
+msgid "<type>"
+msgstr "<type>"
+
+#: ../src/fw_parser.py:245
+msgid "Configure SELinux type: Usually targeted or strict Policy"
+msgstr "Konfigurér SELinux-type: Normalt targeted- eller strict-politik"
+
+#: ../src/fw_parser.py:259
+#, python-format
+msgid "no such option: %s"
+msgstr "ingen sådan indstilling: %s"
+
+#: ../src/fw_parser.py:333
+#, python-format
+msgid "%s option requires an argument"
+msgstr "%s indstillingen behøver et argument"
+
+#: ../src/fw_parser.py:336
+#, python-format
+msgid "%(option)s option requires %(count)s arguments"
+msgstr "%(option)s indstillingen behøver %(count)s argumenter"
+
+#: ../src/fw_parser.py:350
+#, python-format
+msgid "%s option does not take a value"
+msgstr "%s indstillingen tager ikke en værdi"
+
+#: ../src/fw_parser.py:378
+msgid "Show this help message"
+msgstr "Vis denne hjælpebesked"
+
+#: ../src/fw_parser.py:381
+msgid "Run noninteractively; process only command-line arguments"
+msgstr "Kør ikke-interaktivt; behandl kun kommandolinjeargumenter"
+
+#: ../src/fw_parser.py:385 ../src/fw_parser.py:441
+msgid "Be more verbose"
+msgstr "Vær mere uddybende"
+
+#: ../src/fw_parser.py:388
+msgid "Show version"
+msgstr "Vis version"
+
+#: ../src/fw_parser.py:391 ../src/fw_parser.py:444
+msgid "Configure firewall but do not activate the new configuration"
+msgstr "Konfigurér firewallen, men aktivér ikke den nye konfiguration"
+
+#: ../src/fw_parser.py:395 ../src/fw_parser.py:448
+msgid "Ignore actual settings"
+msgstr "Ignorér nuværende indstillinger"
+
+#: ../src/fw_parser.py:398 ../src/fw_parser.py:451
+msgid ""
+"Update firewall non-interactively if the firewall is enabled. This will also "
+"restart the firewall. The -n and -f options will be ignored."
+msgstr ""
+"Opdatér firewall ikke-interaktivt, hvis firewallen er aktiveret. Dette vil "
+"også genstarte firewallen. -n og -f indstillingerne vil blive ignoreret."
+
+#: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+#, python-format
+msgid ""
+"Set firewall default type: %s. This overwrites any existing configuration."
+msgstr ""
+"Sæt standard firewalltype: %s. Dette overskriver den eksisterende "
+"konfiguration."
+
+#: ../src/fw_parser.py:410
+msgid "List predefined services."
+msgstr "Vis fordefinerede tjenester."
+
+#: ../src/fw_parser.py:413
+msgid "List the supported icmp types."
+msgstr "Vis de understøttede icmp-typer."
+
+#: ../src/fw_services.py:35
+msgid "Network Printing Client (IPP)"
+msgstr "Network Printing Client (IPP)"
+
+#: ../src/fw_services.py:37
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over udp) provides the ability to get information about a printer (e.g. "
+"capability and status) and to control printer jobs. If you plan to use a "
+"remote network printer via cups, do not disable this option."
+msgstr ""
+"Internet Printing Protocol (IPP) bruges til distribueret udskrivning. IPP "
+"(over udp) giver muligheden for at modtage information om en printer (f.eks. "
+"kapacitet og status) og til at kontrollere printerjob. Hvis du planlægger at "
+"bruge en ekstern netværksprinter via cups, skal du ikke deaktivere denne "
+"indstilling."
+
+#: ../src/fw_services.py:43
+msgid "Network Printing Server (IPP)"
+msgstr "Network Printing Server (IPP)"
+
+#: ../src/fw_services.py:45
+msgid ""
+"The Internet Printing Protocol (IPP) is used for distributed printing. IPP "
+"(over tcp) provides the ability to share printers over the network. Enable "
+"this option if you plan to share printers via cups over the network."
+msgstr ""
+"Internet Printing Protocol (IPP) bruges til distribueret udskrivning. IPP "
+"(over tcp) giver muligheden for at dele printere over netværket. Aktivér "
+"denne indstilling hvis du planlægger at dele printere via cups over "
+"netværket."
+
+#: ../src/fw_services.py:49
+msgid "Multicast DNS (mDNS)"
+msgstr "Multicast DNS (mDNS)"
+
+#: ../src/fw_services.py:50
+msgid ""
+"mDNS provides the ability to use DNS programming interfaces, packet formats "
+"and operating semantics in a small network without a conventional DNS "
+"server. If you plan to use Avahi, do not disable this option."
+msgstr ""
+"mDNS giver muligheden for at bruge DNS-programmeringsgrænseflader, "
+"pakkeformater og opererende betydningslære i et lille netværk uden en "
+"konventionel DNS-server. Hvis du planlægger at bruge Avahi, skal du ikke "
+"deaktivere denne indstilling."
+
+#: ../src/fw_services.py:56
+msgid "IPsec"
+msgstr "IPsec"
+
+#: ../src/fw_services.py:58
+msgid ""
+"Internet Protocol Security (IPsec) incorporates security for network "
+"transmissions directly into the Internet Protocol (IP). IPsec provides "
+"methods for both encrypting data and authentication for the host or network "
+"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+"this option."
+msgstr ""
+"Internet Protocol Security (IPsec) indarbejder sikkerhed til "
+"netværksoverførsler direkte ind i Internet Protocol (IP). IPsec tilbyder "
+"metoder til både kryptering af data og godkendelse af værten eller netværk "
+"det sender til. Hvis du planlægger at bruge en vpnc-server eller FreeS/WAN, "
+"skal du ikke deaktivere denne indstilling."
+
+#: ../src/fw_services.py:66
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/fw_services.py:67
+msgid ""
+"Secure Shell (SSH) is a protocol for logging into and executing commands on "
+"remote machines. It provides secure encrypted communications. If you plan on "
+"accessing your machine remotely via SSH over a firewalled interface, enable "
+"this option. You need the openssh-server package installed for this option "
+"to be useful."
+msgstr ""
+"Secure Shell (SSH) er en protokol til indlogning og eksekvering af "
+"kommandoer på eksterne maskiner. Dette giver sikker, krypteret "
+"kommunikation. Hvis du planlægger at forbinde til din maskine eksternt via "
+"SSH over en grænseflade med firewallbeskyttelse skal du aktivere denne "
+"indstilling. Du skal have openssh-server-pakken installeret for at denne "
+"indstilling skal være brugbar."
+
+#. _Service("telnet", _("Telnet"), [ ("23", "tcp"), ],
+#. "Telnet is a protocol for logging into remote machines. It "
+#. "is unencrypted, and provides little security from network "
+#. "snooping attacks. Enabling telnet is not recommended. You need "
+#. "the telnet-server package installed for this option to be "
+#. "useful."),
+#: ../src/fw_services.py:80
+msgid "WWW (HTTP)"
+msgstr "WWW (HTTP)"
+
+#: ../src/fw_services.py:81
+msgid ""
+"HTTP is the protocol used to serve Web pages. If you plan to make your Web "
+"server publicly available, enable this option. This option is not required "
+"for viewing pages locally or developing Web pages."
+msgstr ""
+"HTTP er protokollen som bruges til at vise internetsider. Hvis du planlægger "
+"at gøre din internetserver offentligt tilgængelig, skal du aktivere denne "
+"indstilling. Denne indstilling er ikke nødvendigt for at vise sider lokalt "
+"og udvikle internetsider."
+
+#: ../src/fw_services.py:85
+msgid "FTP"
+msgstr "FTP"
+
+#: ../src/fw_services.py:86
+msgid ""
+"FTP is a protocol used for remote file transfer. If you plan to make your "
+"FTP server publicly available, enable this option. You need the vsftpd "
+"package installed for this option to be useful."
+msgstr ""
+"FTP er en protokol til ekstern filoverførsel. Hvis du planlægger at gøre din "
+"FTP-server offentligt tilgængelig, skal du aktivere denne indstilling. Du "
+"skal have vsftpd-pakken installeret for at denne indstilling skal være "
+"brugbar."
+
+#: ../src/fw_services.py:91
+msgid "NFS4"
+msgstr "NFS4"
+
+#: ../src/fw_services.py:92
+msgid ""
+"The NFS4 protocol is used to share files via TCP networking. You will need "
+"to have the NFS tools installed and properly configure your NFS server for "
+"this option to be useful."
+msgstr ""
+"NFS4-protokollen bruges til at dele filer via et TCP-netværk. Du skal have "
+"NFS-værktøjerne installeret og konfigurere din NFS-server rigtigt for at "
+"denne indstilling er brugbar."
+
+#: ../src/fw_services.py:96
+msgid "Secure WWW (HTTPS)"
+msgstr "Sikker WWW (HTTPS)"
+
+#: ../src/fw_services.py:97
+msgid ""
+"HTTPS is a modified HTTP used to serve Web pages when security is important. "
+"Examples are sites that require logins like stores or web mail. This option "
+"is not required for viewing pages locally or developing Web pages. You need "
+"the httpd package installed for this option to be useful."
+msgstr ""
+"HTTPS er en ændret HTTP som bruges til at vise internetsider, når sikkerhed "
+"er vigtigt. Eksempler kunne være sider der behøver logind til butikker og "
+"internet e-post. Denne indstilling er ikke nødvendig for at se sider lokalt "
+"eller udvikle internetsider. Du skal have httpd-pakken installeret for at "
+"denne indstilling er brugbar."
+
+#: ../src/fw_services.py:102
+msgid "Mail (SMTP)"
+msgstr "Post (SMTP)"
+
+#: ../src/fw_services.py:103
+msgid ""
+"This option allows incoming SMTP mail delivery. If you need to allow remote "
+"hosts to connect directly to your machine to deliver mail, enable this "
+"option. You do not need to enable this if you collect your mail from your "
+"ISP's server by POP3 or IMAP, or if you use a tool such as fetchmail. Note "
+"that an improperly configured SMTP server can allow remote machines to use "
+"your server to send spam."
+msgstr ""
+"Denne indstilling tillader levering af indkommende e-post. Hvis du skal "
+"tillade fjernværter at forbinde direkte til din maskine og levere e-post, "
+"skal du aktivere denne indstilling. Du behøver ikke at aktivere dette hvis "
+"du henter din e-post fra din internetleverandørs server ved hjælp af POP3 "
+"eller IMAP, eller hvis du bruger et værktøj som fetchmail. Bemærk at at en "
+"forkert konfigureret SMTP-server kan tillade eksterne maskiner at bruge din "
+"til at sende affaldspost (spam)."
+
+#: ../src/fw_services.py:111
+msgid "Samba Client"
+msgstr "Samba-klient"
+
+#: ../src/fw_services.py:113
+msgid ""
+"This option allows you to access Windows file and printer sharing networks. "
+"You need the samba-client package installed for this option to be useful."
+msgstr ""
+"Denne indstilling giver dig læse- og skriverettigheder til Windows fil- og "
+"printerdelingsnetværk. Du skal have samba-client-pakken installeret for at "
+"denne indstilling er brugbar."
+
+#: ../src/fw_services.py:118
+msgid "Samba"
+msgstr "Samba"
+
+#: ../src/fw_services.py:120
+msgid ""
+"This option allows you to access and participate in Windows file and printer "
+"sharing networks. You need the samba package installed for this option to be "
+"useful."
+msgstr ""
+"Denne indstilling tillader dig adgang og skriverettigheder i Windows fil- og "
+"printerdelingsnetværk. Du skal have samba-pakken installeret for at denne "
+"indstilling skal være brugbar."
+
+#: ../src/fw_services.py:124
+msgid "DNS"
+msgstr "DNS"
+
+#: ../src/fw_services.py:125
+msgid ""
+"The Domain Name System (DNS) is used to provide and request host and domain "
+"names. Enable this option, if you plan to provide a domain name service (e."
+"g. with bind)."
+msgstr ""
+"Domain Name System (DNS) bruges til at tilbyde og forespørge værts- og "
+"domænenavne. Aktivér denne indstilling, hvis du planlægger at tilbyde en "
+"domænenavnstjeneste (f.eks. med bind)."
+
+#: ../src/fw_services.py:128
+msgid "IMAP over SSL"
+msgstr "IMAP over SSL"
+
+#: ../src/fw_services.py:129
+msgid ""
+"The Internet Message Access Protocol over SSL (IMAPs) allows a local client "
+"to access email on a remote server in a secure way. If you plan to provide a "
+"IMAP over SSL service (e.g. with dovecot), enable this option."
+msgstr ""
+"Internet Message Access Protocol over SSL (IMAPs) tillader en lokal klient "
+"adgang til e-post på en ekstern server på en sikker måde. Hvis du planlægger "
+"at udbyde en IMAP- over SSL-tjeneste (f.eks. med dovecot), skal du aktivere "
+"denne indstilling."
+
+#: ../src/fw_services.py:133
+msgid "POP-3 over SSL"
+msgstr "POP-3 over SSL"
+
+#: ../src/fw_services.py:134
+msgid ""
+"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+"from a remote server over a TCP/IP connection. Enable this option, if you "
+"plan to provide a POP3 service (e.g. with dovecot)."
+msgstr ""
+"Post Office Protocol version 3 (POP3) er en protokol til at modtage e-post "
+"fra en fjernserver over en TCP/IP-forbindelse. Aktivér denne indstilling, "
+"hvis du planlægger at tilbyde en POP3-tjeneste (f.eks. med dovecot)."
+
+#: ../src/fw_services.py:138
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: ../src/fw_services.py:139
+msgid ""
+"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+"user authentication over networks. It is mostly used for modem, DSL or "
+"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+"with freeradius), enable this option."
+msgstr ""
+"Remote Authentication Dial In User Service (RADIUS) er en protocol til "
+"brugergodkendelse over netværk. Den bruges mest til modem-, DSL-, eller "
+"trådløs brugergodkendelse. Hvis du planlægger at tilbyde en RADIUS-tjeneste "
+"(f.eks. med freeradius), skal du aktivere denne indstilling."
+
+#: ../src/fw_services.py:144
+msgid "OpenVPN"
+msgstr "OpenVPN"
+
+#: ../src/fw_services.py:145
+msgid ""
+"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+"encrypted point-to-point tunnels between computers. If you plan to provide a "
+"VPN service, enable this option."
+msgstr ""
+"OpenVPN er en virtuelt privat netværk (VPN)-løsning. Det bruges til at lave "
+"krypterede punkt-til-punkt tuneller mellem computere. Hvis du planlægger at "
+"tilbyde en VPN-tjeneste, skal du aktivere denne indstilling."
+
+#: ../src/fw_services.py:149
+msgid "TFTP"
+msgstr "TFTP"
+
+#: ../src/fw_services.py:150
+msgid ""
+"The Trivial File Transfer Protocol (TFTP) is a protocol used to transfer "
+"files to and from a remote machine in s simple way. It is normally used only "
+"for booting diskless workstations and also to transfer data in the Preboot "
+"eXecution Environment (PXE)."
+msgstr ""
+"Trivial File Transfer Protocol (TFTP) er en protokol, som bruges til at "
+"overføre filer til og fra en fjernmaskine på en simpel måde. Den er normalt "
+"kun brugt til opstart af diskløse arbejdsstationer og til at overføre data i "
+"et Preboot eXecution Environment (PXE)."
+
+#: ../src/fw_services.py:156
+msgid "TFTP Client"
+msgstr "TFTP-klient"
+
+#: ../src/fw_services.py:157
+msgid ""
+"This option allows you to access Trivial File Transfer Protocol (TFTP) "
+"servers. You need the tftp package installed for this option to be useful."
+msgstr ""
+"Denne indstilling giver dig adgang til Trivial File Transfer Protocol (TFTP)-"
+"servere. Du skal have tftp-pakken installeret for at denne indstilling er "
+"brugbar."
+
+#: ../src/fw_services.py:162
+msgid "Red Hat Cluster Suite"
+msgstr "Red Hat Cluster Suite"
+
+#: ../src/fw_services.py:174
+msgid ""
+"This option allows you to use the Red Hat Cluster Suite. Ports are opened "
+"for openais, ricci and dlm. You need the Red Hat Cluster Suite installed for "
+"this option to be useful."
+msgstr ""
+"Denne indstilling tillader dig at bruge Red Hat Cluster Suite. Porte er "
+"åbnet for openais, ricci og dlm. Du skal have Red Hat Cluster Suite "
+"installeret for at denne indstilling er brugbar."
+
+#: ../src/fw_services.py:179
+msgid "Amanda Backup Client"
+msgstr "Amanda sikkerhedskopieringsklient"
+
+#: ../src/fw_services.py:180
+msgid ""
+"The Amanda backup client option allows you to connect to a Amanda backup and "
+"archiving server. You need the amanda-client package installed for this "
+"option to be useful."
+msgstr ""
+"Amanda sikkerhedskopieringsklient-indstillingen giver dig mulighed for at "
+"forbinde til Amanda sikkerhedskopi- og arkiveringsserver. Du skal have "
+"amanda-client pakken installeret for at denne indstilling er brugbar."
+
+#: ../src/fw_services.py:186
+msgid "Bacula Client"
+msgstr "Bacula-klient"
+
+#: ../src/fw_services.py:187
+msgid ""
+"This option allows a Bacula server to connect to the local machine to "
+"schedule backups. You need the bacula-client package installed for this "
+"option to be useful."
+msgstr ""
+"Denne indstilling tillader en Bacula-server at forbinde til den lokale "
+"maskine for at planlægge sikkerhedskopieringer. Du skal have bacula-client-"
+"pakken installeret for at denne indstilling er brugbar."
+
+#: ../src/fw_services.py:190
+msgid "Bacula"
+msgstr "Bacula"
+
+#: ../src/fw_services.py:192
+msgid ""
+"Bacula is a network backup solution. Enable this option, if you plan to "
+"provide Bacula backup, file and storage services."
+msgstr ""
+"Bacula er en netværksløsning til sikkerhedskopiering. Aktivér denne "
+"indstilling, hvis du har planet om at tilbyde Bacula-sikkerhedskopiering-, -"
+"fil- og -opbevaringstjenester."
+
+#: ../src/fw_services.py:196
+msgid "Virtual Machine Management"
+msgstr ""
+
+#: ../src/fw_services.py:197
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+"Kerberos). The libvirtd service is needed for this option to be useful."
+msgstr ""
+
+#: ../src/fw_services.py:202
+msgid "Virtual Machine Management (TLS)"
+msgstr ""
+
+#: ../src/fw_services.py:204
+msgid ""
+"Enable this option if you want to allow remote virtual machine management "
+"with TLS encryption, x509 certificates and optional SASL authentication. The "
+"libvirtd service is needed for this option to be useful."
+msgstr ""
+
+#: ../src/fw_tui.py:47
+msgid ""
+"A firewall protects against unauthorized network intrusions. Enabling a "
+"firewall blocks all incoming connections. Disabling a firewall allows all "
+"connections and is not recommended. "
+msgstr ""
+"En firewall beskytter mod utilladt adgang til netværket. Aktivering af en "
+"firewall blokerer al indkommende adgang. Deaktivering af en firewall "
+"tillader alle opkoblinger og er ikke anbefalet. "
+
+#: ../src/fw_tui.py:51
+msgid "Firewall:"
+msgstr "Firewall:"
+
+#: ../src/fw_tui.py:52
+msgid "Enabled"
+msgstr "Aktiveret"
+
+#: ../src/fw_tui.py:58 ../src/fw_tui.py:328 ../src/fw_tui.py:341
+#: ../src/fw_tui.py:344 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "OK"
+msgstr "O.k."
+
+#: ../src/fw_tui.py:59
+msgid "Customize"
+msgstr "Tilpas"
+
+#: ../src/fw_tui.py:60 ../src/fw_tui.py:366 ../src/fw_tui.py:453
+#: ../src/fw_tui.py:525
+msgid "Cancel"
+msgstr "Annullér"
+
+#: ../src/fw_tui.py:71 ../src/system-config-firewall.glade.h:43
+msgid ""
+"Here you can define which services are trusted. Trusted services are "
+"accessible from all hosts and networks."
+msgstr ""
+"Her kan du definere hvilke tjenester du tror på. Pålidelige tjenester er "
+"tilgængelige fra alle værter og netværk."
+
+#. other ports
+#: ../src/fw_tui.py:83 ../src/system-config-firewall.glade.h:67
+msgid "Other Ports"
+msgstr "Andre porte"
+
+#: ../src/fw_tui.py:87 ../src/system-config-firewall.glade.h:12
+msgid ""
+"Add additional ports or port ranges, which need to be accessible for all "
+"hosts or networks."
+msgstr ""
+"Tilføj yderligere porte eller portintervaller, som skal være tilgængelige "
+"for alle værter og netværk."
+
+#: ../src/fw_tui.py:92 ../src/fw_tui.py:138 ../src/fw_tui.py:175
+msgid "Add"
+msgstr "Tilføj"
+
+#: ../src/fw_tui.py:93 ../src/fw_tui.py:139 ../src/fw_tui.py:176
+msgid "Edit"
+msgstr "Redigér"
+
+#: ../src/fw_tui.py:94 ../src/fw_tui.py:140 ../src/fw_tui.py:177
+msgid "Remove"
+msgstr "Fjern"
+
+#. trusted interfaces
+#: ../src/fw_tui.py:104 ../src/system-config-firewall.glade.h:99
+msgid "Trusted Interfaces"
+msgstr "Pålidelige tjenester"
+
+#: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+msgid ""
+"Mark all interfaces as trusted which should have full access to the system."
+msgstr ""
+"Markér alle grænseflader som er pålidelige, og som skal have fuld adgang til "
+"systemet."
+
+#. masquerading
+#: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+msgid "Masquerading"
+msgstr "Maskerede"
+
+#: ../src/fw_tui.py:120 ../src/system-config-firewall.glade.h:60
+msgid "Mark the interfaces to be masqueraded."
+msgstr "Markér alle grænsefladerne som skal maskeres."
+
+#. port forwarding
+#: ../src/fw_tui.py:128 ../src/fw_tui.py:401
+#: ../src/system-config-firewall.glade.h:79
+msgid "Port Forwarding"
+msgstr "Videresending af port"
+
+#: ../src/fw_tui.py:132 ../src/system-config-firewall.glade.h:13
+msgid ""
+"Add entries to forward ports either from one port to another on the local "
+"system or from the local system to another system. Forwarding to another "
+"system is only useful if the interface is masqueraded. Port forwarding is "
+"IPv4 only."
+msgstr ""
+"Tilføj indgange til videresendingsporte, enten fra en port til en anden på "
+"det lokale system eller fra det lokale system til et andet system. "
+"Videresending til et anden system er kun brugbart, hvis grænsefladen er "
+"maskeret. Videresending af port er kun for IPv4."
+
+#. icmp filter
+#: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+msgid "ICMP Filter"
+msgstr "ICMP-filter"
+
+#: ../src/fw_tui.py:155 ../src/system-config-firewall.glade.h:59
+msgid ""
+"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+"types are allowed to pass the firewall. The default is no limitation."
+msgstr ""
+"Markér de ICMP-typer i listen, der skal afvises. Alle andre ICMP-typer er "
+"tilladt at passere firewallen. Som standard er der ingen begrænsninger."
+
+#: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+msgid "Custom Rules"
+msgstr "Tilpassede regler"
+
+#: ../src/fw_tui.py:168 ../src/system-config-firewall.glade.h:101
+msgid ""
+"Use custom rules files to add additional rules to the firewall. The custom "
+"rules are added after the default rules. The files must have the iptables-"
+"save format."
+msgstr ""
+"Brug tilpassede regelfiler til yderligere regler i firewallen. De tilpassede "
+"regler er tilføjet efter standardreglerne. Filerne skal være i iptables-save-"
+"formatet."
+
+#: ../src/fw_tui.py:194
+msgid "Forward"
+msgstr "Fremad"
+
+#: ../src/fw_tui.py:196
+msgid "Back"
+msgstr "Tilbage"
+
+#: ../src/fw_tui.py:197
+msgid "Close"
+msgstr "Luk"
+
+#: ../src/fw_tui.py:345
+msgid "Warning"
+msgstr "Advarsel"
+
+#: ../src/fw_tui.py:349
+msgid ""
+"Valid values: <port>[-<port>], where port is either a number [0..65535] or a "
+"service name."
+msgstr ""
+"Gyldige værdier: <port>[-<port>], hvor port enten er et nummer [0..65535] "
+"eller et tjenestenavn."
+
+#: ../src/fw_tui.py:354
+#, python-format
+msgid "Protocol '%s' is not valid."
+msgstr "Protokol \"%s\" er ikke gyldig."
+
+#: ../src/fw_tui.py:355
+msgid "Valid values: tcp, udp"
+msgstr "Gyldige værdier: tcp, udp"
+
+#: ../src/fw_tui.py:363
+msgid "Please enter a port or port range and protocol."
+msgstr "Indtast venligst en port eller et portinterval og protokol."
+
+#: ../src/fw_tui.py:364 ../src/fw_tui.py:424 ../src/fw_tui.py:445
+#: ../src/system-config-firewall.glade.h:78
+msgid "Port / Port Range:"
+msgstr "Port / portinterval:"
+
+#: ../src/fw_tui.py:365 ../src/fw_tui.py:418
+#: ../src/system-config-firewall.glade.h:83
+msgid "Protocol:"
+msgstr "Protokol:"
+
+#: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+msgid ""
+"Please select the source and destination options according to your needs."
+msgstr ""
+"Vælg venligst kilden og destinationsindstillingerne som passer til dine "
+"behov."
+
+#: ../src/fw_tui.py:407
+msgid "Source (all needed)"
+msgstr "Kilde (alle er nødvendige)"
+
+#: ../src/fw_tui.py:412 ../src/system-config-firewall.glade.h:52
+msgid "Interface:"
+msgstr "Grænseflade:"
+
+#: ../src/fw_tui.py:432
+msgid "Destination (at least one needed)"
+msgstr "Destination (nødvendigt med mindst én)"
+
+#: ../src/fw_tui.py:439 ../src/system-config-firewall.glade.h:46
+msgid "IP address:"
+msgstr "IP-adresse:"
+
+#: ../src/fw_tui.py:466
+#, python-format
+msgid "Interface '%s' is not valid."
+msgstr "Grænseflade \"%s\" er ikke gyldig."
+
+#: ../src/fw_tui.py:488
+#, python-format
+msgid "Address '%s' is not valid."
+msgstr "Adresse \"%s\" er ikke gyldig."
+
+#: ../src/fw_tui.py:521 ../src/system-config-firewall.glade.h:75
+msgid ""
+"Please select the protocol type, the firewall table and the file containing "
+"the rules."
+msgstr ""
+"Vælg venligst protokoltypen, firewalltabellen og filen der indeholder "
+"reglerne."
+
+#: ../src/fw_tui.py:523
+msgid "Firewall Table"
+msgstr "Firewalltabel"
+
+#: ../src/fw_tui.py:524
+msgid "File"
+msgstr "Fil"
+
+#: ../src/fw_tui.py:533
+#, python-format
+msgid "The protocol type '%s' is not valid."
+msgstr "Protokoltypen \"%s\" er ikke gyldig."
+
+#: ../src/fw_tui.py:535 ../src/fw_tui.py:545
+#, python-format
+msgid "Valid values: %s"
+msgstr "Gyldige værdier: %s"
+
+#: ../src/fw_tui.py:543
+#, python-format
+msgid "The firewall table '%s' is not valid."
+msgstr "Firewalltabellen \"%s\" er ikke gyldig."
+
+#: ../src/fw_tui.py:555
+#, python-format
+msgid "The file '%s' does not exist."
+msgstr "Filen \"%s\" findes ikke."
+
+#: ../src/fw_tui.py:562
+msgid "IPv6 has no nat support."
+msgstr "IPv6 har ikke understøttelse for nat."
+
+#: ../src/fw_tui.py:638
+msgid "Yes"
+msgstr "Ja"
+
+#: ../src/fw_tui.py:638
+msgid "No"
+msgstr "Nej"
+
+#: ../src/fw_tui.py:678
+msgid "Hit enter to continue."
+msgstr "Tryk enter for at fortsætte."
+
+#: ../src/fw_tui.py:728
+msgid "Quit"
+msgstr "Afslut"
+
+#: ../src/lokkit:53
+msgid "Predefined Services with Default Environment:"
+msgstr "Foruddefinerede tjenester i standardmiljø:"
+
+#: ../src/lokkit:62
+msgid "Supported icmp types:"
+msgstr "Understøttede icmp-typer:"
+
+#: ../src/system-config-firewall:41
+msgid "ERROR: FirewallD is active, please use firewall-config."
+msgstr ""
+
+#: ../src/system-config-firewall.glade.h:1
+msgid "<b>Basic Firewall Settings</b>"
+msgstr "<b>Grundlæggende firewallindstillinger</b>"
+
+#: ../src/system-config-firewall.glade.h:2
+msgid "<b>Configuration</b>"
+msgstr "<b>Konfiguration</b>"
+
+#: ../src/system-config-firewall.glade.h:3
+msgid "<b>Destination</b>"
+msgstr "<b>Destination</b>"
+
+#: ../src/system-config-firewall.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>Information</b>"
+
+#: ../src/system-config-firewall.glade.h:5
+msgid "<b>Source</b>"
+msgstr "<b>Kilde</b>"
+
+#: ../src/system-config-firewall.glade.h:6
+msgid "<b>User Skill Level</b>"
+msgstr "<b>Bruger evneniveau</b>"
+
+#: ../src/system-config-firewall.glade.h:7
+msgid ""
+"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+msgstr ""
+"<b>Din nuværende konfiguration er tom, alt trafik vil blive blokeret.</b>"
+
+#: ../src/system-config-firewall.glade.h:8
+msgid "<big><b>Firewall Configuration Wizard</b></big>"
+msgstr "<big><b>Konfigurationsguide til firewall</b></big>"
+
+#: ../src/system-config-firewall.glade.h:9
+msgid ""
+"A <i>\"System without network access\"</i> does not need a firewall at all. "
+"This selection disables the firewall. Otherwise, choose <i>\"System with "
+"network access\"</i>."
+msgstr ""
+"Et <i>\"System uden netværksadgang\"</i> behøver overhovedet ikke en "
+"firewall. Dette valg deaktiverer firewallen. Ellers skal du vælge <i>"
+"\"System med netværksadgang\"</i>."
+
+#: ../src/system-config-firewall.glade.h:10
+msgid "Add Entry"
+msgstr "Tilføj punkt"
+
+#: ../src/system-config-firewall.glade.h:11
+msgid "Add Interface"
+msgstr "Tilføj grænseflade"
+
+#: ../src/system-config-firewall.glade.h:14
+msgid "Allow access to necessary ports or port ranges, only."
+msgstr "Tillad kun adgang til nødvendige porte eller portintervaller."
+
+#: ../src/system-config-firewall.glade.h:15
+msgid "Allow access to necessary services, only."
+msgstr "Tillad kun adgang til nødvendige tjenester."
+
+#: ../src/system-config-firewall.glade.h:16
+msgid "Apply"
+msgstr "Tilføj"
+
+#: ../src/system-config-firewall.glade.h:17
+msgid "Apply changes"
+msgstr "Tilføj ændringer"
+
+#: ../src/system-config-firewall.glade.h:19
+msgid ""
+"Beginner\n"
+"Expert"
+msgstr ""
+"Begynder\n"
+"Ekspert"
+
+#: ../src/system-config-firewall.glade.h:21
+msgid "Configure Service Settings"
+msgstr "Konfigurér tjenesteindstillinger"
+
+#: ../src/system-config-firewall.glade.h:22
+msgid "Configure firewall helper modules for connection tracking"
+msgstr "Konfigurér firewallhjælpemoduler til forbindelsessporing"
+
+#: ../src/system-config-firewall.glade.h:23
+msgid "Configure the iptables and ip6tables service settings."
+msgstr "Konfigurér serviceindstillinger for iptables og ip6tables."
+
+#: ../src/system-config-firewall.glade.h:25
+msgid "Custom Rules File"
+msgstr "Tilpasset regelfil"
+
+#: ../src/system-config-firewall.glade.h:26
+msgid "Desktop"
+msgstr "Skrivebord"
+
+#: ../src/system-config-firewall.glade.h:27
+msgid ""
+"Desktop\n"
+"Server"
+msgstr ""
+"Skrivebord\n"
+"Server"
+
+#: ../src/system-config-firewall.glade.h:29
+msgid "Disable"
+msgstr "Deaktivér"
+
+#: ../src/system-config-firewall.glade.h:30
+msgid "Disable Firewall"
+msgstr "Deaktivér firewall"
+
+#: ../src/system-config-firewall.glade.h:32
+msgid "Edit Entry"
+msgstr "Redigér punkt"
+
+#: ../src/system-config-firewall.glade.h:33
+msgid "Enable"
+msgstr "Aktivér"
+
+#: ../src/system-config-firewall.glade.h:34
+msgid "Enable Firewall"
+msgstr "Aktivér firewall"
+
+#: ../src/system-config-firewall.glade.h:35
+msgid "Enable firewall"
+msgstr "Aktivér firewall"
+
+#: ../src/system-config-firewall.glade.h:36
+msgid "Expert"
+msgstr "Ekspert"
+
+#: ../src/system-config-firewall.glade.h:37
+msgid "File:"
+msgstr "Fil:"
+
+#: ../src/system-config-firewall.glade.h:39
+msgid "Firewall Configuration Startup"
+msgstr "Opstart af firewallkonfiguration"
+
+#: ../src/system-config-firewall.glade.h:40
+msgid "Firewall Configuration Wizard"
+msgstr "Konfigurationsguide til firewall"
+
+#: ../src/system-config-firewall.glade.h:41
+msgid "Firewall Table:"
+msgstr "Firewalltabel:"
+
+#: ../src/system-config-firewall.glade.h:42
+msgid "Forward to another port"
+msgstr "Videresend til en anden port"
+
+#: ../src/system-config-firewall.glade.h:44
+msgid ""
+"Hit <i>OK</i> to apply your changes. You do not need to restart the "
+"firewall, the changes are effective as soon as they are applied."
+msgstr ""
+"Tryk <i>O.k.</i> for at tilføje dine ændringer. Du behøver ikke at genstarte "
+"firewallen, ændringerne træder i kraft så snart de er tilføjet."
+
+#: ../src/system-config-firewall.glade.h:47
+msgid ""
+"If you clear the <i>keep configuration</i> button, the actual firewall "
+"configuration will be overwritten."
+msgstr ""
+"Hvis du rydder <i>Behold konfigurationen</i>-knappen vil den nuværende "
+"firewallkonfiguration blive overskrevet."
+
+#: ../src/system-config-firewall.glade.h:48
+msgid ""
+"If you enable local forwarding, you have to specify a port. This port has to "
+"be different to the source port."
+msgstr ""
+"Hvis du aktiverer lokal videresending, skal du angive en port. Denne port "
+"skal være forskellig fra kildeporten."
+
+#: ../src/system-config-firewall.glade.h:49
+msgid ""
+"If you enable masquerading, IP forwarding will also be enabled for your IPv4 "
+"networks."
+msgstr ""
+"Hvis du aktiverer maskering vil IP-videresending også blive aktivere for "
+"dine IPv4-netværk."
+
+#: ../src/system-config-firewall.glade.h:50
+msgid ""
+"If you need further firewall settings, please modify your configuration by "
+"hand, but keep in mind, that this tool is not able to load your custom "
+"configuration. If you are using this tool, all your manual changes will be "
+"lost. If you do not want to lose your manual configuration changes, leave "
+"this program without applying."
+msgstr ""
+"Hvis du har brug for yderligere firewallindstillinger, skal du ændre din "
+"konfiguration manuelt, men husk at dette værktøj ikke er i stand til at "
+"indlæse din tilpassede konfiguration. Hvis du bruger dette værktøj vil alle "
+"dine manuelle ændringer gå tabt. Hvis du ikke ønsker at miste dine manuelle "
+"konfigurationsændringer, skal du afslutte dette program uden at tilføje."
+
+#: ../src/system-config-firewall.glade.h:53
+msgid "Keep Configuration"
+msgstr "Behold konfiguration"
+
+#: ../src/system-config-firewall.glade.h:54
+msgid "Load"
+msgstr "Indlæs"
+
+#: ../src/system-config-firewall.glade.h:55
+msgid "Load _Default Configuration"
+msgstr "Indlæs standar_d konfiguration"
+
+#: ../src/system-config-firewall.glade.h:56
+msgid "Local forwarding"
+msgstr "Lokal videresending"
+
+#: ../src/system-config-firewall.glade.h:57
+msgid "Make sure to open the destination port on the remote system."
+msgstr "Husk at åbne destinationsporten på fjernsystemet."
+
+#: ../src/system-config-firewall.glade.h:62
+msgid ""
+"Masquerading allows you to set up a host or router that connects your local "
+"network to the internet. Your local network will not be visible and the "
+"hosts appear as a single address on the internet. Masquerading is IPv4 only."
+msgstr ""
+"Maskering tillader dig at sætte en vært eller en ruter op, som forbinder til "
+"dit lokale netværk til internettet. Dit lokale netværk vil ikke blive "
+"synligt og værterne vises som en enkelt adresse på internettet. Maskering er "
+"kun for IPv4."
+
+#: ../src/system-config-firewall.glade.h:63
+msgid "Move Entry Down"
+msgstr "Flyt punkt ned"
+
+#: ../src/system-config-firewall.glade.h:64
+msgid "Move Entry Up"
+msgstr "Flyt punkt op"
+
+#: ../src/system-config-firewall.glade.h:65
+msgid "No configuration"
+msgstr "Ingen konfiguration"
+
+#: ../src/system-config-firewall.glade.h:66
+msgid ""
+"Only mark interfaces if you can trust all participants on that network "
+"interface."
+msgstr ""
+"Markér kun en grænseflade, hvis du kan stole på alle deltagere på den "
+"netværksgrænseflade."
+
+#: ../src/system-config-firewall.glade.h:68
+msgid ""
+"Please answer the questions in the following configuration steps. The wizard "
+"leads you back to the main application and hides all unnecessary "
+"configuration options."
+msgstr ""
+"Svar venligst på spørgsmålene i de følgende konfigurationstrin. Guiden vil "
+"lede dig tilbage til hovedprogrammet og gemme alle unødvendige "
+"konfigurationsindstillinger."
+
+#: ../src/system-config-firewall.glade.h:69
+msgid "Please check your firewall settings after applying custom rules."
+msgstr ""
+"Kontrollér venligst dine firewallindstillinger efter tilføjelse af "
+"tilpassede regler."
+
+#: ../src/system-config-firewall.glade.h:70
+msgid ""
+"Please load a default configuration from the <i>Options</i> menu or use the "
+"wizard."
+msgstr ""
+"Indlæs venligst en standard konfiguration fra <i>Indstillinger</i>-menuen "
+"eller brug guiden."
+
+#: ../src/system-config-firewall.glade.h:71
+msgid "Please remember to check your firewall configuration before using it."
+msgstr ""
+"Husk venligst at kontrollere din firewallkonfiguration før du tager den i "
+"brug."
+
+#: ../src/system-config-firewall.glade.h:72
+msgid "Please select an entry from the list or enter a interface further down."
+msgstr ""
+"Vælg venligst et punkt fra listen eller indtast en grænseflade længere nede."
+
+#: ../src/system-config-firewall.glade.h:73
+msgid ""
+"Please select an entry from the list or enter a port and protocol further "
+"down."
+msgstr ""
+"Vælg venligst et punkt fra listen eller indtast en port og protokol længere "
+"nede."
+
+#: ../src/system-config-firewall.glade.h:74
+msgid ""
+"Please select keep configuration or choose to load a default configuration."
+msgstr ""
+"Vælg venligst om du vil beholde konfigurationen eller indlæse en nuværende "
+"konfiguration."
+
+#: ../src/system-config-firewall.glade.h:77
+msgid "Please specify your firewall skills."
+msgstr "Angiv venligst dine firewallevner."
+
+#: ../src/system-config-firewall.glade.h:80
+msgid "Port and Protocol"
+msgstr "Port og protokol"
+
+#: ../src/system-config-firewall.glade.h:81
+msgid "Port:"
+msgstr "Port:"
+
+#: ../src/system-config-firewall.glade.h:82
+msgid "Protocol Type:"
+msgstr "Protokoltype:"
+
+#: ../src/system-config-firewall.glade.h:84
+msgid "Reload"
+msgstr "Genindlæs"
+
+#: ../src/system-config-firewall.glade.h:85
+msgid "Reload current configuration"
+msgstr "Genindlæs nuværende konfiguration"
+
+#: ../src/system-config-firewall.glade.h:86
+msgid "Remove Entry"
+msgstr "Fjern punkt"
+
+#: ../src/system-config-firewall.glade.h:87
+msgid ""
+"Select <i>\"Expert\"</i> if you are familiar with firewall configurations or "
+"if you need to add user customized rules. Otherwise, choose <i>\"Beginner\"</"
+"i>."
+msgstr ""
+"Vælg <i>\"Ekspert\"</i> hvis du er bekendt med konfigurering af firewalls "
+"eller har brug for at tilføje brugertilpassede regler. Ellers skal du vælge "
+"<i>\"Begynder\"</i>."
+
+#: ../src/system-config-firewall.glade.h:88
+msgid "Select a File"
+msgstr "Vælg en fil"
+
+#: ../src/system-config-firewall.glade.h:90
+msgid "Service Settings"
+msgstr "Serviceindstillinger"
+
+#: ../src/system-config-firewall.glade.h:91
+msgid "Start Wizard"
+msgstr "Start guide"
+
+#: ../src/system-config-firewall.glade.h:92
+msgid "Start configuration wizard"
+msgstr "Start konfigurationsguiden"
+
+#: ../src/system-config-firewall.glade.h:93
+msgid ""
+"System without network access\n"
+"System with network access"
+msgstr ""
+"System uden netværksadgang\n"
+"System med netværksadgang"
+
+#: ../src/system-config-firewall.glade.h:95
+msgid "TODO"
+msgstr "Gøremål"
+
+#: ../src/system-config-firewall.glade.h:96
+msgid ""
+"The Internet Control Message Protocol (ICMP) is mainly used to send error "
+"messages between networked computers, but additionally for informational "
+"messages like ping requests and replies."
+msgstr ""
+"Internet Control Message Protocol (ICMP) er hovedsageligt brugt til at sende "
+"fejlmeddelser mellem computere på netværk, men også til "
+"informationsmeddelser, som for eksempel, ping-forespørgsler og svar."
+
+#: ../src/system-config-firewall.glade.h:97
+msgid "This program will help you to set up a basic firewall for your system."
+msgstr ""
+"Dette program hjælper dig med at sætte en grundlæggende firewall op på dit "
+"system."
+
+#: ../src/system-config-firewall.glade.h:98
+msgid ""
+"This wizard helps you to set up a clean firewall configuration for your "
+"system."
+msgstr ""
+"Denne guide hjælper dig med at sætte en ren firewallkonfiguration op på dit "
+"system."
+
+#: ../src/system-config-firewall.glade.h:102
+msgid "User Defined"
+msgstr "Brugerdefineret"
+
+#: ../src/system-config-firewall.glade.h:103
+msgid "User Skill Level"
+msgstr "Bruger evneniveau"
+
+#: ../src/system-config-firewall.glade.h:104
+msgid "What kind of system do you have?"
+msgstr "Hvilket slags system har du?"
+
+#: ../src/system-config-firewall.glade.h:105
+msgid "Wizard"
+msgstr "Guide"
+
+#: ../src/system-config-firewall.glade.h:106
+msgid "You can change the settings in the <i>Options</i> menu afterwards."
+msgstr ""
+"Du kan ændre indstillinger i <i>Indstillinger</i>-menuen efterfølgende."
+
+#: ../src/system-config-firewall.glade.h:107
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/system-config-firewall.glade.h:108
+msgid "_File"
+msgstr "_Fil"
+
+#: ../src/system-config-firewall.glade.h:109
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../src/system-config-firewall.glade.h:110
+msgid "_Options"
+msgstr "_Indstillinger"
+
+#: ../src/system-config-firewall.glade.h:111
+msgid "_Quit"
+msgstr "_Afslut"
+
+#: ../src/system-config-firewall.glade.h:112
+msgid "_Start Configuration Wizard"
+msgstr "_Start konfigurationsguiden"
+
+#: ../src/system-config-firewall.glade.h:113
+msgid "configuration"
+msgstr "konfiguration"
+
+#: ../src/system-config-firewall.glade.h:114
+msgid "modified label"
+msgstr "ændret etiket"
+
+#: ../src/system-config-firewall.glade.h:115
+msgid "system-config-firewall"
+msgstr "system-config-firewall"
+
+#. TRANSLATORS: Replace this string with your names, one name per line.
+#: ../src/system-config-firewall.glade.h:117
+msgid "translator-credits"
+msgstr ""
+"Kris Thomsen\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#~ msgid "Helper modules:"
+#~ msgstr "Hjælpemoduler:"
+
+#~ msgid "Disabled"
+#~ msgstr "Deaktiveret"
+
+#~ msgid "Firewall Configuration - Customize"
+#~ msgstr "Firewallkonfiguration - Tilpas"
+
+#~ msgid ""
+#~ "You can customize your firewall in two ways. First, you can select to "
+#~ "allow all traffic from certain network interfaces. Second, you can allow "
+#~ "certain protocols explicitly through the firewall. Specify additional "
+#~ "ports in the form 'service:protocol', such as 'imap:tcp'. "
+#~ msgstr ""
+#~ "Du kan tilpasse din firewall på to måder. For det første kan du vælge at "
+#~ "tillade al trafik fra udvalgte netværksgrænseflader. Endvidere kan du "
+#~ "tillade specifikke protokoller eksplicit gennem firewallen. Specificér "
+#~ "yderligere porte på formen 'tjeneste:protokol', såsom 'imap:tcp'."
+
+#~ msgid "Trusted Services:"
+#~ msgstr "Pålidelige tjenester:"
+
+#~ msgid "Trusted Interfaces:"
+#~ msgstr "Pålidelige grænseflader:"
+
+#~ msgid "Masquerading:"
+#~ msgstr "Maskeret:"
+
+#~ msgid "Other Ports:"
+#~ msgstr "Andre porte:"
+
+#~ msgid "Custom Rules:"
+#~ msgstr "Tilpassede regler:"
+
+#~ msgid "Trusted Devices"
+#~ msgstr "Pålidelige enheder:"
+
+#~ msgid "Add Port"
+#~ msgstr "Tilføj port"
+
+#~ msgid "enabled"
+#~ msgstr "aktiveret"
+
+#~ msgid "disabled"
+#~ msgstr "deaktiveret"
+
+#~ msgid "Configure SELinux mode: enforcing, permissive or disabled"
+#~ msgstr ""
+#~ "Konfigurér SELinuxtilstand: 'enforcing', 'permissive', eller 'disabled'"
+
+#~ msgid "Disable IPSec"
+#~ msgstr "Deaktivér IPSec"
+
+#~ msgid "Ignore settings stored in /etc/sysconfig/system-config-firewall"
+#~ msgstr "ignorér opsætning gemt i /etc/sysconfig/system-config-firewall"
+
+#~ msgid "Deactivated"
+#~ msgstr "Deaktiveret"
+
+#~ msgid "Start the service"
+#~ msgstr "Start tjenesten"
+
+#~ msgid "SELinux"
+#~ msgstr "SELinux"
+
+#~ msgid ""
+#~ "Security Enhanced Linux (SELinux) provides finer-grained security "
+#~ "controls than those available in a traditional Linux system.  It can be "
+#~ "set up in a disabled state, a state which only warns about things which "
+#~ "would be denied, or a fully active state.  Most people should keep the "
+#~ "default setting."
+#~ msgstr ""
+#~ "Security Enhanced Linux (SELinux) giver mere fintmasket "
+#~ "sikkerhedsmuligheder end dem som findes i et traditionelt Linux-system. "
+#~ "Det kan være sat op i en deaktiveret tilstand, en tilstand som kun "
+#~ "advarer om ting som ville blive nægtet,eller en fuldt aktiv tilstand. De "
+#~ "fleste bør beholde standardindstillingerne."
+
+#~ msgid ""
+#~ "Changing this SELinux setting requires rebooting the system so the entire "
+#~ "file system may be relabeled.  Relabeling takes a long time depending on "
+#~ "the file system.  Would you like to continue with this setting and reboot "
+#~ "the system after firstboot is complete?"
+#~ msgstr ""
+#~ "Ændring af denne SELinux-indstilling kræver genstart af systemet, så hele "
+#~ "filsystemet kan blive ometikeret. Ometikering tager lang tid, afhængigt "
+#~ "af filsystemet.  Vil du gerne fortsætte med denne indstilling og "
+#~ "genstarte systemet efter 'firstboot' er færdig?"
+
+#~ msgid "Enforcing"
+#~ msgstr "Gennemtvinger"
+
+#~ msgid "Permissive"
+#~ msgstr "Tilladende"
+
+#~ msgid ""
+#~ "Changing to SELinux enabled will cause a relabel of the entire file "
+#~ "system on the next boot. Relabeling takes a long time depending on the "
+#~ "size of the file system.  Do you wish to continue?"
+#~ msgstr ""
+#~ "Ændring til SELinux aktiveret kræver en gen-etikettering af hele "
+#~ "filsystemet ved næste opstart. Gen-etikettering tager lang tid, afhængigt "
+#~ "af størrelsen af filsystemet. Ønsker du at fortsætte?"
+
+#~ msgid "Trust"
+#~ msgstr "Betro"
+
+#~ msgid "Firewall deactivated"
+#~ msgstr "Firewall deaktiveret"
+
+#~ msgid ""
+#~ "\n"
+#~ "Firewall Configuration\n"
+#~ "\n"
+#~ "   A firewall sits between your computer and the network, \n"
+#~ "   and determines which resources on your computer remote\n"
+#~ "   users on the network are able to access. A\n"
+#~ "   properly configured firewall can greatly increase\n"
+#~ "   the out-of-the-box security of your system.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Firewallkonfiguration\n"
+#~ "\n"
+#~ "   En firewall er placeret mellem din maskine og netværket,\n"
+#~ "   og bestemmer hvilke resurser på din maskine som\n"
+#~ "   eksterne brugere på netværket kan få fat på. En korrekt\n"
+#~ "   konfigureret firewall kan forbedre\n"
+#~ "   standardsikkerheden betydeligt på dit system.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Choose the appropriate security level for your\n"
+#~ "   system.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Vælg det rigtige sikkerhedsniveau for dit\n"
+#~ "   system.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Enabled -- By choosing enabled, your system will\n"
+#~ "   not accept connections from the outside that are\n"
+#~ "   not explicitly defined by you.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Aktiveret -- Hvis du vælger aktiveret vil dit system\n"
+#~ "   ikke acceptere opkoblingstyper udefra som ikke\n"
+#~ "   udtrykkeligt er defineret af dig.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   If you are connecting your system to the Internet,\n"
+#~ "   but do not plan to run a server, this is the\n"
+#~ "   safest choice. If additional services are needed,\n"
+#~ "   you can choose Customize to allow specific\n"
+#~ "   services through the firewall, or to implicitly\n"
+#~ "   trust traffic coming over certain interfaces.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Hvis du opkobler dit system til Internet, men\n"
+#~ "   ikke planlægger at køre en server, er dette det sikreste\n"
+#~ "   indstilling. Hvis du behøver yderligere tjenester kan\n"
+#~ "   du vælge Tilret for at tillade specifikke tjenester\n"
+#~ "   at passere gennem firewallen, eller for at implicit have\n"
+#~ "   tillid til trafik som kommer ind over visse grænseflader.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Disabled -- Disabling the  firewall allows complete\n"
+#~ "   access and does no security checking. It is recommended\n"
+#~ "   that this only be selected if you are running on a\n"
+#~ "   trusted network (not the Internet), or if you plan\n"
+#~ "   to do more detailed firewall configuration later.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Deaktiveret -- Deaktivering af firewallen tillader\n"
+#~ "   fuldstændig adgang og laver ingen sikkerhedskontroller.\n"
+#~ "   Det anbefales kun hvis du bruger et sikkert\n"
+#~ "   netværk (ikke Internet), eller hvis du planlægger at\n"
+#~ "   lave en mere detaljeret firewallkonfiguration senere.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Firewall Customization\n"
+#~ "\n"
+#~ "   Choose which trusted devices and incoming services\n"
+#~ "   should be allowed for your network security\n"
+#~ "   settings.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Tilpasning af firewall\n"
+#~ "\n"
+#~ "   Vælg hvilke pålidelige enheder og indkommende\n"
+#~ "   tjenester som skal tillades for dine netværks-\n"
+#~ "   sikkerhedsindstillinger.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   Trusted Devices -- Checking these for any of your\n"
+#~ "   devices allows all traffic coming from that device\n"
+#~ "   to be allowed. For example, if you are running a\n"
+#~ "   local network, but are connecting to the Internet\n"
+#~ "   via a PPP dialup, you could check that eth0 is\n"
+#~ "   trusted to allow any traffic coming from your\n"
+#~ "   local network.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Pålidelige enheder -- At markere for dette for nogen\n"
+#~ "   af dine enheder gør at al trafik som kommer fra\n"
+#~ "   denne enhed tillades. Hvis du til eksempel bruger et\n"
+#~ "   lokalt netværk, men kobler op til Internet via en\n"
+#~ "   PPP-modemopkopling, kan du markere at eth0 er\n"
+#~ "   betroet til at tillade al trafik som kommer fra dit\n"
+#~ "   lokale netværk.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "   It is not recommended to enable this for devices\n"
+#~ "   that are connected to public networks, such as the\n"
+#~ "   Internet.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   At bruge dette for enheder som er opkoblet til\n"
+#~ "   offentlige netværk, som eksempelvis Internet,\n"
+#~ "   anbefales ikke.\n"
+
+#~ msgid ""
+#~ "   Allow Incoming -- Enabling these options allows the\n"
+#~ "   specified services to pass through the firewall.\n"
+#~ "   Note, during a workstation-class installation, the\n"
+#~ "   majority of these services are not present on the\n"
+#~ "   system.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "   Tillad indkommende -- Aktivering af disse muligheder\n"
+#~ "   tillader de angivne tjenester at passere gennem\n"
+#~ "   firewallen.\n"
+#~ "   Bemærk at under en arbejdsstations-installation\n"
+#~ "   findes de fleste af disse tjenester ikke på systemet.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "     * Telnet -- Telnet is a protocol for logging\n"
+#~ "       into remote machines. It is unencrypted, and\n"
+#~ "       provides little security from network snooping\n"
+#~ "       attacks. Enabling telnet is not recommended.\n"
+#~ "       You need the telnet-server package installed\n"
+#~ "       for this option to be useful.\n"
+#~ msgstr ""
+#~ "     * Telnet -- Telnet er en protokol for indlogning\n"
+#~ "       på fjernmaskiner. Det er ukrypteret og tilbyder\n"
+#~ "       meget lille sikkerhed mod netværksaflytnings-\n"
+#~ "       angreb. At bruge telnet anbefales ikke.\n"
+#~ "       Du skal have pakken telnet-server installeret\n"
+#~ "       for at denne indstilling skal være brugbart.\n"
+
+#~ msgid ""
+#~ "     * Other ports -- You can specify that other\n"
+#~ "       ports not listed here be allowed through the\n"
+#~ "       firewall. The format to use is\n"
+#~ "       'port:protocol'. For example, if you wanted to\n"
+#~ "       allow IMAP access through your firewall, you\n"
+#~ "       can specify 'imap:tcp'. You can also specify\n"
+#~ "       numeric ports explicitly; to allow UDP packets\n"
+#~ "       on port 1234 through, specify '1234:udp'. To\n"
+#~ "       specify multiple ports, separate them by\n"
+#~ "       commas.\n"
+#~ msgstr ""
+#~ "     * Andre porte -- Du kan angive at andre porte,\n"
+#~ "       som ikke er listet her, tillades gennem firewallen.\n"
+#~ "       Formatet du skal bruge er \"port:protokol\".\n"
+#~ "       Hvis du for eksempel vil tillade IMAP-adgang\n"
+#~ "       gennem din firewall kan du angive \"imap:tcp\".\n"
+#~ "       Du kan også angive numeriske porte. For at\n"
+#~ "       lade UDP-pakker på port 1234 passere angiver du\n"
+#~ "       \"1234:udp\". For at angive flere porte angiver\n"
+#~ "       du dem adskilte med kommaer.\n"
+
+#~ msgid "Ok"
+#~ msgstr "O.k."
+
+#~ msgid "Security Level:"
+#~ msgstr "Sikkerhedsniveau:"
+
+#~ msgid "SELinux:"
+#~ msgstr "SELinux:"
+
+#~ msgid "MASQUERADE Devices:"
+#~ msgstr "Maskerede enheder:"
+
+#~ msgid "Allow incoming:"
+#~ msgstr "Tillad indkommende:"
+
+#~ msgid "Other ports"
+#~ msgstr "Andre porte"
+
+#~ msgid ""
+#~ " <Tab>/<Alt-Tab> between elements   |   <Space> selects  |   <F12> next "
+#~ "screen"
+#~ msgstr ""
+#~ " <Tab>/<Alt-Tab> mellem elementer   |   <Mellemrum> vælger  |   <F12> "
+#~ "næste skærm"
+
+#~ msgid "module to add"
+#~ msgstr "modul der skal tilføjes"
+
+#~ msgid "module to remove"
+#~ msgstr "modul der skal fjernes"
+
+#~ msgid "port:protocol (e.g, ssh:tcp)"
+#~ msgstr "port:protokol (f.eks. \"ssh:tcp\")"
+
+#~ msgid "device to trust"
+#~ msgstr "enhed vi betror"
+
+#~ msgid "Configure SELinux Policy"
+#~ msgstr "Konfigurér SELinux-politik"
+
+#~ msgid "Usually 'targeted' or 'strict'"
+#~ msgstr "Normalt \"targeted\" eller \"strict\""
+
+#~ msgid "Backwards compatiblity, ignored"
+#~ msgstr "Bagudkompatibilitet, ignoreret"
+
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgid "_SELinux"
+#~ msgstr "_SELinux"
+
+#~ msgid "Configure system security level and firewall rules"
+#~ msgstr "Konfigurér systemets sikkerhedsniveau og firewallregler"
+
+#~ msgid "Security Level and Firewall"
+#~ msgstr "Sikkerhedsniveau og firewall"
